@@ -15,7 +15,32 @@
     <link rel="shortcut icon" href="img/favicon.svg" type="icon/x-icon" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header-mobile">
+      <a href="index.html" class="logo">
+        <img
+          src="img/logo.svg"
+          alt="Курсы турецкого языка ДИАЛОГ"
+          class="logo__img"
+          width="169"
+          height="38"
+        />
+      </a>
+      <button
+        id="burgerBtnOpen"
+        class="header-btn__open"
+        aria-label="Открыть меню"
+        type="button"
+      >
+        <img
+          src="img/bar.svg"
+          alt="Меню"
+          class="header-btn__open-image"
+          width="20"
+          height="18"
+        />
+      </button>
+    </header>
+    <header class="header header-desktop burger-menu">
       <address class="header-top container">
         <ul class="social header-top__social">
           <li class="social__item">
@@ -124,9 +149,8 @@
             </li>
           </ul>
         </nav>
-        <button class="btn header-main__btn" type="button">
+        <button id="callbackBtn" class="btn header-main__btn" type="button">
           <img
-            id="callbackBtn"
             src="img/btn-phone.svg"
             alt="телефон"
             width="20"
@@ -136,6 +160,20 @@
           Заказать звонок
         </button>
       </section>
+      <button
+        id="burgerBtnClose"
+        class="header-btn__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <img
+          src="img/cross.svg"
+          alt="Закрыть"
+          width="16"
+          height="16"
+          class="header-btn__close-image"
+        />
+      </button>
     </header>
     <main class="main">
       <section class="hero">
