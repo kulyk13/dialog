@@ -1,3 +1,30 @@
 @import "fonts.scss";
 @import "reset.scss";
 @import "common.scss";
+/* ============ TEMPLATES START ============ */
+$brand_color: #e6514a;
+$btn_hover_color: #be312b;
+/* ============ TEMPLATES END ============ */
+/* ============ HEADER START ============ */
+.header-mobile__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-btn {
+  margin-right: -10px;
+}
+.burger-menu {
+  display: flex;
+  flex-direction: column-reverse;
+  .burger-menu__top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.menu__link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+/* ============ HEADER START ============ */

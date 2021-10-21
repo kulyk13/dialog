@@ -370,10 +370,6 @@ section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
-
 ol,
 ul {
   list-style: none;
@@ -398,6 +394,8 @@ table {
 }
 
 /* ============ CSS RESET END ============ */
+/* ============ VARIABLES START ============ */
+/* ============ VARIABLES END ============ */
 /* ============ COMMON STYLES START ============ */
 *,
 ::before,
@@ -427,6 +425,12 @@ button {
   cursor: pointer;
   background: none;
   border: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 10px;
 }
 
 input {
@@ -434,22 +438,25 @@ input {
   border: 0;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 body {
   font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 14px;
   font-weight: 400;
+  line-height: 1.2;
   background-color: #fff;
   color: #23283b;
 }
 
 a {
   color: #23283b;
-  padding: 5px;
+  padding: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-a:hover {
-  color: #3035c3;
 }
 
 .visually-hidden {
@@ -470,10 +477,111 @@ a:hover {
 .section-head {
   text-align: center;
 }
+.section-head .section-title {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+.section-head .section-title::before {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: #e6514a;
+  margin-top: -2px;
+  margin-right: 13px;
+}
 .section-head .section-subtitle {
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
   font-weight: 800;
+  line-height: 1.3;
+}
+
+.logo {
+  margin-left: -10px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 16px 10%;
+  background-color: #e6514a;
+  color: #fff;
+  border-radius: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.btn .header-main__btn-img {
+  margin-right: 10px;
+  margin-top: -1px;
+}
+.btn:hover {
+  background-color: #be312b;
 }
 
 /* ============ COMMON STYLES END ============ */
+/* ============ TEMPLATES START ============ */
+/* ============ TEMPLATES END ============ */
+/* ============ HEADER START ============ */
+.header-mobile__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-btn {
+  margin-right: -10px;
+}
+
+.burger-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+.burger-menu .burger-menu__top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+/* ============ HEADER START ============ */
