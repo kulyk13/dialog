@@ -1,0 +1,43 @@
+/* ============ COMMON STYLES START ============ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+a,
+span,
+::before,
+::after {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #fff;
+  color: #23283b;
+}
+a {
+  color: #23283b;
+  padding: 5px;
+  transition: 0.3s;
+}
+a:hover {
+  color: #3035c3;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ============ COMMON STYLES END ============ */
