@@ -189,35 +189,43 @@
             Мы работаем онлайн ежедневно только для вас!
           </p>
           <a href="#" class="btn offer__btn">Записаться на пробный урок</a>
+          <figure class="hero__img-wrap">
+            <img
+              src="img/laptop.webp"
+              alt="Ноутбук"
+              class="hero__img"
+              width="327"
+              height="276"
+            />
+          </figure>
         </div>
-        <img
-          src="img/laptop.webp"
-          alt="Ноутбук"
-          class="hero__img"
-          width="327"
-          height="276"
-        />
       </section>
       <section class="greeting">
-        <h2 class="section-title greeting__title">Приветствие</h2>
-        <p class="section-subtitle greeting__subtitle">Давайте знакомиться!</p>
-        <iframe
-          class="video-frame"
-          width="327"
-          height="186"
-          loading="lazy"
-          src="https://www.youtube.com/embed/Rs75vSex-jo"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        >
-        </iframe>
+        <div class="container">
+          <h2 class="section-title greeting__title">Приветствие</h2>
+          <p class="section-subtitle greeting__subtitle">
+            Давайте знакомиться!
+          </p>
+          <iframe
+            class="video-frame"
+            width="327"
+            height="186"
+            loading="lazy"
+            src="https://www.youtube.com/embed/Rs75vSex-jo"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
       </section>
       <section class="programs">
-        <h2 class="seection-title programs__title">Программы</h2>
-        <p class="section-subtitle programs__subtitle">
-          Наши программы обучения:
-        </p>
+        <div class="container section-head">
+          <h2 class="seection-title programs__title">Программы</h2>
+          <p class="section-subtitle programs__subtitle">
+            Наши программы обучения:
+          </p>
+        </div>
         <ul class="container programs__cards-wrap">
           <li class="program-card">
             <div class="program-card__price-block">
@@ -524,8 +532,8 @@
           </li>
         </ul>
       </section>
-      <article class="banner">
-        <div class="container banner__wrap">
+      <section class="banner-section">
+        <article class="container banner">
           <div class="banner__description">
             <h2 class="banner__description-title">
               ДИАЛОГ - лицензированное образовательное учреждение
@@ -546,11 +554,15 @@
             height="340"
             loading="lazy"
           />
-        </div>
-      </article>
+        </article>
+      </section>
       <section class="partners">
-        <h2 class="section-title partners__title">Партнеры</h2>
-        <p class="section-subtitle partners__subtitle">Наши услуги оценили:</p>
+        <div class="container section-head">
+          <h2 class="section-title partners__title">Партнеры</h2>
+          <p class="section-subtitle partners__subtitle">
+            Наши услуги оценили:
+          </p>
+        </div>
         <ul class="container partners__list">
           <li class="partners__list-item">
             <img
@@ -614,22 +626,25 @@
           </li>
         </ul>
       </section>
-      <article class="subscribe">
-        <div class="container subscribe__wrap">
+      <section class="subscribe-section">
+        <article class="container subscribe">
           <h2 class="visually-hidden">Подпишись</h2>
           <p class="subscribe__text">
             Подпишись на 10 бесплатных уроков «Турецкий базар» в email рассылке
             для комфортного общения
           </p>
           <a href="#" class="btn subscribe__btn">Подписаться</a>
-        </div>
-      </article>
+        </article>
+      </section>
       <section class="courses">
-        <h2 class="section-title courses__title">Курсы</h2>
-        <p class="section-subtitle courses-subtitle">
-          Общий курс турецкого языка:
-        </p>
-        <div class="container slider-wrap">
+        <div class="container section-head">
+          <h2 class="section-title courses__title">Курсы</h2>
+          <p class="section-subtitle courses-subtitle">
+            Общий курс турецкого языка:
+          </p>
+        </div>
+        <article class="container slider">
+          <h3 class="visually-hidden">Слайдер</h3>
           <ul class="slider-pagination">
             <li class="slider-pagination__item">
               <a
@@ -1448,13 +1463,15 @@
               />
             </svg>
           </button>
-        </div>
+        </article>
       </section>
       <section class="teachers">
-        <h2 class="section-title teachers__title">Преподаватели</h2>
-        <p class="section-subtitle teachers__subtitle">
-          Наши преподаватели турецкого языка:
-        </p>
+        <div class="container section-head">
+          <h2 class="section-title teachers__title">Преподаватели</h2>
+          <p class="section-subtitle teachers__subtitle">
+            Наши преподаватели турецкого языка:
+          </p>
+        </div>
         <ul class="container teachers__introduce">
           <li class="introduce-card">
             <a href="#" class="introduce__card-link">
@@ -1583,8 +1600,8 @@
           </li>
         </ul>
       </section>
-      <section class="whats-need">
-        <div class="container whats-need__wrap">
+      <section class="whats-need-section">
+        <article class="container whats-need">
           <h2 class="section-title whats-need__title">Что нужно?</h2>
           <p class="section-subtitle whats-need__subtitle">
             Что нужно, чтобы начать?
@@ -1604,11 +1621,13 @@
               Приступить к изучению прекрасного турецкого языка!
             </li>
           </ul>
-        </div>
+        </article>
       </section>
       <section class="benefits">
-        <h2 class="section-title benefits__title">Преимущества</h2>
-        <p class="section-subtitle benefits__subtitle">Наши преимущества:</p>
+        <div class="container section-head">
+          <h2 class="section-title benefits__title">Преимущества</h2>
+          <p class="section-subtitle benefits__subtitle">Наши преимущества:</p>
+        </div>
         <ul class="container benefits__wrap">
           <li class="benefit__item">
             <img
