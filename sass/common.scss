@@ -39,9 +39,9 @@ a {
   color: #23283b;
   padding: 5px;
   transition: 0.3s;
-}
-a:hover {
-  color: #3035c3;
+  &:hover {
+    color: #3035c3;
+  }
 }
 .visually-hidden {
   position: absolute;
