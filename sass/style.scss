@@ -1,30 +1,109 @@
 @import "fonts.scss";
 @import "reset.scss";
 @import "common.scss";
-/* ============ TEMPLATES START ============ */
+// VARIABLES
 $brand_color: #e6514a;
 $btn_hover_color: #be312b;
-/* ============ TEMPLATES END ============ */
-/* ============ HEADER START ============ */
-.header-mobile__wrap {
+$menu-link-color: #3035c3;
+// TEMPLATES
+%flex-between-center {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+%flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+%flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+%column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+// MIXINS
+@mixin font($ff, $fw, $fz) {
+  font-family: $ff, sans-serif;
+  font-weight: $fw;
+  font-size: $fz;
+}
+// HEADER START
+.header-mobile__wrap {
+  @extend %flex-between-center;
+  box-shadow: 0px 5px 20px rgba(28, 28, 28, 0.1);
 }
 .header-btn {
   margin-right: -10px;
 }
 .burger-menu {
-  display: flex;
-  flex-direction: column-reverse;
+  @extend %column-reverse;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 28px;
+  padding-bottom: 22px;
+  transition: 0.4s;
+  &.hide {
+    transform: translateX(100vw);
+  }
+  &.visible {
+    transform: translateX(0);
+  }
   .burger-menu__top-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @extend %flex-between-center;
+    .menu__close-btn {
+      position: absolute;
+      right: 26px;
+      top: -47px;
+      z-index: 100;
+      background-color: #fff;
+    }
   }
 }
-.menu__link {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+.header-top {
+  @extend %column-reverse;
+  align-items: center;
+  @include font("Roboto", 900, 14px);
+  &__contacts {
+    margin-top: 63px;
+    .contact__item {
+      display: flex;
+      align-items: center;
+      .contact__link:hover {
+        color: $brand_color;
+      }
+    }
+  }
 }
-/* ============ HEADER START ============ */
+.header-main {
+  @extend %flex-column-center;
+  .logo {
+    display: none;
+  }
+  &__btn {
+    margin-top: 26px;
+  }
+}
+.menu {
+  @extend %flex-column-center;
+  .menu__item:nth-child(n + 2) {
+    margin-top: 12px;
+  }
+  .menu__link {
+    @include font("Montserrat", 700, 18px);
+    &:hover {
+      color: $menu-link-color;
+    }
+  }
+}
+.social {
+  @extend %flex-center-center;
+  &.header-top__social {
+    margin-top: 16px;
+  }
+}
+// HEADER END

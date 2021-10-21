@@ -1,8 +1,20 @@
-/* ============ VARIABLES START ============ */
+// VARIABLES
 $brand_color: #e6514a;
 $btn_hover_color: #be312b;
-/* ============ VARIABLES END ============ */
-/* ============ COMMON STYLES START ============ */
+$menu-link-color: #3035c3;
+// TEMPLATES
+%flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// MIXINS
+@mixin font($ff, $fw, $fz) {
+  font-family: $ff, sans-serif;
+  font-weight: $fw;
+  font-size: $fz;
+}
+// COMMON STYLES
 *,
 ::before,
 ::after {
@@ -68,9 +80,7 @@ a {
   text-align: center;
   .section-title {
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center-center;
     margin-bottom: 20px;
     &::before {
       content: "";
@@ -82,23 +92,16 @@ a {
     }
   }
   .section-subtitle {
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
-    font-weight: 800;
+    @include font("Montserrat", 800, 36px);
     line-height: 1.3;
   }
 }
 .logo {
   margin-left: -10px;
 }
-.social {
-  display: flex;
-  align-items: center;
-}
+
 .btn {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
+  @include font("Montserrat", 700, 16px);
   padding: 16px 10%;
   background-color: $brand_color;
   color: #fff;
@@ -112,5 +115,3 @@ a {
     background-color: $btn_hover_color;
   }
 }
-
-/* ============ COMMON STYLES END ============ */
