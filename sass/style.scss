@@ -2,9 +2,12 @@
 @import "reset.scss";
 @import "common.scss";
 // VARIABLES
-$brand_color: #e6514a;
-$btn_hover_color: #be312b;
-$menu-link-color: #3035c3;
+$brand_color: hsl(3, 76%, 60%);
+$btn_hover_color: hsl(2, 63%, 46%);
+$menu_link_color: hsl(238, 60%, 48%);
+$bg_color: hsl(0, 0%, 100%);
+$header_color: hsla(0, 0%, 100%, 0.75);
+$tr_time: 0.3s;
 // TEMPLATES
 %flex-between-center {
   display: flex;
@@ -32,35 +35,54 @@ $menu-link-color: #3035c3;
   font-size: $fz;
 }
 // HEADER START
+.header-mobile {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: $header_color;
+}
 .header-mobile__wrap {
   @extend %flex-between-center;
-  box-shadow: 0px 5px 20px rgba(28, 28, 28, 0.1);
+  position: relative;
+  padding: 16px 24px;
+  transition: $tr_time;
+  &.shadow {
+    box-shadow: 0px 5px 20px hsla(0, 0%, 11%, 0.1);
+  }
+  &:hover {
+    background-color: $bg_color;
+  }
 }
 .header-btn {
   margin-right: -10px;
 }
 .burger-menu {
   @extend %column-reverse;
-  position: absolute;
+  position: fixed;
   width: 100%;
-  background-color: #fff;
-  padding-top: 28px;
-  padding-bottom: 22px;
-  transition: 0.4s;
-  &.hide {
-    transform: translateX(100vw);
-  }
-  &.visible {
+  height: 100vh;
+  background-color: $bg_color;
+  margin-top: -90px;
+  padding-bottom: 134px;
+  transition: $tr_time;
+  overflow-y: hidden;
+  transform: translateX(100vw);
+  &.open {
     transform: translateX(0);
+  }
+  &.transition {
+    transition: $tr_time;
   }
   .burger-menu__top-nav {
     @extend %flex-between-center;
     .menu__close-btn {
       position: absolute;
       right: 26px;
-      top: -47px;
+      top: 27px;
       z-index: 100;
-      background-color: #fff;
+      background-color: $bg_color;
     }
   }
 }
@@ -73,6 +95,9 @@ $menu-link-color: #3035c3;
     .contact__item {
       display: flex;
       align-items: center;
+      &:first-child {
+        margin-bottom: 8px;
+      }
       .contact__link:hover {
         color: $brand_color;
       }
@@ -96,7 +121,7 @@ $menu-link-color: #3035c3;
   .menu__link {
     @include font("Montserrat", 700, 18px);
     &:hover {
-      color: $menu-link-color;
+      color: $menu_link_color;
     }
   }
 }
@@ -107,3 +132,6 @@ $menu-link-color: #3035c3;
   }
 }
 // HEADER END
+// HERO START
+
+//HERO END

@@ -71,7 +71,7 @@ a {
   margin: -1px;
 }
 .container {
-  max-width: 375px;
+  min-width: 375px;
   width: 100%;
   margin: 0 auto;
   padding: 0 25px;
@@ -102,7 +102,7 @@ a {
 
 .btn {
   @include font("Montserrat", 700, 16px);
-  padding: 16px 10%;
+  padding: 14px 9%;
   background-color: $brand_color;
   color: #fff;
   border-radius: 30px;

@@ -477,7 +477,7 @@ a {
 }
 
 .container {
-  max-width: 375px;
+  min-width: 375px;
   width: 100%;
   margin: 0 auto;
   padding: 0 25px;
@@ -513,7 +513,7 @@ a {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  padding: 16px 10%;
+  padding: 14px 9%;
   background-color: #e6514a;
   color: #fff;
   border-radius: 30px;
@@ -576,9 +576,27 @@ a {
           flex-direction: column-reverse;
 }
 
+.header-mobile {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
 .header-mobile__wrap {
+  position: relative;
+  padding: 16px 24px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.header-mobile__wrap.shadow {
   -webkit-box-shadow: 0px 5px 20px rgba(28, 28, 28, 0.1);
           box-shadow: 0px 5px 20px rgba(28, 28, 28, 0.1);
+}
+.header-mobile__wrap:hover {
+  background-color: white;
 }
 
 .header-btn {
@@ -586,28 +604,32 @@ a {
 }
 
 .burger-menu {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  background-color: #fff;
-  padding-top: 28px;
-  padding-bottom: 22px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.burger-menu.hide {
+  height: 100vh;
+  background-color: white;
+  margin-top: -90px;
+  padding-bottom: 134px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow-y: hidden;
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
 }
-.burger-menu.visible {
+.burger-menu.open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+.burger-menu.transition {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .burger-menu .burger-menu__top-nav .menu__close-btn {
   position: absolute;
   right: 26px;
-  top: -47px;
+  top: 27px;
   z-index: 100;
-  background-color: #fff;
+  background-color: white;
 }
 
 .header-top {
@@ -629,8 +651,11 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
+.header-top__contacts .contact__item:first-child {
+  margin-bottom: 8px;
+}
 .header-top__contacts .contact__item .contact__link:hover {
-  color: #e6514a;
+  color: #e7534b;
 }
 
 .header-main .logo {
@@ -649,7 +674,7 @@ a {
   font-size: 18px;
 }
 .menu .menu__link:hover {
-  color: #3035c3;
+  color: #3136c4;
 }
 
 .social.header-top__social {
