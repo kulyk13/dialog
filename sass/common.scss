@@ -8,6 +8,11 @@ $menu-link-color: #3035c3;
   align-items: center;
   justify-content: center;
 }
+%flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 // MIXINS
 @mixin font($ff, $fw, $fz) {
   font-family: $ff, sans-serif;
@@ -71,7 +76,7 @@ a {
   margin: -1px;
 }
 .container {
-  min-width: 375px;
+  max-width: 375px;
   width: 100%;
   margin: 0 auto;
   padding: 0 25px;

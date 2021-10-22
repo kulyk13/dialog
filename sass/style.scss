@@ -4,7 +4,7 @@
 // VARIABLES
 $brand_color: hsl(3, 76%, 60%);
 $btn_hover_color: hsl(2, 63%, 46%);
-$menu_link_color: hsl(238, 60%, 48%);
+$brand_color2: hsl(238, 60%, 48%);
 $bg_color: hsl(0, 0%, 100%);
 $header_color: hsla(0, 0%, 100%, 0.75);
 $tr_time: 0.3s;
@@ -121,7 +121,7 @@ $tr_time: 0.3s;
   .menu__link {
     @include font("Montserrat", 700, 18px);
     &:hover {
-      color: $menu_link_color;
+      color: $brand_color2;
     }
   }
 }
@@ -132,6 +132,36 @@ $tr_time: 0.3s;
   }
 }
 // HEADER END
-// HERO START
 
+// HERO START
+.hero {
+  padding-top: 48px;
+  padding-bottom: 30px;
+}
+.offer {
+  @extend %flex-column-center;
+  &__title {
+    @include font("Montserrat", 800, 36px);
+    text-align: center;
+    margin-bottom: 40px;
+    span {
+      color: $brand_color;
+    }
+  }
+  &__text {
+    @include font("Lato", 700, 16px);
+    order: -1;
+    text-align: center;
+    color: $brand_color2;
+    margin-bottom: 28px;
+  }
+  &__btn {
+    margin-bottom: 52px;
+  }
+  .hero__img {
+    border-radius: 12px;
+    object-position: 0px -86px;
+    box-shadow: 0px 10px 24px rgba(73, 95, 211, 0.12);
+  }
+}
 //HERO END
