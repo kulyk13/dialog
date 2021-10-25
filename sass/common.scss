@@ -1,4 +1,5 @@
 // VARIABLES
+$text_color: #23283b;
 $brand_color: #e6514a;
 $btn_hover_color: #be312b;
 $menu-link-color: #3035c3;
@@ -61,10 +62,10 @@ body {
   font-weight: 400;
   line-height: 1.2;
   background-color: #fff;
-  color: #23283b;
+  color: $text_color;
 }
 a {
-  color: #23283b;
+  color: $text_color;
   padding: 10px;
   transition: 0.3s;
 }
@@ -83,6 +84,7 @@ a {
 }
 .section-head {
   text-align: center;
+  margin-bottom: 35px;
   .section-title {
     text-transform: uppercase;
     @extend %flex-center-center;
@@ -112,6 +114,7 @@ a {
   color: #fff;
   border-radius: 30px;
   align-items: center;
+  justify-content: center;
   .header-main__btn-img {
     margin-right: 10px;
     margin-top: -1px;

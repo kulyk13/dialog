@@ -2,9 +2,11 @@
 @import "reset.scss";
 @import "common.scss";
 // VARIABLES
+$text_color: #23283b;
 $brand_color: hsl(3, 76%, 60%);
 $btn_hover_color: hsl(2, 63%, 46%);
 $brand_color2: hsl(238, 60%, 48%);
+$brand_color2_light: hsl(240, 100%, 94%);
 $bg_color: hsl(0, 0%, 100%);
 $bg_color2: hsl(238, 60%, 48%, 0.6);
 $header_color: hsla(0, 0%, 100%, 0.75);
@@ -179,10 +181,10 @@ $tr_time: 0.3s;
 }
 .video-youtube {
   position: relative;
-  padding-bottom: 56.25%;
+  width: 327px;
   padding-top: 3px;
-  margin-top: 32px;
-  height: 0;
+  margin: 0 auto;
+  height: 186px;
   &.video-youtube_overlay {
     &:before {
       content: "";
@@ -240,3 +242,75 @@ $tr_time: 0.3s;
   }
 }
 //GREETING END
+//PROGRAMS START
+.programs {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  &__cards-wrap {
+    @extend %flex-column-center;
+  }
+}
+.programs__cards-wrap {
+  display: grid;
+  row-gap: 50px;
+}
+.program-card {
+  display: grid;
+  row-gap: 32px;
+  &__header {
+    @extend %flex-column-center;
+    width: 327px;
+    padding: 28px 35px;
+    border: 1px solid $brand_color2_light;
+    border-radius: 4px;
+    text-align: center;
+    .program-card__title {
+      @include font("Montserrat", 700, 16px);
+      color: $text_color;
+      order: 1;
+    }
+    .program-card__price {
+      @include font("Montserrat", 900, 18px);
+      color: $brand_color2;
+      margin-bottom: 16px;
+      span {
+        font-size: 40px;
+      }
+      &.program-card__overhead {
+        font-size: 22px;
+      }
+    }
+  }
+  &__list {
+    display: grid;
+    row-gap: 12px;
+    &-item {
+      display: flex;
+      align-items: center;
+    }
+    .program-card__list-check {
+      margin-right: 16px;
+    }
+  }
+  &__cta {
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__btn {
+    width: 230px;
+    padding: 16px 0;
+  }
+  &__watch-btn {
+    @include font("Roboto", 900, 14);
+    color: $brand_color2;
+    margin-top: 10px;
+    .program-card__play-img {
+      margin-right: 12px;
+    }
+    &:hover {
+      color: $btn_hover_color;
+    }
+  }
+}
+
+//PROGRAMS END
