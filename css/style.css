@@ -394,7 +394,7 @@ table {
 }
 
 /* ============ CSS RESET END ============ */
-.social, .section-head .section-title {
+.partners__list, .social, .section-head .section-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -558,7 +558,7 @@ a {
           align-items: center;
 }
 
-.social, .section-head .section-title {
+.partners__list, .social, .section-head .section-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -938,4 +938,9 @@ a {
 .banner__btn {
   padding: 16px 64px;
   border-radius: 70px;
+}
+
+.partners {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
