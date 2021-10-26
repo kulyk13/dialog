@@ -60,7 +60,12 @@ $tr_time: 0.3s;
   }
 }
 .header-btn {
+  background: url(../img/bar.svg) no-repeat 50% 50%;
   margin-right: -10px;
+  padding: 20px;
+  &.close {
+    background: url(../img/cross.svg) no-repeat 50% 50%;
+  }
 }
 .burger-menu {
   @extend %column-reverse;
@@ -174,7 +179,7 @@ $tr_time: 0.3s;
 .greeting {
   padding-top: 30px;
   padding-bottom: 80px;
-  background: linear-gradient(hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0.7)),
+  background: linear-gradient(hsla(0, 0%, 100%, 1), hsla(0, 0%, 100%, 0.6)),
     url(../img/flag-bg.webp) no-repeat 0 100% / 100% 168px;
 }
 .hidden {

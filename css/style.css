@@ -617,7 +617,12 @@ a {
 }
 
 .header-btn {
+  background: url(../img/bar.svg) no-repeat 50% 50%;
   margin-right: -10px;
+  padding: 20px;
+}
+.header-btn.close {
+  background: url(../img/cross.svg) no-repeat 50% 50%;
 }
 
 .burger-menu {
@@ -739,8 +744,8 @@ a {
 .greeting {
   padding-top: 30px;
   padding-bottom: 80px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.7))), url(../img/flag-bg.webp) no-repeat 0 100%/100% 168px;
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url(../img/flag-bg.webp) no-repeat 0 100%/100% 168px;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.6))), url(../img/flag-bg.webp) no-repeat 0 100%/100% 168px;
+  background: linear-gradient(white, rgba(255, 255, 255, 0.6)), url(../img/flag-bg.webp) no-repeat 0 100%/100% 168px;
 }
 
 .hidden {

@@ -1,11 +1,8 @@
 // Burger menu
-burgerBtnOpen.addEventListener("click", (ev) => {
-  burgerMenu.classList.add("open");
-  mobileHeader.classList.remove("shadow");
-});
-burgerBtnClose.addEventListener("click", (ev) => {
-  burgerMenu.classList.remove("open");
-  mobileHeader.classList.add("shadow");
+burgerBtn.addEventListener("click", (ev) => {
+  burgerMenu.classList.toggle("open");
+  mobileHeader.classList.toggle("shadow");
+  burgerBtn.classList.toggle("close");
 });
 window.addEventListener("load", (ev) => {
   burgerMenu.classList.add("transition");
