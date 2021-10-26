@@ -2,13 +2,14 @@
 @import "reset.scss";
 @import "common.scss";
 // VARIABLES
-$text_color: #23283b;
+$text_color: hsl(228, 26%, 18%);
+$text_color_light: hsl(0, 0%, 100%);
 $brand_color: hsl(3, 76%, 60%);
 $btn_hover_color: hsl(2, 63%, 46%);
 $brand_color2: hsl(238, 60%, 48%);
 $brand_color2_light: hsl(240, 100%, 94%);
 $bg_color: hsl(0, 0%, 100%);
-$bg_color2: hsl(238, 60%, 48%, 0.6);
+$bg_color2: hsla(238, 60%, 48%, 0.6);
 $header_color: hsla(0, 0%, 100%, 0.75);
 $tr_time: 0.3s;
 // TEMPLATES
@@ -320,5 +321,40 @@ $tr_time: 0.3s;
     }
   }
 }
-
 //PROGRAMS END
+//BANNER SECTION START
+.banner-section {
+  padding-top: 106px;
+  padding-bottom: 40px;
+}
+.banner {
+  @extend %flex-column-center;
+  background-color: $brand_color2;
+  border-radius: 12px;
+  color: $text_color_light;
+  width: 327px;
+  padding: 0 36px 48px 36px;
+  &__img {
+    order: -1;
+    margin-top: -66px;
+    margin-bottom: 40px;
+  }
+  &__description {
+    @extend %flex-column-center;
+    &-title {
+      @include font("Montserrat", 800, 24px);
+      margin-bottom: 25px;
+      line-height: 1.3;
+    }
+    &-text {
+      font-size: 16px;
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+  }
+  &__btn {
+    padding: 16px 64px;
+    border-radius: 70px;
+  }
+}
+//BANNER SECTION END

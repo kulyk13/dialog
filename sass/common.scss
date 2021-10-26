@@ -1,8 +1,14 @@
 // VARIABLES
-$text_color: #23283b;
-$brand_color: #e6514a;
-$btn_hover_color: #be312b;
-$menu-link-color: #3035c3;
+$text_color: hsl(228, 26%, 18%);
+$text_color_light: hsl(0, 0%, 100%);
+$brand_color: hsl(3, 76%, 60%);
+$btn_hover_color: hsl(2, 63%, 46%);
+$brand_color2: hsl(238, 60%, 48%);
+$brand_color2_light: hsl(240, 100%, 94%);
+$bg_color: hsl(0, 0%, 100%);
+$bg_color2: hsla(238, 60%, 48%, 0.6);
+$header_color: hsla(0, 0%, 100%, 0.75);
+$tr_time: 0.3s;
 // TEMPLATES
 %flex-center-center {
   display: flex;
@@ -61,7 +67,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
-  background-color: #fff;
+  background-color: $bg_color;
   color: $text_color;
 }
 a {
@@ -111,7 +117,7 @@ a {
   @include font("Montserrat", 700, 16px);
   padding: 14px 9%;
   background-color: $brand_color;
-  color: #fff;
+  color: $text_color_light;
   border-radius: 30px;
   align-items: center;
   justify-content: center;
