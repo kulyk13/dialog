@@ -884,13 +884,22 @@ a {
 .program-card__watch-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 14;
+  font-size: 14px;
   color: #3136c4;
   margin-top: 10px;
 }
 .program-card__watch-btn .program-card__play-img {
   margin-right: 12px;
 }
+.program-card__watch-btn .program-card__play-img path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .program-card__watch-btn:hover {
   color: #bf302b;
+}
+.program-card__watch-btn:hover > .program-card__play-img path {
+  fill: #bf302b;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }

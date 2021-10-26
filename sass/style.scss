@@ -202,7 +202,6 @@ $tr_time: 0.3s;
       z-index: 5;
     }
   }
-
   .video-youtube__content {
     position: absolute;
     top: 0;
@@ -301,14 +300,23 @@ $tr_time: 0.3s;
     padding: 16px 0;
   }
   &__watch-btn {
-    @include font("Roboto", 900, 14);
+    @include font("Roboto", 900, 14px);
     color: $brand_color2;
     margin-top: 10px;
     .program-card__play-img {
       margin-right: 12px;
+      path {
+        transition: $tr_time;
+      }
     }
     &:hover {
       color: $btn_hover_color;
+      & > .program-card__play-img {
+        path {
+          fill: $btn_hover_color;
+          transition: $tr_time;
+        }
+      }
     }
   }
 }
