@@ -119,7 +119,8 @@ a {
     &:first-child {
       margin-bottom: 8px;
     }
-    .contact__link:hover {
+    .contact__link:hover,
+    .contact__link:focus-within {
       color: $brand_color;
     }
   }
@@ -136,7 +137,8 @@ a {
     margin-right: 10px;
     margin-top: -1px;
   }
-  &:hover {
+  &:hover,
+  &:focus-within {
     background-color: $btn_hover_color;
   }
 }

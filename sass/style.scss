@@ -120,7 +120,8 @@ $tr_time: 0.3s;
   }
   .menu__link {
     @include font("Montserrat", 700, 18px);
-    &:hover {
+    &:hover,
+    &:focus-within {
       color: $brand_color2;
     }
   }
@@ -231,7 +232,8 @@ $tr_time: 0.3s;
     transform: translate(-50%, -50%);
     z-index: 10;
     cursor: pointer;
-    &:hover {
+    &:hover,
+    &:focus-within {
       background-image: url(../img/play-active.svg);
     }
   }
@@ -305,7 +307,8 @@ $tr_time: 0.3s;
         transition: $tr_time;
       }
     }
-    &:hover {
+    &:hover,
+    &:focus-within {
       color: $btn_hover_color;
       & > .program-card__play-img {
         path {

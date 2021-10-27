@@ -534,7 +534,8 @@ a {
 .contacts .contact__item:first-child {
   margin-bottom: 8px;
 }
-.contacts .contact__item .contact__link:hover {
+.contacts .contact__item .contact__link:hover,
+.contacts .contact__item .contact__link:focus-within {
   color: #e12d23;
 }
 
@@ -557,7 +558,7 @@ a {
   margin-right: 10px;
   margin-top: -1px;
 }
-.btn:hover {
+.btn:hover, .btn:focus-within {
   background-color: #bf302b;
 }
 
@@ -697,7 +698,7 @@ a {
   font-weight: 700;
   font-size: 18px;
 }
-.menu .menu__link:hover {
+.menu .menu__link:hover, .menu .menu__link:focus-within {
   color: #3136c4;
 }
 
@@ -815,7 +816,7 @@ a {
   z-index: 10;
   cursor: pointer;
 }
-.video-youtube .video-youtube__new-play-btn:hover {
+.video-youtube .video-youtube__new-play-btn:hover, .video-youtube .video-youtube__new-play-btn:focus-within {
   background-image: url(../img/play-active.svg);
 }
 
@@ -901,10 +902,10 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.program-card__watch-btn:hover {
+.program-card__watch-btn:hover, .program-card__watch-btn:focus-within {
   color: #bf302b;
 }
-.program-card__watch-btn:hover > .program-card__play-img path {
+.program-card__watch-btn:hover > .program-card__play-img path, .program-card__watch-btn:focus-within > .program-card__play-img path {
   fill: #bf302b;
 }
 
