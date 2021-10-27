@@ -112,7 +112,18 @@ a {
 .logo {
   margin-left: -10px;
 }
-
+.contacts {
+  .contact__item {
+    display: flex;
+    align-items: center;
+    &:first-child {
+      margin-bottom: 8px;
+    }
+    .contact__link:hover {
+      color: $brand_color;
+    }
+  }
+}
 .btn {
   @include font("Montserrat", 700, 16px);
   padding: 14px 9%;

@@ -523,6 +523,21 @@ a {
   margin-left: -10px;
 }
 
+.contacts .contact__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contacts .contact__item:first-child {
+  margin-bottom: 8px;
+}
+.contacts .contact__item .contact__link:hover {
+  color: #e7534b;
+}
+
 .btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -665,20 +680,6 @@ a {
 }
 .header-top__contacts {
   margin-top: 63px;
-}
-.header-top__contacts .contact__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header-top__contacts .contact__item:first-child {
-  margin-bottom: 8px;
-}
-.header-top__contacts .contact__item .contact__link:hover {
-  color: #e7534b;
 }
 
 .header-main .logo {

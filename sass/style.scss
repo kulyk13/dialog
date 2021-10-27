@@ -102,16 +102,6 @@ $tr_time: 0.3s;
   @include font("Roboto", 900, 14px);
   &__contacts {
     margin-top: 63px;
-    .contact__item {
-      display: flex;
-      align-items: center;
-      &:first-child {
-        margin-bottom: 8px;
-      }
-      .contact__link:hover {
-        color: $brand_color;
-      }
-    }
   }
 }
 .header-main {
