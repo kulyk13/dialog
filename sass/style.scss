@@ -408,8 +408,38 @@ $tr_time: 0.3s;
   padding: 80px 0;
   background-color: $bg_color3;
 }
+.slider-pagination {
+  @extend %align-center;
+  @include font("Montserrat", 700, 18px);
+  line-height: 1.5;
+  position: absolute;
+  &__link {
+    color: $bg_color2;
+    transition: $tr_time;
+    &:hover,
+    &:focus-within {
+      color: $brand_color;
+    }
+    &:focus-within > .slider-pagination__value {
+      font-size: 18px;
+      color: $brand_color;
+    }
+  }
+  &__value {
+    font-size: 0;
+    transition: $tr_time;
+  }
+}
+
+.courses__slider {
+  width: 400px;
+  .slider-btn {
+    display: none;
+  }
+}
 .slider-card {
   padding: 32px 24px;
+  max-width: 327px;
   background-color: $bg_color;
   box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22);
   border-radius: 10px;

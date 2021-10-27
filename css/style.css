@@ -619,7 +619,7 @@ a {
           flex-direction: column;
 }
 
-.slider-card .info-item__list-definition {
+.slider-card .info-item__list-definition, .slider-pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1009,8 +1009,41 @@ a {
   background-color: #fafaff;
 }
 
+.slider-pagination {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  position: absolute;
+}
+.slider-pagination__link {
+  color: rgba(49, 54, 196, 0.65);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.slider-pagination__link:hover, .slider-pagination__link:focus-within {
+  color: #e12d23;
+}
+.slider-pagination__link:focus-within > .slider-pagination__value {
+  font-size: 18px;
+  color: #e12d23;
+}
+.slider-pagination__value {
+  font-size: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.courses__slider {
+  width: 400px;
+}
+.courses__slider .slider-btn {
+  display: none;
+}
+
 .slider-card {
   padding: 32px 24px;
+  max-width: 327px;
   background-color: white;
   -webkit-box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22);
           box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22);
