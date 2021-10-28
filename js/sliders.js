@@ -28,7 +28,7 @@ const slider = new Swiper(".courses__slider", {
     320: {
       slidesPerView: 1,
       centeredSlides: true,
-      spaceBetween: 100,
+      spaceBetween: 50,
       grabCursor: true,
       pagination: {
         el: ".swiper-pagination",
