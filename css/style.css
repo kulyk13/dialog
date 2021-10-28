@@ -642,6 +642,7 @@ a {
   padding: 16px 24px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  max-width: 100%;
 }
 .header-mobile__wrap.shadow {
   -webkit-box-shadow: 0px 5px 20px rgba(28, 28, 28, 0.1);
