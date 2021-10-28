@@ -619,7 +619,7 @@ a {
           flex-direction: column;
 }
 
-.slider-card .info-item__list-definition, .slider-pagination {
+.slider-card .info-item__list-definition, .courses__slider .slider-pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -978,6 +978,10 @@ a {
 .partners__slider .partners__list .swiper-notification {
   display: none;
 }
+.partners__slider .partners__list .partner__img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
 
 .subscribe-section {
   padding-top: 40px;
@@ -1009,44 +1013,74 @@ a {
   background-color: #fafaff;
 }
 
-.slider-pagination {
+.courses__slider {
+  width: 327px;
+}
+.courses__slider.swiper {
+  padding-top: 87px;
+}
+.courses__slider .slider {
+  padding: 0;
+}
+.courses__slider .slider-btn {
+  display: none;
+}
+.courses__slider .slider-pagination {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.5;
   position: absolute;
 }
-.slider-pagination__link {
+.courses__slider .slider-pagination.swiper-pagination {
+  top: 0;
+  bottom: initial;
+}
+.courses__slider .slider-pagination.swiper-pagination .swiper-pagination-bullet {
+  background: transparent;
+  padding: 0;
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  opacity: 1;
+}
+.courses__slider .slider-pagination.swiper-pagination .swiper-pagination-bullet-active {
+  color: #e12d23;
+}
+.courses__slider .slider-pagination.swiper-pagination .swiper-pagination-bullet-active > .slider-pagination__value {
+  font-size: 18px;
+  color: #e12d23;
+}
+.courses__slider .slider-pagination__item {
   color: rgba(49, 54, 196, 0.65);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.slider-pagination__link:hover, .slider-pagination__link:focus-within {
+.courses__slider .slider-pagination__item:hover, .courses__slider .slider-pagination__item:focus-within {
   color: #e12d23;
 }
-.slider-pagination__link:focus-within > .slider-pagination__value {
+.courses__slider .slider-pagination__item:focus-within > .slider-pagination__value {
   font-size: 18px;
   color: #e12d23;
 }
-.slider-pagination__value {
+.courses__slider .slider-pagination__value {
   font-size: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
-.courses__slider {
-  width: 400px;
+.courses__slider .swiper-scrollbar {
+  top: 47px;
+  background: transparent;
 }
-.courses__slider .slider-btn {
-  display: none;
+.courses__slider .swiper-scrollbar .swiper-scrollbar-drag {
+  border-radius: 0;
+  height: 3px;
+  background-color: #e12d23;
 }
 
 .slider-card {
   padding: 32px 24px;
-  max-width: 327px;
   background-color: white;
-  -webkit-box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22);
-          box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22);
   border-radius: 10px;
   line-height: 1.5;
 }

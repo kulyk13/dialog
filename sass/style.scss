@@ -377,6 +377,9 @@ $tr_time: 0.3s;
     .swiper-notification {
       display: none;
     }
+    .partner__img {
+      object-fit: fill;
+    }
   }
 }
 //PARTNERS SECTION END
@@ -408,40 +411,74 @@ $tr_time: 0.3s;
   padding: 80px 0;
   background-color: $bg_color3;
 }
-.slider-pagination {
-  @extend %align-center;
-  @include font("Montserrat", 700, 18px);
-  line-height: 1.5;
-  position: absolute;
-  &__link {
-    color: $bg_color2;
-    transition: $tr_time;
-    &:hover,
-    &:focus-within {
-      color: $brand_color;
-    }
-    &:focus-within > .slider-pagination__value {
-      font-size: 18px;
-      color: $brand_color;
-    }
-  }
-  &__value {
-    font-size: 0;
-    transition: $tr_time;
-  }
-}
-
 .courses__slider {
-  width: 400px;
+  width: 327px;
+  &.swiper {
+    padding-top: 87px;
+  }
+  .slider {
+    padding: 0;
+  }
   .slider-btn {
     display: none;
   }
+  .slider-pagination {
+    @extend %align-center;
+    @include font("Montserrat", 700, 18px);
+    line-height: 1.5;
+    position: absolute;
+    &.swiper-pagination {
+      top: 0;
+      bottom: initial;
+      .swiper-pagination-bullet {
+        background: transparent;
+        padding: 0;
+        border-radius: 5px;
+        width: auto;
+        height: auto;
+        opacity: 1;
+      }
+      .swiper-pagination-bullet-active {
+        color: $brand-color;
+        & > .slider-pagination__value {
+          font-size: 18px;
+          color: $brand-color;
+        }
+      }
+    }
+
+    &__item {
+      color: $bg_color2;
+      transition: $tr_time;
+      &:hover,
+      &:focus-within {
+        color: $brand_color;
+      }
+      &:focus-within > .slider-pagination__value {
+        font-size: 18px;
+        color: $brand_color;
+      }
+    }
+    &__value {
+      font-size: 0;
+      transition: $tr_time;
+    }
+  }
+  .swiper-scrollbar {
+    top: 47px;
+    background: transparent;
+    .swiper-scrollbar-drag {
+      border-radius: 0;
+      height: 3px;
+      background-color: $brand_color;
+    }
+  }
 }
+
 .slider-card {
   padding: 32px 24px;
-  max-width: 327px;
   background-color: $bg_color;
-  box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22);
+  // box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22);
   border-radius: 10px;
   line-height: 1.5;
   .slider-title {
