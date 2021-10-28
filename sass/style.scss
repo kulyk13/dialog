@@ -453,12 +453,7 @@ $tr_time: 0.3s;
     &__item {
       color: $text_color2;
       transition: $tr_time;
-      &:hover,
-      &:focus-within {
-        color: $brand_color;
-      }
-      &:focus-within > .slider-pagination__value {
-        font-size: 18px;
+      &:hover {
         color: $brand_color;
       }
     }

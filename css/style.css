@@ -1060,11 +1060,7 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.courses__slider .slider-pagination__item:hover, .courses__slider .slider-pagination__item:focus-within {
-  color: #dc271e;
-}
-.courses__slider .slider-pagination__item:focus-within > .slider-pagination__value {
-  font-size: 18px;
+.courses__slider .slider-pagination__item:hover {
   color: #dc271e;
 }
 .courses__slider .slider-pagination__value {
