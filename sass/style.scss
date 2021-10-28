@@ -4,7 +4,8 @@
 // VARIABLES
 $text_color: hsl(228, 26%, 18%);
 $text_color_light: hsl(0, 0%, 100%);
-$brand_color: hsl(3, 76%, 51%);
+$text_color2: hsla(238, 60%, 48%, 0.75);
+$brand_color: hsl(3, 76%, 49%);
 $btn_hover_color: hsl(2, 63%, 46%);
 $brand_color2: hsl(238, 60%, 48%);
 $brand_color2_light: hsl(240, 100%, 94%);
@@ -380,7 +381,7 @@ $tr_time: 0.3s;
       display: none;
     }
     .partner__img {
-      object-fit: fill;
+      object-fit: contain;
     }
   }
 }
@@ -450,7 +451,7 @@ $tr_time: 0.3s;
     }
 
     &__item {
-      color: $bg_color2;
+      color: $text_color2;
       transition: $tr_time;
       &:hover,
       &:focus-within {

@@ -508,7 +508,7 @@ a {
   content: "";
   width: 40px;
   height: 1px;
-  background-color: #e12d23;
+  background-color: #dc271e;
   margin-top: -2px;
   margin-right: 13px;
 }
@@ -536,7 +536,7 @@ a {
 }
 .contacts .contact__item .contact__link:hover,
 .contacts .contact__item .contact__link:focus-within {
-  color: #e12d23;
+  color: #dc271e;
 }
 
 .btn {
@@ -544,7 +544,7 @@ a {
   font-weight: 700;
   font-size: 16px;
   padding: 14px 9%;
-  background-color: #e12d23;
+  background-color: #dc271e;
   color: white;
   border-radius: 30px;
   -webkit-box-align: center;
@@ -742,7 +742,7 @@ a {
   margin-bottom: 40px;
 }
 .offer__title span {
-  color: #e12d23;
+  color: #dc271e;
 }
 .offer__text {
   font-family: "Lato", sans-serif;
@@ -983,8 +983,8 @@ a {
   display: none;
 }
 .partners__slider .partners__list .partner__img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .subscribe-section {
@@ -1049,23 +1049,23 @@ a {
   opacity: 1;
 }
 .courses__slider .slider-pagination.swiper-pagination .swiper-pagination-bullet-active {
-  color: #e12d23;
+  color: #dc271e;
 }
 .courses__slider .slider-pagination.swiper-pagination .swiper-pagination-bullet-active > .slider-pagination__value {
   font-size: 18px;
-  color: #e12d23;
+  color: #dc271e;
 }
 .courses__slider .slider-pagination__item {
-  color: rgba(49, 54, 196, 0.65);
+  color: rgba(49, 54, 196, 0.75);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .courses__slider .slider-pagination__item:hover, .courses__slider .slider-pagination__item:focus-within {
-  color: #e12d23;
+  color: #dc271e;
 }
 .courses__slider .slider-pagination__item:focus-within > .slider-pagination__value {
   font-size: 18px;
-  color: #e12d23;
+  color: #dc271e;
 }
 .courses__slider .slider-pagination__value {
   font-size: 0;
@@ -1079,7 +1079,7 @@ a {
 .courses__slider .swiper-scrollbar .swiper-scrollbar-drag {
   border-radius: 0;
   height: 3px;
-  background-color: #e12d23;
+  background-color: #dc271e;
 }
 
 .slider-card {
@@ -1133,7 +1133,7 @@ a {
 .slider-card .info-item__list-item .info-item__list-value {
   margin-left: 3px;
   font-weight: 800;
-  color: #e12d23;
+  color: #dc271e;
 }
 .slider-card .info-item__list-item .info-item__list-progress {
   width: 100%;
@@ -1148,7 +1148,7 @@ a {
   border-radius: 10px;
 }
 .slider-card .info-item progress::-webkit-progress-value {
-  background-color: #e12d23;
+  background-color: #dc271e;
   height: 4px;
   border-radius: 10px;
 }
