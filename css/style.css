@@ -1205,6 +1205,19 @@ a {
 .teachers-slider .teachers__introduce {
   padding: 0 0 60px 0;
 }
+.teachers-slider .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
+  background-color: #7575ff;
+}
+.teachers-slider .swiper-pagination-bullets .swiper-pagination-bullet:first-child {
+  margin: 0;
+}
+.teachers-slider .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(n+2) {
+  margin: 0 0 0 20px;
+}
+.teachers-slider .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #dc271e;
+}
 
 .introduce-card__link {
   padding: 0;

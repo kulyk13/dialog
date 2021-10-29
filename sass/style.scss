@@ -9,6 +9,7 @@ $brand_color: hsl(3, 76%, 49%);
 $btn_hover_color: hsl(2, 63%, 46%);
 $brand_color2: hsl(238, 60%, 48%);
 $brand_color2_light: hsl(240, 100%, 94%);
+$brand_color2_semilight: hsl(240, 100%, 73%);
 $bg_color: hsl(0, 0%, 100%);
 $bg_color2: hsla(238, 60%, 48%, 0.65);
 $bg_color3: hsl(240, 100%, 99%);
@@ -607,6 +608,21 @@ $tr_time: 0.3s;
   width: 300px;
   .teachers__introduce {
     padding: 0 0 60px 0;
+  }
+  .swiper-pagination-bullets {
+    .swiper-pagination-bullet {
+      margin: 0;
+      background-color: $brand_color2_semilight;
+      &:first-child {
+        margin: 0;
+      }
+      &:nth-child(n + 2) {
+        margin: 0 0 0 20px;
+      }
+      &.swiper-pagination-bullet-active {
+        background-color: $brand_color;
+      }
+    }
   }
 }
 .introduce-card {
