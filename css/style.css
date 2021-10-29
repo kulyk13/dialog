@@ -1028,6 +1028,27 @@ a {
 }
 .courses__slider .slider-btn {
   display: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22);
+          box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22);
+}
+.courses__slider .slider-btn.swiper-button-next:after, .courses__slider .slider-btn.swiper-button-prev:after {
+  content: "";
+}
+.courses__slider .slider-btn .slider-btn__arrow-img path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.courses__slider .slider-btn:hover {
+  background-color: #3136c4;
+}
+.courses__slider .slider-btn:hover > .slider-btn__arrow-img path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  fill: white;
 }
 .courses__slider .slider-pagination {
   font-family: "Montserrat", sans-serif;

@@ -32,7 +32,7 @@ const slider = new Swiper(".courses__slider", {
       grabCursor: true,
       pagination: {
         el: ".swiper-pagination",
-        clickable: true,
+        clickable: false,
         renderBullet: function (index, className) {
           return (
             '<li class="' +
@@ -50,6 +50,10 @@ const slider = new Swiper(".courses__slider", {
         el: ".swiper-scrollbar",
         draggable: true,
         dragSize: 266,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     },
   },
