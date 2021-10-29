@@ -1193,3 +1193,12 @@ a {
   margin-top: -3px;
   margin-right: 16px;
 }
+
+.teachers {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.teachers-slider {
+  width: 375px;
+}

@@ -1,4 +1,5 @@
 //Sliders
+
 //Partners slider
 const swiper = new Swiper(".partners__slider", {
   // Optional parameters
@@ -54,6 +55,23 @@ const slider = new Swiper(".courses__slider", {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+    },
+  },
+});
+
+// Teachers slider
+const teacherSlider = new Swiper(".teachers-slider", {
+  // Optional parameters
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      centeredSlides: true,
+      spaceBetween: 20,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: false,
       },
     },
   },
