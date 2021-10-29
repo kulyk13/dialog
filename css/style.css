@@ -1244,3 +1244,48 @@ a {
   line-height: 1.5;
   margin-top: 32px;
 }
+
+.whats-need-section {
+  padding: 40px 0;
+}
+
+.whats-need {
+  width: 327px;
+  padding: 60px 36px;
+  color: white;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 10px 40px rgba(73, 95, 211, 0.22);
+          box-shadow: 0px 10px 40px rgba(73, 95, 211, 0.22);
+  background: linear-gradient(90.03deg, #3035c3 0.03%, rgba(49, 54, 196, 0.954) 21.37%, rgba(49, 54, 196, 0.864) 39.97%, rgba(49, 54, 196, 0.719) 55.19%, rgba(49, 54, 196, 0) 99.97%), url(../img/small-flag.webp) no-repeat 50% 50%/cover;
+}
+.whats-need .section-head {
+  margin-bottom: 28px;
+}
+.whats-need .section-head .section-title {
+  text-transform: none;
+}
+.whats-need__list {
+  line-height: 1.5;
+}
+.whats-need__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 16px;
+}
+.whats-need__list-item:first-child .whats-need__list-number {
+  margin-right: 15px;
+}
+.whats-need__list-item:nth-last-child(n+2) {
+  margin-bottom: 10px;
+}
+.whats-need__list-number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #dc271e;
+  margin-right: 11px;
+}

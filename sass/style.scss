@@ -653,3 +653,51 @@ $tr_time: 0.3s;
   }
 }
 //TEACHERS SECTION END
+//WHATS NEED SECTION START
+.whats-need-section {
+  padding: 40px 0;
+}
+.whats-need {
+  width: 327px;
+  padding: 60px 36px;
+  color: $text_color_light;
+  border-radius: 12px;
+  box-shadow: 0px 10px 40px rgba(73, 95, 211, 0.22);
+  background: linear-gradient(
+      90.03deg,
+      #3035c3 0.03%,
+      hsla(238, 60%, 48%, 0.954) 21.37%,
+      hsla(238, 60%, 48%, 0.864) 39.97%,
+      hsla(238, 60%, 48%, 0.719) 55.19%,
+      hsla(238, 60%, 48%, 0) 99.97%
+    ),
+    url(../img/small-flag.webp) no-repeat 50% 50% / cover;
+  .section-head {
+    margin-bottom: 28px;
+    .section-title {
+      text-transform: none;
+    }
+  }
+  &__list {
+    line-height: 1.5;
+    &-item {
+      display: flex;
+      align-items: baseline;
+      font-size: 16px;
+      &:first-child {
+        .whats-need__list-number {
+          margin-right: 15px;
+        }
+      }
+      &:nth-last-child(n + 2) {
+        margin-bottom: 10px;
+      }
+    }
+    &-number {
+      @include font("Montserrat", 800, 24px);
+      color: $brand_color;
+      margin-right: 11px;
+    }
+  }
+}
+//WHATS NEED SECTION END
