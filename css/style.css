@@ -1039,6 +1039,7 @@ a {
 .courses__slider .slider-pagination.swiper-pagination {
   top: 0;
   bottom: initial;
+  width: 200%;
 }
 .courses__slider .slider-pagination.swiper-pagination .swiper-pagination-bullet {
   background: transparent;
@@ -1050,6 +1051,19 @@ a {
 }
 .courses__slider .slider-pagination.swiper-pagination .swiper-pagination-bullet-active {
   color: #dc271e;
+  padding: 0 16px;
+}
+.courses__slider .slider-pagination.swiper-pagination .swiper-pagination-bullet-active:nth-child(2) {
+  padding: 0 6px;
+}
+.courses__slider .slider-pagination.swiper-pagination .swiper-pagination-bullet-active:nth-child(3) {
+  padding: 0 34px;
+}
+.courses__slider .slider-pagination.swiper-pagination .swiper-pagination-bullet-active:nth-child(4) {
+  padding: 0 20px;
+}
+.courses__slider .slider-pagination.swiper-pagination .swiper-pagination-bullet-active:nth-child(5) {
+  padding: 0 40px;
 }
 .courses__slider .slider-pagination.swiper-pagination .swiper-pagination-bullet-active > .slider-pagination__value {
   font-size: 18px;
@@ -1068,11 +1082,12 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.courses__slider .swiper-scrollbar {
+.courses__slider.swiper-horizontal .swiper-scrollbar {
   top: 47px;
   background: transparent;
+  width: 130%;
 }
-.courses__slider .swiper-scrollbar .swiper-scrollbar-drag {
+.courses__slider.swiper-horizontal .swiper-scrollbar .swiper-scrollbar-drag {
   border-radius: 0;
   height: 3px;
   background-color: #dc271e;

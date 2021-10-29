@@ -433,6 +433,7 @@ $tr_time: 0.3s;
     &.swiper-pagination {
       top: 0;
       bottom: initial;
+      width: 200%;
       .swiper-pagination-bullet {
         background: transparent;
         padding: 0;
@@ -443,6 +444,19 @@ $tr_time: 0.3s;
       }
       .swiper-pagination-bullet-active {
         color: $brand-color;
+        padding: 0 16px;
+        &:nth-child(2) {
+          padding: 0 6px;
+        }
+        &:nth-child(3) {
+          padding: 0 34px;
+        }
+        &:nth-child(4) {
+          padding: 0 20px;
+        }
+        &:nth-child(5) {
+          padding: 0 40px;
+        }
         & > .slider-pagination__value {
           font-size: 18px;
           color: $brand-color;
@@ -462,13 +476,16 @@ $tr_time: 0.3s;
       transition: $tr_time;
     }
   }
-  .swiper-scrollbar {
-    top: 47px;
-    background: transparent;
-    .swiper-scrollbar-drag {
-      border-radius: 0;
-      height: 3px;
-      background-color: $brand_color;
+  &.swiper-horizontal {
+    .swiper-scrollbar {
+      top: 47px;
+      background: transparent;
+      width: 130%;
+      .swiper-scrollbar-drag {
+        border-radius: 0;
+        height: 3px;
+        background-color: $brand_color;
+      }
     }
   }
 }
