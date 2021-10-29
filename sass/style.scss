@@ -604,6 +604,36 @@ $tr_time: 0.3s;
   padding-bottom: 40px;
 }
 .teachers-slider {
-  width: 375px;
+  width: 300px;
+  .teachers__introduce {
+    padding: 0 0 60px 0;
+  }
+}
+.introduce-card {
+  @extend %flex-column-center;
+  &__link {
+    padding: 0;
+  }
+  &:first-child {
+    .introduce-card__img {
+      object-position: 0px 0px;
+    }
+  }
+  &__img {
+    border-radius: 12px;
+  }
+  &__quote {
+    text-align: center;
+    margin-top: 43px;
+    padding: 0 20px;
+    &-name {
+      @include font("Montserrat", 800, 20px);
+      color: $brand_color2;
+    }
+    &-text {
+      line-height: 1.5;
+      margin-top: 32px;
+    }
+  }
 }
 //TEACHERS SECTION END

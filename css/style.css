@@ -406,7 +406,7 @@ table {
           justify-content: center;
 }
 
-.banner__description, .banner, .program-card__header, .programs__cards-wrap, .offer, .menu, .header-main {
+.introduce-card, .banner__description, .banner, .program-card__header, .programs__cards-wrap, .offer, .menu, .header-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -586,7 +586,7 @@ a {
           justify-content: center;
 }
 
-.banner__description, .banner, .program-card__header, .programs__cards-wrap, .offer, .menu, .header-main {
+.introduce-card, .banner__description, .banner, .program-card__header, .programs__cards-wrap, .offer, .menu, .header-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1200,5 +1200,34 @@ a {
 }
 
 .teachers-slider {
-  width: 375px;
+  width: 300px;
+}
+.teachers-slider .teachers__introduce {
+  padding: 0 0 60px 0;
+}
+
+.introduce-card__link {
+  padding: 0;
+}
+.introduce-card:first-child .introduce-card__img {
+  -o-object-position: 0px 0px;
+     object-position: 0px 0px;
+}
+.introduce-card__img {
+  border-radius: 12px;
+}
+.introduce-card__quote {
+  text-align: center;
+  margin-top: 43px;
+  padding: 0 20px;
+}
+.introduce-card__quote-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #3136c4;
+}
+.introduce-card__quote-text {
+  line-height: 1.5;
+  margin-top: 32px;
 }
