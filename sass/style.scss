@@ -126,25 +126,6 @@ $tr_time: 0.3s;
     margin-top: 26px;
   }
 }
-.menu {
-  @extend %flex-column-center;
-  .menu__item:nth-child(n + 2) {
-    margin-top: 12px;
-  }
-  .menu__link {
-    @include font("Montserrat", 700, 18px);
-    &:hover,
-    &:focus-within {
-      color: $brand_color2;
-    }
-  }
-}
-.social {
-  @extend %flex-center-center;
-  &.header-top__social {
-    margin-top: 16px;
-  }
-}
 // HEADER END
 
 // HERO START
@@ -179,6 +160,7 @@ $tr_time: 0.3s;
   }
 }
 //HERO END
+
 // GREETING START
 .greeting {
   padding-top: 30px;
@@ -252,6 +234,7 @@ $tr_time: 0.3s;
   }
 }
 //GREETING END
+
 //PROGRAMS START
 .programs {
   padding-top: 60px;
@@ -332,6 +315,7 @@ $tr_time: 0.3s;
   }
 }
 //PROGRAMS END
+
 //BANNER SECTION START
 .banner-section {
   padding-top: 106px;
@@ -369,6 +353,7 @@ $tr_time: 0.3s;
   }
 }
 //BANNER SECTION END
+
 //PARTNERS SECTION START
 .partners {
   padding-top: 40px;
@@ -387,6 +372,7 @@ $tr_time: 0.3s;
   }
 }
 //PARTNERS SECTION END
+
 //SUBSCRIBE SECTION START
 .subscribe-section {
   padding-top: 40px;
@@ -410,6 +396,7 @@ $tr_time: 0.3s;
   }
 }
 //SUBSCRIBE SECTION END
+
 //COURSES SECTION START
 .courses {
   padding: 80px 0;
@@ -599,6 +586,7 @@ $tr_time: 0.3s;
   }
 }
 //COURSES SECTION END
+
 //TEACHERS SECTION START
 .teachers {
   padding-top: 80px;
@@ -653,6 +641,7 @@ $tr_time: 0.3s;
   }
 }
 //TEACHERS SECTION END
+
 //WHATS NEED SECTION START
 .whats-need-section {
   padding: 40px 0;
@@ -701,6 +690,7 @@ $tr_time: 0.3s;
   }
 }
 //WHATS NEED SECTION END
+
 //BENEFITS SECTION START
 .benefits {
   padding-top: 40px;
@@ -740,6 +730,7 @@ $tr_time: 0.3s;
   }
 }
 //BENEFITS SECTION END
+
 //QUESIONS SECTION START
 .questions {
   padding: 80px 0;
@@ -766,3 +757,96 @@ $tr_time: 0.3s;
   }
 }
 //QUESIONS SECTION END
+
+//FOOTER START
+.footer {
+  padding: 60px 0;
+  background-color: $brand_color2;
+  color: $text_color_light;
+  text-align: center;
+  &-main {
+    @extend %flex-column-center;
+    position: relative;
+    &::after {
+      content: "";
+      width: 327px;
+      height: 1px;
+      background-color: $bg_color;
+      opacity: 0.3;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 10;
+    }
+  }
+  &__item {
+    @extend %flex-column-center;
+    font-size: 12px;
+    margin-bottom: 42px;
+    .copyright {
+      order: 1;
+    }
+    .logo {
+      margin-bottom: 24px;
+    }
+    .caution-text {
+      margin-bottom: 27px;
+    }
+  }
+  &-nav {
+    display: flex;
+    max-width: 327px;
+    margin-bottom: 42px;
+    &__list {
+      text-align: left;
+      align-items: baseline;
+      .footer-nav__item:nth-child(n + 2) {
+        margin-top: 4px;
+      }
+    }
+    .footer-nav__link {
+      color: $text_color_light;
+      font-size: 14px;
+    }
+  }
+  &__contacts {
+    text-align: center;
+  }
+  &-info {
+    margin-top: 26px;
+    @extend %column-reverse;
+    &__list {
+      margin-bottom: 20px;
+    }
+    &__item {
+      &:first-child {
+        margin-bottom: 4px;
+      }
+    }
+    &__link {
+      color: $text_color_light;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}
+.contact-info {
+  &__title {
+    @include font("Montseerrat", 700, 14px);
+    margin-bottom: 12px;
+  }
+  &__value {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    .contact__link {
+      color: $text_color_light;
+      padding: 0;
+    }
+    .contact__item:first-child {
+      margin-bottom: 14px;
+    }
+  }
+}
+
+//FOOTER END

@@ -125,6 +125,25 @@ a {
     }
   }
 }
+.menu {
+  @extend %flex-column-center;
+  .menu__item:nth-child(n + 2) {
+    margin-top: 12px;
+  }
+  .menu__link {
+    @include font("Montserrat", 700, 18px);
+    &:hover,
+    &:focus-within {
+      color: $brand_color2;
+    }
+  }
+}
+.social {
+  @extend %flex-center-center;
+  &.header-top__social {
+    margin-top: 16px;
+  }
+}
 .btn {
   @include font("Montserrat", 700, 16px);
   padding: 14px 9%;

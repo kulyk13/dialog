@@ -406,7 +406,7 @@ table {
           justify-content: center;
 }
 
-.questions__wrap, .benefits__wrap, .introduce-card, .banner__description, .banner, .program-card__header, .programs__cards-wrap, .offer, .menu, .header-main {
+.footer__item, .footer-main, .questions__wrap, .benefits__wrap, .introduce-card, .banner__description, .banner, .program-card__header, .programs__cards-wrap, .offer, .header-main, .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,6 +539,22 @@ a {
   color: #dc271e;
 }
 
+.menu .menu__item:nth-child(n+2) {
+  margin-top: 12px;
+}
+.menu .menu__link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.menu .menu__link:hover, .menu .menu__link:focus-within {
+  color: #3136c4;
+}
+
+.social.header-top__social {
+  margin-top: 16px;
+}
+
 .btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -574,7 +590,7 @@ a {
           align-items: center;
 }
 
-.social, .section-head .section-title {
+.section-head .section-title, .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -586,7 +602,7 @@ a {
           justify-content: center;
 }
 
-.questions__wrap, .benefits__wrap, .introduce-card, .banner__description, .banner, .program-card__header, .programs__cards-wrap, .offer, .menu, .header-main {
+.footer__item, .footer-main, .questions__wrap, .benefits__wrap, .introduce-card, .banner__description, .banner, .program-card__header, .programs__cards-wrap, .offer, .header-main, .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -599,7 +615,7 @@ a {
           align-items: center;
 }
 
-.header-top, .burger-menu {
+.footer-info, .header-top, .burger-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,22 +727,6 @@ a {
 }
 .header-main__btn {
   margin-top: 26px;
-}
-
-.menu .menu__item:nth-child(n+2) {
-  margin-top: 12px;
-}
-.menu .menu__link {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-}
-.menu .menu__link:hover, .menu .menu__link:focus-within {
-  color: #3136c4;
-}
-
-.social.header-top__social {
-  margin-top: 16px;
 }
 
 .hero {
@@ -1352,4 +1352,100 @@ a {
 }
 .questions__ask-btn {
   padding: 16px 60px;
+}
+
+.footer {
+  padding: 60px 0;
+  background-color: #3136c4;
+  color: white;
+  text-align: center;
+}
+.footer-main {
+  position: relative;
+}
+.footer-main::after {
+  content: "";
+  width: 327px;
+  height: 1px;
+  background-color: white;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.footer__item {
+  font-size: 12px;
+  margin-bottom: 42px;
+}
+.footer__item .copyright {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.footer__item .logo {
+  margin-bottom: 24px;
+}
+.footer__item .caution-text {
+  margin-bottom: 27px;
+}
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 327px;
+  margin-bottom: 42px;
+}
+.footer-nav__list {
+  text-align: left;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.footer-nav__list .footer-nav__item:nth-child(n+2) {
+  margin-top: 4px;
+}
+.footer-nav .footer-nav__link {
+  color: white;
+  font-size: 14px;
+}
+.footer__contacts {
+  text-align: center;
+}
+.footer-info {
+  margin-top: 26px;
+}
+.footer-info__list {
+  margin-bottom: 20px;
+}
+.footer-info__item:first-child {
+  margin-bottom: 4px;
+}
+.footer-info__link {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-info__title {
+  font-family: "Montseerrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.contact-info__value {
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 24px;
+}
+.contact-info__value .contact__link {
+  color: white;
+  padding: 0;
+}
+.contact-info__value .contact__item:first-child {
+  margin-bottom: 14px;
 }
