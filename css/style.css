@@ -406,7 +406,7 @@ table {
           justify-content: center;
 }
 
-.benefits__wrap, .introduce-card, .banner__description, .banner, .program-card__header, .programs__cards-wrap, .offer, .menu, .header-main {
+.questions__wrap, .benefits__wrap, .introduce-card, .banner__description, .banner, .program-card__header, .programs__cards-wrap, .offer, .menu, .header-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -586,7 +586,7 @@ a {
           justify-content: center;
 }
 
-.benefits__wrap, .introduce-card, .banner__description, .banner, .program-card__header, .programs__cards-wrap, .offer, .menu, .header-main {
+.questions__wrap, .benefits__wrap, .introduce-card, .banner__description, .banner, .program-card__header, .programs__cards-wrap, .offer, .menu, .header-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1291,7 +1291,8 @@ a {
 }
 
 .benefits {
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 .benefits .section-head {
   margin-bottom: 50px;
@@ -1327,4 +1328,28 @@ a {
 }
 .benefits__btn {
   padding: 16px 35px;
+}
+
+.questions {
+  padding: 80px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 54, 196, 0.65)), to(rgba(49, 54, 196, 0.65))), url(../img/sky-bg.webp) no-repeat 56% 50%/cover;
+  background: linear-gradient(rgba(49, 54, 196, 0.65), rgba(49, 54, 196, 0.65)), url(../img/sky-bg.webp) no-repeat 56% 50%/cover;
+}
+.questions__content {
+  color: white;
+  text-align: center;
+  margin-bottom: 52px;
+}
+.questions__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  margin-bottom: 28px;
+}
+.questions__text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.questions__ask-btn {
+  padding: 16px 60px;
 }
