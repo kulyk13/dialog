@@ -7,6 +7,15 @@ burgerBtn.addEventListener("click", (ev) => {
 window.addEventListener("load", (ev) => {
   burgerMenu.classList.add("transition");
 });
+
+//Popup
+callbackBtn.addEventListener("click", (ev) => {
+  callbackPopup.classList.add("popup-window_active");
+});
+closePopupBtn.addEventListener("click", (ev) => {
+  callbackPopup.classList.remove("popup-window_active");
+});
+
 // Video frame
 ("use strict");
 function onYouTubePlayerAPIReady() {
