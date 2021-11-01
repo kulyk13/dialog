@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Языковые курсы «Диалог»</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body style="background-color: aquamarine">
     <article class="popup">
       <img
         src="img/popup.webp"
@@ -17,22 +18,37 @@
         loading="lazy"
       />
       <form class="form popup-form" action="#" method="get">
-        <h2 class="form__title">Подача заявки</h2>
-        <p class="form__subtitle">
+        <h2 class="popup-form__title">Подача заявки</h2>
+        <p class="popup-form__subtitle">
           Оставьте свои контактные данные и наш менеджер свяжется с Вами в
           ближайшее время
         </p>
-        <fieldset>
-          <legend>Ваше имя и фамилия</legend>
-          <input type="text" placeholder="Имя и Фамилия" required />
+        <fieldset class="popup-form__input-group">
+          <legend class="popup-form__input-title">Ваше имя и фамилия</legend>
+          <input
+            class="popup-form__input"
+            type="text"
+            placeholder="Имя и Фамилия"
+            required
+          />
         </fieldset>
-        <fieldset>
-          <legend>Ваш телефон/whatsapp</legend>
-          <input type="tel" placeholder="Телефон/Whatsapp" required />
+        <fieldset class="popup-form__input-group">
+          <legend class="popup-form__input-title">Ваш телефон/whatsapp</legend>
+          <input
+            class="popup-form__input"
+            type="tel"
+            placeholder="Телефон/Whatsapp"
+            required
+          />
         </fieldset>
-        <fieldset>
-          <legend>Ваш e-mail</legend>
-          <input type="email" placeholder="E-mail" required />
+        <fieldset class="popup-form__input-group">
+          <legend class="popup-form__input-title">Ваш e-mail</legend>
+          <input
+            class="popup-form__input"
+            type="email"
+            placeholder="E-mail"
+            required
+          />
         </fieldset>
         <button id="applyBtn" class="btn popup__btn" type="submit">
           Подать заявку

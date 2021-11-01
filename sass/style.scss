@@ -5,6 +5,8 @@
 $text_color: hsl(228, 26%, 18%);
 $text_color_light: hsl(0, 0%, 100%);
 $text_color2: hsla(238, 60%, 48%, 0.75);
+$popup_placeholder: hsla(226, 23%, 18%, 0.3);
+$popup_border: hsla(226, 23%, 18%, 0.1);
 $brand_color: hsl(3, 76%, 49%);
 $btn_hover_color: hsl(2, 63%, 46%);
 $brand_color2: hsl(238, 60%, 48%);
@@ -850,3 +852,71 @@ $tr_time: 0.3s;
 }
 
 //FOOTER END
+
+//POPUP START
+.popup {
+  position: relative;
+  background-color: $bg_color;
+  box-shadow: 0px 10px 40px rgba(73, 95, 211, 0.22);
+  border-radius: 20px;
+  max-width: 335px;
+  padding: 52px 24px;
+  &__img {
+    display: none;
+  }
+  &-form {
+    &__title {
+      @include font("Montserrat", 800, 32px);
+      color: $brand_color2;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    &__subtitle {
+      font-size: 12px;
+      text-align: center;
+      line-height: 1.5;
+      margin-bottom: 36px;
+    }
+    &__input-title {
+      @include font("Montserrat", 700, 14px);
+      padding-left: 6px;
+      margin-bottom: 8px;
+    }
+    &__input-group {
+      &:nth-last-child(n + 2) {
+        margin-bottom: 16px;
+      }
+      &:last-of-type {
+        margin-bottom: 32px;
+      }
+    }
+    &__input {
+      border: 1px solid $popup_border;
+      padding: 16px 0 19px 20px;
+      border-radius: 40px;
+      width: 287px;
+      &::-webkit-input-placeholder {
+        color: $popup_placeholder;
+      }
+      &::-moz-placeholder {
+        color: $popup_placeholder;
+      }
+      &:-moz-placeholder {
+        color: $popup_placeholder;
+      }
+      &:-ms-input-placeholder {
+        color: $popup_placeholder;
+      }
+    }
+  }
+  &__btn {
+    width: 100%;
+    padding: 16px 16px;
+  }
+  .close-btn {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+  }
+}
+//POPUP END
