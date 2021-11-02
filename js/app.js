@@ -57,3 +57,6 @@ openPopup.forEach(function (popupItem) {
 });
 closePopupBtn.onclick = () =>
   callbackPopup.classList.remove("popup-window_active");
+
+//Copyright year
+copyrightYear.textContent = new Date().getFullYear();
