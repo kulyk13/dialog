@@ -83,7 +83,7 @@ a {
   margin: -1px;
 }
 .container {
-  max-width: 375px;
+  min-width: 375px;
   width: 100%;
   margin: 0 auto;
   padding: 0 25px;
@@ -146,7 +146,7 @@ a {
 }
 .btn {
   @include font("Montserrat", 700, 16px);
-  padding: 14px 9%;
+  padding: 16px 8%;
   background-color: $brand_color;
   color: $text_color_light;
   border-radius: 30px;
