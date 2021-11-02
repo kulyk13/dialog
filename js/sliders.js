@@ -33,7 +33,7 @@ const slider = new Swiper(".courses__slider", {
       grabCursor: true,
       pagination: {
         el: ".swiper-pagination",
-        clickable: false,
+        clickable: true,
         renderBullet: function (index, className) {
           return (
             '<li class="' +

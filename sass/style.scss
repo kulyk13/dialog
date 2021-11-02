@@ -855,6 +855,7 @@ $tr_time: 0.3s;
 
 //POPUP START
 .popup-window {
+  visibility: hidden;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -878,7 +879,6 @@ $tr_time: 0.3s;
     }
   }
 }
-
 .popup-wrap {
   flex-shrink: 0;
   flex-grow: 0;
@@ -891,10 +891,11 @@ $tr_time: 0.3s;
   justify-content: center;
 }
 .popup {
+  display: flex;
   margin: 50px 0;
   flex-shrink: 0;
   flex-grow: 0;
-  transform: scale(0.9);
+  transform: scale(0.8);
   opacity: 0;
   overflow: visible;
   position: relative;
@@ -902,12 +903,14 @@ $tr_time: 0.3s;
   box-shadow: 0px 10px 40px rgba(73, 95, 211, 0.22);
   border-radius: 20px;
   max-width: 335px;
-  padding: 52px 24px;
-  transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+  transition: transform $tr_time ease 0s, opacity $tr_time ease 0s;
   &__img {
     display: none;
+    border-radius: 20px 0 0 20px;
+    object-position: -160px 0;
   }
   &-form {
+    padding: 52px 24px;
     &__title {
       @include font("Montserrat", 800, 32px);
       color: $brand_color2;

@@ -8,14 +8,6 @@ window.addEventListener("load", (ev) => {
   burgerMenu.classList.add("transition");
 });
 
-//Popup
-callbackBtn.addEventListener("click", (ev) => {
-  callbackPopup.classList.add("popup-window_active");
-});
-closePopupBtn.addEventListener("click", (ev) => {
-  callbackPopup.classList.remove("popup-window_active");
-});
-
 // Video frame
 ("use strict");
 function onYouTubePlayerAPIReady() {
@@ -57,3 +49,11 @@ var tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+//Popup
+const openPopup = document.querySelectorAll(".open-popup");
+openPopup.forEach(function (popupItem) {
+  popupItem.onclick = () => callbackPopup.classList.add("popup-window_active");
+});
+closePopupBtn.onclick = () =>
+  callbackPopup.classList.remove("popup-window_active");
