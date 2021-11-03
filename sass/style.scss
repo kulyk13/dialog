@@ -4,7 +4,7 @@
 // VARIABLES
 $text_color: hsl(228, 26%, 18%);
 $text_color_light: hsl(0, 0%, 100%);
-$text_color2: hsla(238, 60%, 48%, 0.75);
+$text_color2: hsla(238, 60%, 48%, 0.5);
 $popup_placeholder: hsla(226, 23%, 18%, 0.3);
 $popup_border: hsla(226, 23%, 18%, 0.1);
 $brand_color: hsl(3, 76%, 49%);
@@ -493,7 +493,7 @@ $tr_time: 0.3s;
       color: $text_color2;
       transition: $tr_time;
       &:hover {
-        color: $brand_color;
+        color: $brand_color2;
       }
     }
     &__value {

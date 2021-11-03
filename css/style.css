@@ -1100,12 +1100,12 @@ a {
   color: #dc271e;
 }
 .courses__slider .slider-pagination__item {
-  color: rgba(49, 54, 196, 0.75);
+  color: rgba(49, 54, 196, 0.5);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .courses__slider .slider-pagination__item:hover {
-  color: #dc271e;
+  color: #3136c4;
 }
 .courses__slider .slider-pagination__value {
   font-size: 0;
