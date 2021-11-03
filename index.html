@@ -209,24 +209,28 @@
           </figure>
         </div>
       </section>
-      <section class="greeting">
-        <div class="container section-head">
+      <section class="greeting container">
+        <div class="section-head">
           <h2 class="section-title greeting__title">Приветствие</h2>
           <p class="section-subtitle greeting__subtitle">
             Давайте знакомиться!
           </p>
         </div>
-        <div class="video-youtube video-youtube__overlay">
-          <div
-            id="video-youtube__content"
-            class="
-              video-youtube__content video-youtube__content_hide-origin-play-btn
+        <div class="video_wrapper video_wrapper_full js-videoWrapper">
+          <iframe
+            title="Видеоприветствие"
+            class="videoIframe js-videoIframe"
+            src=""
+            frameborder="0"
+            allowTransparency="true"
+            allowfullscreen
+            data-src="https://www.youtube.com/embed/Rs75vSex-jo?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white
             "
-          ></div>
+          ></iframe>
           <button
+            class="videoPoster js-videoPoster"
             type="button"
-            aria-label="play video"
-            class="video-youtube__new-play-btn"
+            aria-label="Воспроизвести"
           ></button>
         </div>
       </section>
@@ -1999,5 +2003,6 @@
     <script defer src="js/app.js"></script>
     <script defer src="js/sliders.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
   </body>
 </html>

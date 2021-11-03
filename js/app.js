@@ -9,46 +9,25 @@ window.addEventListener("load", (ev) => {
 });
 
 // Video frame
-("use strict");
-function onYouTubePlayerAPIReady() {
-  var playerYoutube;
+$(document).on("click", ".js-videoPoster", function (e) {
+  //отменяем стандартное действие button
+  e.preventDefault();
+  var poster = $(this);
+  // ищем родителя ближайшего по классу
+  var wrapper = poster.closest(".js-videoWrapper");
+  videoPlay(wrapper);
+});
 
-  playerYoutube = new YT.Player("video-youtube__content", {
-    videoId: "Rs75vSex-jo",
-    playerVars: {
-      // 'controls': 0,
-      // 'showinfo': 0,
-      // 'disablekb': 1
-    },
-    events: {
-      onReady: onYouTubePlayerReady,
-    },
-  });
+//вопроизводим видео, при этом скрывая постер
+function videoPlay(wrapper) {
+  var iframe = wrapper.find(".js-videoIframe");
+  // Берем ссылку видео из data
+  var src = iframe.data("src");
+  // скрываем постер
+  wrapper.addClass("videoWrapperActive");
+  // подставляем в src параметр из data
+  iframe.attr("src", src);
 }
-
-function onYouTubePlayerReady(event) {
-  // https://developers.google.com/youtube/iframe_api_reference#Events
-  var targetYoutubeVideo = event.target;
-  var videoDomElem = document.getElementById(
-    event.target.getIframe().getAttribute("id")
-  );
-  var newPlayBtn = videoDomElem.nextElementSibling;
-
-  newPlayBtn.addEventListener("click", function (event) {
-    targetYoutubeVideo.playVideo();
-    this.classList.add("hidden");
-    videoDomElem.classList.remove(
-      "video-youtube__content_hide-origin-play-btn"
-    );
-    videoDomElem.parentNode.classList.remove("video-youtube_overlay");
-  });
-}
-
-var tag = document.createElement("script");
-
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName("script")[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 //Popup
 const openPopup = document.querySelectorAll(".open-popup");
