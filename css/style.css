@@ -1357,6 +1357,14 @@ a {
   line-height: 1.5;
   margin-top: 32px;
 }
+.introduce-card__comment-link {
+  color: #dc271e;
+  padding: 0;
+  font-weight: 700;
+}
+.introduce-card__comment-link:hover {
+  text-decoration: underline;
+}
 
 .whats-need-section {
   padding-top: 40px;

@@ -657,6 +657,15 @@ $tr_time: 0.3s;
       margin-top: 32px;
     }
   }
+  &__comment-link {
+    color: $brand_color;
+    padding: 0;
+    font-weight: 700;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 //TEACHERS SECTION END
 
