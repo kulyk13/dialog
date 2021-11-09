@@ -566,7 +566,7 @@ a {
 .section-head .section-subtitle {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1.3;
 }
 
@@ -609,7 +609,7 @@ a {
 .btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   padding: 16px 8%;
   background-color: #dc271e;
   color: white;
@@ -850,7 +850,7 @@ a {
 .offer__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 30px;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -1063,12 +1063,12 @@ a {
 .banner__description-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 25px;
   line-height: 1.3;
 }
 .banner__description-text {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 32px;
   line-height: 1.5;
 }
@@ -1127,7 +1127,7 @@ a {
 }
 
 .courses__slider {
-  max-width: 327px;
+  max-width: 279px;
 }
 .courses__slider.swiper {
   padding-top: 87px;
@@ -1522,13 +1522,13 @@ a {
   min-width: 272px;
   margin-bottom: 42px;
 }
-.footer-nav__list {
+.footer-nav .footer-nav__list {
   text-align: left;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-.footer-nav__list .footer-nav__item:nth-child(n+2) {
+.footer-nav .footer-nav__list .footer-nav__item:nth-child(n+2) {
   margin-top: 4px;
 }
 .footer-nav .footer-nav__link {
@@ -1679,4 +1679,115 @@ a {
   position: absolute;
   right: 14px;
   top: 14px;
+}
+
+.header-mobile__wrap, .burger-menu .burger-menu__top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-head .section-title, .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu, .header-main, .offer, .programs__cards-wrap, .program-card__header, .program-card__cta, .banner, .banner__description, .introduce-card, .benefits__wrap, .questions__wrap, .footer-main, .footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.burger-menu, .header-top, .footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.slider-card__info, .slider-card .info-item__list-item .info-item__list-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.courses__slider .slider-pagination, .slider-card .info-item__list-definition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-section, .subscribe-section, .whats-need-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 375px) {
+  .section-head .section-subtitle {
+    font-size: 36px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  .offer__title {
+    font-size: 36px;
+  }
+
+  .hero__img {
+    width: 327px;
+    height: 276px;
+  }
+
+  .banner__description-title {
+    font-size: 24px;
+  }
+
+  .banner__description-text {
+    font-size: 16px;
+  }
+
+  .swiper.courses__slider {
+    max-width: 327px;
+  }
+
+  .introduce-card__img {
+    width: 300px;
+    height: 210px;
+  }
 }
