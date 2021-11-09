@@ -395,6 +395,18 @@ table {
 }
 
 /* ============ CSS RESET END ============ */
+.burger-menu .burger-menu__top-nav, .header-mobile__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .social, .section-head .section-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -418,6 +430,44 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer-info, .header-top, .burger-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.slider-card .info-item__list-item .info-item__list-value, .slider-card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slider-card .info-item__list-definition, .courses__slider .slider-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.whats-need-section, .subscribe-section, .banner-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 *,
@@ -579,6 +629,56 @@ a {
   background-color: #bf302b;
 }
 
+.form {
+  padding: 52px 24px;
+}
+.form__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  color: #3136c4;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.form__subtitle {
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 36px;
+}
+.form__label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding-left: 6px;
+}
+.form__input-group:nth-last-child(n+2) {
+  margin-bottom: 16px;
+}
+.form__input-group:last-of-type {
+  margin-bottom: 32px;
+}
+.form__input {
+  border: 1px solid rgba(35, 40, 56, 0.1);
+  padding: 16px 0 19px 20px;
+  border-radius: 40px;
+  margin-top: 8px;
+  min-width: 220px;
+  width: 100%;
+}
+.form__input::-webkit-input-placeholder {
+  color: rgba(35, 40, 56, 0.3);
+}
+.form__input::-moz-placeholder {
+  color: rgba(35, 40, 56, 0.3);
+}
+.form__input:-moz-placeholder {
+  color: rgba(35, 40, 56, 0.3);
+}
+.form__input:-ms-input-placeholder {
+  color: rgba(35, 40, 56, 0.3);
+}
+
 .burger-menu .burger-menu__top-nav, .header-mobile__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -678,12 +778,15 @@ a {
   background-color: white;
 }
 
-.header-btn {
+.menu-btn {
   background: url(../img/bar.svg) no-repeat 50% 50%;
   margin-right: -10px;
   padding: 20px;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
 }
-.header-btn.close {
+.menu-btn.close {
   background: url(../img/cross.svg) no-repeat 50% 50%;
 }
 
@@ -1568,54 +1671,6 @@ a {
   border-radius: 20px 0 0 20px;
   -o-object-position: -160px 0;
      object-position: -160px 0;
-}
-.popup-form {
-  padding: 52px 24px;
-}
-.popup-form__title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 32px;
-  color: #3136c4;
-  text-align: center;
-  margin-bottom: 12px;
-}
-.popup-form__subtitle {
-  font-size: 12px;
-  text-align: center;
-  line-height: 1.5;
-  margin-bottom: 36px;
-}
-.popup-form__input-title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  padding-left: 6px;
-  margin-bottom: 8px;
-}
-.popup-form__input-group:nth-last-child(n+2) {
-  margin-bottom: 16px;
-}
-.popup-form__input-group:last-of-type {
-  margin-bottom: 32px;
-}
-.popup-form__input {
-  border: 1px solid rgba(35, 40, 56, 0.1);
-  padding: 16px 0 19px 20px;
-  border-radius: 40px;
-  width: 287px;
-}
-.popup-form__input::-webkit-input-placeholder {
-  color: rgba(35, 40, 56, 0.3);
-}
-.popup-form__input::-moz-placeholder {
-  color: rgba(35, 40, 56, 0.3);
-}
-.popup-form__input:-moz-placeholder {
-  color: rgba(35, 40, 56, 0.3);
-}
-.popup-form__input:-ms-input-placeholder {
-  color: rgba(35, 40, 56, 0.3);
 }
 .popup__btn {
   width: 100%;

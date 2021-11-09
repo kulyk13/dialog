@@ -1,15 +1,25 @@
 // VARIABLES
 $text_color: hsl(228, 26%, 18%);
 $text_color_light: hsl(0, 0%, 100%);
+$text_color2: hsla(238, 60%, 48%, 0.75);
+$popup_placeholder: hsla(226, 23%, 18%, 0.3);
+$popup_border: hsla(226, 23%, 18%, 0.1);
 $brand_color: hsl(3, 76%, 49%);
 $btn_hover_color: hsl(2, 63%, 46%);
 $brand_color2: hsl(238, 60%, 48%);
 $brand_color2_light: hsl(240, 100%, 94%);
+$brand_color2_semilight: hsl(240, 100%, 73%);
 $bg_color: hsl(0, 0%, 100%);
 $bg_color2: hsla(238, 60%, 48%, 0.6);
+$bg_color3: hsl(240, 100%, 99%);
 $header_color: hsla(0, 0%, 100%, 0.75);
 $tr_time: 0.3s;
 // TEMPLATES
+%flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 %flex-center-center {
   display: flex;
   align-items: center;
@@ -19,6 +29,22 @@ $tr_time: 0.3s;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+%column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+%column {
+  display: flex;
+  flex-direction: column;
+}
+%align-center {
+  display: flex;
+  align-items: center;
+}
+%justify-center {
+  display: flex;
+  justify-content: center;
 }
 // MIXINS
 @mixin font($ff, $fw, $fz) {
@@ -159,5 +185,52 @@ a {
   &:hover,
   &:focus-within {
     background-color: $btn_hover_color;
+  }
+}
+.form {
+  padding: 52px 24px;
+  &__title {
+    @include font("Montserrat", 800, 32px);
+    color: $brand_color2;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  &__subtitle {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 36px;
+  }
+  &__label {
+    @include font("Montserrat", 700, 14px);
+    padding-left: 6px;
+  }
+  &__input-group {
+    &:nth-last-child(n + 2) {
+      margin-bottom: 16px;
+    }
+    &:last-of-type {
+      margin-bottom: 32px;
+    }
+  }
+  &__input {
+    border: 1px solid $popup_border;
+    padding: 16px 0 19px 20px;
+    border-radius: 40px;
+    margin-top: 8px;
+    min-width: 220px;
+    width: 100%;
+    &::-webkit-input-placeholder {
+      color: $popup_placeholder;
+    }
+    &::-moz-placeholder {
+      color: $popup_placeholder;
+    }
+    &:-moz-placeholder {
+      color: $popup_placeholder;
+    }
+    &:-ms-input-placeholder {
+      color: $popup_placeholder;
+    }
   }
 }

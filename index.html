@@ -54,10 +54,12 @@
         </a>
         <button
           id="burgerBtn"
-          class="header-btn"
+          class="menu-btn"
           aria-label="Открыть меню"
           type="button"
-        ></button>
+        >
+          Меню
+        </button>
       </div>
     </header>
     <header id="burgerMenu" class="header header-desktop burger-menu">
@@ -171,7 +173,7 @@
         </nav>
         <button
           id="callbackBtn"
-          class="btn header-main__btn open-popup"
+          class="btn header-main__btn js-open-popup"
           type="button"
         >
           <img
@@ -197,7 +199,7 @@
           <p class="offer__text">
             Мы работаем онлайн ежедневно только для вас!
           </p>
-          <button type="button" class="btn offer__btn open-popup">
+          <button type="button" class="btn offer__btn js-open-popup">
             Записаться на пробный урок
           </button>
           <figure class="hero__img-wrap">
@@ -309,7 +311,7 @@
               </li>
             </ul>
             <div class="program-card__cta">
-              <button type="button" class="btn program-card__btn open-popup">
+              <button type="button" class="btn program-card__btn js-open-popup">
                 Получить
               </button>
               <a href="#" class="program-card__watch-btn">
@@ -387,7 +389,7 @@
               </li>
             </ul>
             <div class="program-card__cta">
-              <button type="button" class="btn program-card__btn open-popup">
+              <button type="button" class="btn program-card__btn js-open-popup">
                 Записаться
               </button>
               <a href="#" class="program-card__watch-btn">
@@ -469,7 +471,7 @@
               </li>
             </ul>
             <div class="program-card__cta">
-              <button type="button" class="btn program-card__btn open-popup">
+              <button type="button" class="btn program-card__btn js-open-popup">
                 Записаться
               </button>
               <a href="#" class="program-card__watch-btn">
@@ -583,7 +585,7 @@
               Имеем лицензию министерства образования РФ и специализируемся
               только на преподавании турецкого языка и русского языка для турок.
             </p>
-            <button type="button" class="btn banner__btn open-popup">
+            <button type="button" class="btn banner__btn js-open-popup">
               Записаться на пробный урок
             </button>
           </div>
@@ -1705,7 +1707,7 @@
               </p>
             </li>
           </ul>
-          <button type="button" class="btn benefits__btn open-popup">
+          <button type="button" class="btn benefits__btn js-open-popup">
             Записаться на пробный урок
           </button>
         </div>
@@ -1943,42 +1945,42 @@
             loading="lazy"
           />
           <form class="form popup-form" action="#" method="get">
-            <h2 class="popup-form__title">Подача заявки</h2>
-            <p class="popup-form__subtitle">
+            <h2 class="form__title popup-form__title">Подача заявки</h2>
+            <p class="form__subtitle popup-form__subtitle">
               Оставьте свои контактные данные и наш менеджер свяжется с Вами в
               ближайшее время
             </p>
-            <fieldset class="popup-form__input-group">
-              <legend class="popup-form__input-title">
+            <div class="form__input-group popup-form__input-group">
+              <label class="form__label popup-form__label">
                 Ваше имя и фамилия
-              </legend>
+              </label>
               <input
-                class="popup-form__input"
+                class="form__input popup-form__input"
                 type="text"
                 placeholder="Имя и Фамилия"
                 required
               />
-            </fieldset>
-            <fieldset class="popup-form__input-group">
-              <legend class="popup-form__input-title">
+            </div>
+            <div class="form__input-group popup-form__input-group">
+              <label class="form__label popup-form__label">
                 Ваш телефон/whatsapp
-              </legend>
+              </label>
               <input
-                class="popup-form__input"
+                class="form__input popup-form__input"
                 type="tel"
                 placeholder="Телефон/Whatsapp"
                 required
               />
-            </fieldset>
-            <fieldset class="popup-form__input-group">
-              <legend class="popup-form__input-title">Ваш e-mail</legend>
+            </div>
+            <div class="form__input-group popup-form__input-group">
+              <label class="form__label popup-form__label">Ваш e-mail</label>
               <input
-                class="popup-form__input"
+                class="form__input popup-form__input"
                 type="email"
                 placeholder="E-mail"
                 required
               />
-            </fieldset>
+            </div>
             <button id="applyBtn" class="btn popup__btn" type="submit">
               Подать заявку
             </button>

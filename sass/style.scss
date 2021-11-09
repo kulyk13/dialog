@@ -77,10 +77,13 @@ $tr_time: 0.3s;
     background-color: $bg_color;
   }
 }
-.header-btn {
+.menu-btn {
   background: url(../img/bar.svg) no-repeat 50% 50%;
   margin-right: -10px;
   padding: 20px;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
   &.close {
     background: url(../img/cross.svg) no-repeat 50% 50%;
   }
@@ -943,52 +946,6 @@ $tr_time: 0.3s;
     display: none;
     border-radius: 20px 0 0 20px;
     object-position: -160px 0;
-  }
-  &-form {
-    padding: 52px 24px;
-    &__title {
-      @include font("Montserrat", 800, 32px);
-      color: $brand_color2;
-      text-align: center;
-      margin-bottom: 12px;
-    }
-    &__subtitle {
-      font-size: 12px;
-      text-align: center;
-      line-height: 1.5;
-      margin-bottom: 36px;
-    }
-    &__input-title {
-      @include font("Montserrat", 700, 14px);
-      padding-left: 6px;
-      margin-bottom: 8px;
-    }
-    &__input-group {
-      &:nth-last-child(n + 2) {
-        margin-bottom: 16px;
-      }
-      &:last-of-type {
-        margin-bottom: 32px;
-      }
-    }
-    &__input {
-      border: 1px solid $popup_border;
-      padding: 16px 0 19px 20px;
-      border-radius: 40px;
-      width: 287px;
-      &::-webkit-input-placeholder {
-        color: $popup_placeholder;
-      }
-      &::-moz-placeholder {
-        color: $popup_placeholder;
-      }
-      &:-moz-placeholder {
-        color: $popup_placeholder;
-      }
-      &:-ms-input-placeholder {
-        color: $popup_placeholder;
-      }
-    }
   }
   &__btn {
     width: 100%;

@@ -30,7 +30,7 @@ function videoPlay(wrapper) {
 }
 
 //Popup
-let openPopup = document.querySelectorAll(".open-popup");
+let openPopup = document.querySelectorAll(".js-open-popup");
 openPopup.forEach(function (popupItem) {
   popupItem.onclick = () => callbackPopup.classList.add("popup-window_active");
 });
