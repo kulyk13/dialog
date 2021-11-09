@@ -890,76 +890,67 @@ a {
   background: linear-gradient(white, rgba(255, 255, 255, 0.6)), url(../img/flag-bg.webp) no-repeat 0 100%/100% 168px;
 }
 
-.video_wrapper {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
+.video {
   position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-color: #000000;
   border-radius: 12px;
-  background-color: #000;
+  margin: 0 auto;
 }
 
-.video_wrapper_full {
-  height: 186px;
-}
-
-.videoIframe {
+.video__link {
   position: absolute;
   top: 0;
-  bottom: 0;
-  right: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 12px;
-  background-color: rgba(49, 54, 196, 0.6);
 }
 
-.videoPoster {
+.video__media {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 54, 196, 0.6)), to(rgba(49, 54, 196, 0.6))), url(../img/video-img.webp) no-repeat 50% 50%/100%;
-  background: linear-gradient(rgba(49, 54, 196, 0.6), rgba(49, 54, 196, 0.6)), url(../img/video-img.webp) no-repeat 50% 50%/100%;
   border: none;
   border-radius: 12px;
-  text-indent: -999em;
-  overflow: hidden;
-  opacity: 1;
-  -webkit-transition: opacity 0.3s, height 0s;
-  transition: opacity 0.3s, height 0s;
-  -webkit-transition-delay: 0s, 0s;
-  transition-delay: 0s, 0s;
 }
 
-.videoPoster:hover {
+.video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  display: none;
+  font-size: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: url(../img/play.svg) no-repeat 50% 50%/cover;
+  background-color: transparent;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   cursor: pointer;
 }
 
-.videoPoster:before {
-  content: "";
-  position: absolute;
-  top: calc(50% - 25px);
-  left: calc(50% - 25px);
-  width: 50px;
-  height: 50px;
-  background: url(../img/play.svg) no-repeat 0 0/contain;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+.video__button:focus {
+  outline: none;
 }
 
-.videoPoster:hover:before,
-.videoPoster:focus-within:before {
-  background: url(../img/play-active.svg) no-repeat 0 0/contain;
+.video:hover .video__button,
+.video__button:focus-within {
+  background: url(../img/play-active.svg) no-repeat 50% 50%/cover;
 }
 
-.videoWrapperActive .videoPoster {
-  opacity: 0;
-  height: 0;
-  -webkit-transition-delay: 0s, 800ms;
-  transition-delay: 0s, 800ms;
+.video--enabled {
+  cursor: pointer;
+}
+
+.video--enabled .video__button {
+  display: block;
 }
 
 .programs {
@@ -1136,7 +1127,7 @@ a {
 }
 
 .courses__slider {
-  min-width: 272px;
+  max-width: 327px;
 }
 .courses__slider.swiper {
   padding-top: 87px;

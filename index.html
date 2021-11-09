@@ -220,22 +220,20 @@
             Давайте знакомиться!
           </p>
         </div>
-        <div class="video_wrapper video_wrapper_full js-videoWrapper">
-          <iframe
-            title="Видеоприветствие"
-            class="videoIframe js-videoIframe"
-            src=""
-            frameborder="0"
-            allowTransparency="true"
-            allowfullscreen
-            data-src="https://www.youtube.com/embed/Rs75vSex-jo?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white
-            "
-          ></iframe>
-          <button
-            class="videoPoster js-videoPoster"
-            type="button"
-            aria-label="Воспроизвести"
-          ></button>
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/Rs75vSex-jo">
+            <picture>
+              <source srcset="img/video-img-lg.webp" type="image/webp" />
+              <img
+                class="video__media"
+                src="https://i.ytimg.com/vi/Rs75vSex-jo/maxresdefault.jpg"
+                alt="Урок 1 / БЫСТРО учим Турецкий язык / Для начинающих / Приветствие и знакомство!"
+              />
+            </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            Запустить видео
+          </button>
         </div>
       </section>
       <section class="programs">
@@ -2007,6 +2005,5 @@
     <script defer src="js/app.js"></script>
     <script defer src="js/sliders.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
   </body>
 </html>
