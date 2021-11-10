@@ -154,10 +154,10 @@ a {
 .menu {
   @extend %flex-column-center;
   .menu__item:nth-child(n + 2) {
-    margin-top: 12px;
+    margin-top: 8px;
   }
   .menu__link {
-    @include font("Montserrat", 700, 18px);
+    @include font("Montserrat", 700, 14px);
     &:hover,
     &:focus-within {
       color: $brand_color2;
@@ -166,13 +166,10 @@ a {
 }
 .social {
   @extend %flex-center-center;
-  &.header-top__social {
-    margin-top: 16px;
-  }
 }
 .btn {
   @include font("Montserrat", 700, 14px);
-  padding: 16px 8%;
+  padding: 14px 28px;
   background-color: $brand_color;
   color: $text_color_light;
   border-radius: 30px;
@@ -188,9 +185,9 @@ a {
   }
 }
 .form {
-  padding: 52px 24px;
+  padding: 40px 16px;
   &__title {
-    @include font("Montserrat", 800, 32px);
+    @include font("Montserrat", 800, 30px);
     color: $brand_color2;
     text-align: center;
     margin-bottom: 12px;
@@ -199,7 +196,7 @@ a {
     font-size: 12px;
     text-align: center;
     line-height: 1.5;
-    margin-bottom: 36px;
+    margin-bottom: 26px;
   }
   &__label {
     @include font("Montserrat", 700, 14px);
@@ -207,10 +204,10 @@ a {
   }
   &__input-group {
     &:nth-last-child(n + 2) {
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
     &:last-of-type {
-      margin-bottom: 32px;
+      margin-bottom: 24px;
     }
   }
   &__input {
