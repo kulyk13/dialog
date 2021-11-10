@@ -10,6 +10,10 @@ const swiper = new Swiper(".partners__slider", {
       spaceBetween: 32,
       grabCursor: true,
     },
+    576: {
+      slidesPerView: 4,
+      centeredSlides: true,
+    },
   },
 });
 
