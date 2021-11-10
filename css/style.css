@@ -1997,6 +1997,18 @@ a {
        object-position: 0px 0px;
     background-color: white;
   }
+
+  .greeting {
+    padding-top: 40px;
+  }
+
+  .video {
+    padding-bottom: 46%;
+  }
+  .video__button {
+    width: 80px;
+    height: 80px;
+  }
 }
 @media (min-width: 1200px) {
   .container {

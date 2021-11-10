@@ -294,6 +294,16 @@ $tr_time: 0.3s;
       background-color: $bg_color;
     }
   }
+  .greeting {
+    padding-top: 40px;
+  }
+  .video {
+    padding-bottom: 46%;
+    &__button {
+      width: 80px;
+      height: 80px;
+    }
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)
