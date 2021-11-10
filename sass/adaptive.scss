@@ -187,6 +187,14 @@ $tr_time: 0.3s;
   .container {
     max-width: 756px;
   }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    padding: 0;
+  }
   .header-mobile {
     display: none;
   }
@@ -257,26 +265,47 @@ $tr_time: 0.3s;
       }
     }
   }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-    padding: 0;
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 143px;
+    position: relative;
+  }
+  .offer {
+    align-items: flex-start;
+    padding-right: 435px;
+    &__title {
+      text-align: left;
+      font-size: 46px;
+      br {
+        display: none;
+      }
+    }
+    .hero__img-wrap {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .hero__img {
+      width: 470px;
+      height: 597px;
+      box-shadow: none;
+      border-radius: 0;
+      object-position: 0px 0px;
+      background-color: $bg_color;
+    }
   }
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1170px;
   }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
   .container {
-    max-width: 1140px;
+    max-width: 1320px;
   }
 }
