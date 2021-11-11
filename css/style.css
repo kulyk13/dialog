@@ -1112,8 +1112,8 @@ a {
   border-radius: 12px;
   text-align: center;
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 54, 196, 0.6)), to(rgba(49, 54, 196, 0.6))), url(../img/big-flag.webp) no-repeat 50% 50%/cover;
-  background: linear-gradient(rgba(49, 54, 196, 0.6), rgba(49, 54, 196, 0.6)), url(../img/big-flag.webp) no-repeat 50% 50%/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 54, 196, 0.8)), to(rgba(49, 54, 196, 0.8))), url(../img/big-flag.webp) no-repeat 50% 50%/cover;
+  background: linear-gradient(rgba(49, 54, 196, 0.8), rgba(49, 54, 196, 0.8)), url(../img/big-flag.webp) no-repeat 50% 50%/cover;
 }
 .subscribe__text {
   font-family: "Montserrat", sans-serif;
@@ -1463,8 +1463,8 @@ a {
 
 .questions {
   padding: 80px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 54, 196, 0.6)), to(rgba(49, 54, 196, 0.6))), url(../img/sky-bg.webp) no-repeat 56% 50%/cover;
-  background: linear-gradient(rgba(49, 54, 196, 0.6), rgba(49, 54, 196, 0.6)), url(../img/sky-bg.webp) no-repeat 56% 50%/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 54, 196, 0.8)), to(rgba(49, 54, 196, 0.8))), url(../img/sky-bg.webp) no-repeat 56% 50%/cover;
+  background: linear-gradient(rgba(49, 54, 196, 0.8), rgba(49, 54, 196, 0.8)), url(../img/sky-bg.webp) no-repeat 56% 50%/cover;
 }
 .questions__content {
   color: white;
@@ -2272,6 +2272,25 @@ a {
     width: 200px;
   }
   .benefits__item:nth-last-child(n+2) {
+    margin-bottom: 0;
+  }
+
+  .questions {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .questions__wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .questions__content {
+    text-align: left;
+    max-width: 600px;
     margin-bottom: 0;
   }
 }
