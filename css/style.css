@@ -1377,6 +1377,7 @@ a {
 }
 
 .whats-need {
+  width: 100%;
   padding: 60px 36px;
   color: white;
   border-radius: 12px;
@@ -1863,6 +1864,10 @@ a {
     padding: 0;
   }
 
+  .section-head .section-subtitle {
+    font-size: 40px;
+  }
+
   .header-mobile {
     display: none;
   }
@@ -2131,35 +2136,35 @@ a {
     max-width: 550px;
   }
 
-  .swiper.courses__slider {
+  .courses__slider.swiper {
     max-width: 800px;
   }
-  .swiper.courses__slider .swiper-pagination.slider-pagination {
+  .courses__slider .swiper-pagination.slider-pagination {
     width: 800px;
   }
-  .swiper.courses__slider .swiper-pagination.slider-pagination .swiper-pagination-bullet-active:nth-child(2) {
+  .courses__slider .swiper-pagination.slider-pagination .swiper-pagination-bullet-active:nth-child(2) {
     padding-right: 0px;
     padding-left: 7px;
   }
-  .swiper.courses__slider .swiper-pagination.slider-pagination .swiper-pagination-bullet-active:nth-child(3) {
+  .courses__slider .swiper-pagination.slider-pagination .swiper-pagination-bullet-active:nth-child(3) {
     padding-right: 0px;
     padding-left: 15px;
   }
-  .swiper.courses__slider .swiper-pagination.slider-pagination .swiper-pagination-bullet-active:nth-child(4) {
+  .courses__slider .swiper-pagination.slider-pagination .swiper-pagination-bullet-active:nth-child(4) {
     padding-right: 0px;
     padding-left: 50px;
   }
-  .swiper.courses__slider .swiper-pagination.slider-pagination .swiper-pagination-bullet-active:nth-child(5) {
+  .courses__slider .swiper-pagination.slider-pagination .swiper-pagination-bullet-active:nth-child(5) {
     padding-right: 0px;
     padding-left: 0px;
   }
-  .swiper.courses__slider.swiper-horizontal .swiper-scrollbar {
+  .courses__slider.swiper-horizontal .swiper-scrollbar {
     width: 800px;
   }
-  .swiper.courses__slider .slider-card {
+  .courses__slider .slider-card {
     padding: 35px 40px;
   }
-  .swiper.courses__slider .slider-card__info {
+  .courses__slider .slider-card__info {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2168,16 +2173,16 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .swiper.courses__slider .slider-card .info-item {
+  .courses__slider .slider-card .info-item {
     max-width: 235px;
   }
-  .swiper.courses__slider .slider-card .info-item__title {
+  .courses__slider .slider-card .info-item__title {
     font-size: 18px;
   }
-  .swiper.courses__slider .slider-card .info-item:nth-last-child(n+2) {
+  .courses__slider .slider-card .info-item:nth-last-child(n+2) {
     margin-bottom: 0;
   }
-  .swiper.courses__slider .slider-title {
+  .courses__slider .slider-title {
     font-size: 24px;
   }
 
@@ -2203,6 +2208,38 @@ a {
   }
   .introduce-card__img {
     width: 276px;
+  }
+
+  .whats-need {
+    padding: 80px 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .whats-need .section-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 35px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+    max-width: 470px;
+  }
+  .whats-need__list {
+    max-width: 470px;
   }
 }
 @media (min-width: 1200px) {

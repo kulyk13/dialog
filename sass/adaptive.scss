@@ -195,6 +195,11 @@ $tr_time: 0.3s;
     max-width: 960px;
     padding: 0;
   }
+  .section-head {
+    .section-subtitle {
+      font-size: 40px;
+    }
+  }
   .header-mobile {
     display: none;
   }
@@ -387,8 +392,10 @@ $tr_time: 0.3s;
       max-width: 550px;
     }
   }
-  .swiper.courses__slider {
-    max-width: 800px;
+  .courses__slider {
+    &.swiper {
+      max-width: 800px;
+    }
     .swiper-pagination.slider-pagination {
       width: 800px;
       .swiper-pagination-bullet-active:nth-child(2) {
@@ -449,6 +456,23 @@ $tr_time: 0.3s;
     }
     &__img {
       width: 276px;
+    }
+  }
+  .whats-need {
+    padding: 80px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .section-head {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 35px;
+      align-items: flex-start;
+      text-align: left;
+      max-width: 470px;
+    }
+    &__list {
+      max-width: 470px;
     }
   }
 }
