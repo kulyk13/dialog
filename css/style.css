@@ -775,7 +775,9 @@ a {
 }
 
 .menu-btn {
-  background: url(../img/bar.svg) no-repeat 50% 50%;
+  background-image: url(../img/bar.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   margin-right: -10px;
   padding: 20px;
   width: 20px;
@@ -783,7 +785,9 @@ a {
   font-size: 0;
 }
 .menu-btn.close {
-  background: url(../img/cross.svg) no-repeat 50% 50%;
+  background-image: url(../img/cross.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .burger-menu {
@@ -888,8 +892,8 @@ a {
 .greeting {
   padding-top: 30px;
   padding-bottom: 80px;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.6))), url(../img/flag-bg.webp) no-repeat 0 100%/100% 168px;
-  background: linear-gradient(white, rgba(255, 255, 255, 0.6)), url(../img/flag-bg.webp) no-repeat 0 100%/100% 168px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.6))), url(../img/flag-bg.webp) no-repeat 0 100%/100% 168px;
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0.6)), url(../img/flag-bg.webp) no-repeat 0 100%/100% 168px;
 }
 
 .video {
@@ -932,7 +936,10 @@ a {
   width: 50px;
   height: 50px;
   border: none;
-  background: url(../img/play.svg) no-repeat 50% 50%/cover;
+  background-image: url(../img/play.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
   background-color: transparent;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -945,7 +952,10 @@ a {
 
 .video:hover .video__button,
 .video__button:focus-within {
-  background: url(../img/play-active.svg) no-repeat 50% 50%/cover;
+  background-image: url(../img/play-active.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 .video--enabled {
@@ -1112,8 +1122,11 @@ a {
   border-radius: 12px;
   text-align: center;
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 54, 196, 0.8)), to(rgba(49, 54, 196, 0.8))), url(../img/big-flag.webp) no-repeat 50% 50%/cover;
-  background: linear-gradient(rgba(49, 54, 196, 0.8), rgba(49, 54, 196, 0.8)), url(../img/big-flag.webp) no-repeat 50% 50%/cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 54, 196, 0.8)), to(rgba(49, 54, 196, 0.8))), url(../img/big-flag.webp);
+  background-image: linear-gradient(rgba(49, 54, 196, 0.8), rgba(49, 54, 196, 0.8)), url(../img/big-flag.webp);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 .subscribe__text {
   font-family: "Montserrat", sans-serif;
@@ -1177,7 +1190,7 @@ a {
   width: 200%;
 }
 .courses__slider .slider-pagination.swiper-pagination .swiper-pagination-bullet {
-  background: transparent;
+  background-color: transparent;
   padding: 0;
   border-radius: 5px;
   width: auto;
@@ -1219,7 +1232,7 @@ a {
 }
 .courses__slider.swiper-horizontal .swiper-scrollbar {
   top: 47px;
-  background: transparent;
+  background-color: transparent;
   width: 130%;
 }
 .courses__slider.swiper-horizontal .swiper-scrollbar .swiper-scrollbar-drag {
@@ -1289,7 +1302,7 @@ a {
   position: absolute;
   top: 26px;
   left: 0;
-  background: #fff;
+  background-color: #fff;
 }
 .slider-card .info-item progress::-webkit-progress-bar {
   background-color: #e0e0ff;
@@ -1383,7 +1396,10 @@ a {
   border-radius: 12px;
   -webkit-box-shadow: 0px 10px 40px rgba(73, 95, 211, 0.22);
           box-shadow: 0px 10px 40px rgba(73, 95, 211, 0.22);
-  background: linear-gradient(90.03deg, #3136c4 0.03%, rgba(48, 53, 195, 0.954249) 21.37%, rgba(48, 53, 195, 0.863855) 39.97%, rgba(48, 53, 195, 0.718583) 55.19%, rgba(48, 53, 195, 0) 99.97%), url(../img/small-flag.webp) no-repeat 50% 50%/cover;
+  background-image: linear-gradient(90.03deg, #3136c4 0.03%, rgba(48, 53, 195, 0.954249) 21.37%, rgba(48, 53, 195, 0.863855) 39.97%, rgba(48, 53, 195, 0.718583) 55.19%, rgba(48, 53, 195, 0) 99.97%), url(../img/small-flag.webp);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 .whats-need .section-head {
   margin-bottom: 28px;
@@ -1463,8 +1479,11 @@ a {
 
 .questions {
   padding: 80px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 54, 196, 0.8)), to(rgba(49, 54, 196, 0.8))), url(../img/sky-bg.webp) no-repeat 56% 50%/cover;
-  background: linear-gradient(rgba(49, 54, 196, 0.8), rgba(49, 54, 196, 0.8)), url(../img/sky-bg.webp) no-repeat 56% 50%/cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 54, 196, 0.8)), to(rgba(49, 54, 196, 0.8))), url(../img/sky-bg.webp);
+  background-image: linear-gradient(rgba(49, 54, 196, 0.8), rgba(49, 54, 196, 0.8)), url(../img/sky-bg.webp);
+  background-repeat: no-repeat;
+  background-position: 56% 50%;
+  background-size: cover;
 }
 .questions__content {
   color: white;
