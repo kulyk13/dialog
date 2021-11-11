@@ -2160,22 +2160,25 @@ a {
   }
 
   .courses__slider.swiper {
-    max-width: 800px;
+    max-width: 960px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
   .courses__slider .swiper-pagination.slider-pagination {
-    width: 800px;
+    width: 960px;
+    padding: 0 80px;
   }
   .courses__slider .swiper-pagination.slider-pagination .swiper-pagination-bullet-active:nth-child(2) {
-    padding-right: 0px;
-    padding-left: 7px;
+    padding-right: 10px;
+    padding-left: 0px;
   }
   .courses__slider .swiper-pagination.slider-pagination .swiper-pagination-bullet-active:nth-child(3) {
     padding-right: 0px;
-    padding-left: 15px;
+    padding-left: 0px;
   }
   .courses__slider .swiper-pagination.slider-pagination .swiper-pagination-bullet-active:nth-child(4) {
     padding-right: 0px;
-    padding-left: 50px;
+    padding-left: 15px;
   }
   .courses__slider .swiper-pagination.slider-pagination .swiper-pagination-bullet-active:nth-child(5) {
     padding-right: 0px;
@@ -2183,6 +2186,7 @@ a {
   }
   .courses__slider.swiper-horizontal .swiper-scrollbar {
     width: 800px;
+    left: auto;
   }
   .courses__slider .slider-card {
     padding: 35px 40px;
@@ -2207,6 +2211,24 @@ a {
   }
   .courses__slider .slider-title {
     font-size: 24px;
+  }
+  .courses__slider .slider-btn {
+    display: block;
+    position: absolute;
+  }
+  .courses__slider .slider-btn.slider__next-btn {
+    right: 40px;
+  }
+  .courses__slider .slider-btn.slider__next-btn .slider-btn__arrow-img {
+    margin-left: 6px;
+    margin-top: 4px;
+  }
+  .courses__slider .slider-btn.slider__prev-btn {
+    left: 40px;
+  }
+  .courses__slider .slider-btn.slider__prev-btn .slider-btn__arrow-img {
+    margin-left: 3px;
+    margin-top: 4px;
   }
 
   .teachers {
