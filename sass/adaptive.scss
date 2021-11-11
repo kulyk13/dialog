@@ -387,6 +387,50 @@ $tr_time: 0.3s;
       max-width: 550px;
     }
   }
+  .swiper.courses__slider {
+    max-width: 800px;
+    .swiper-pagination.slider-pagination {
+      width: 800px;
+      .swiper-pagination-bullet-active:nth-child(2) {
+        padding-right: 0px;
+        padding-left: 7px;
+      }
+      .swiper-pagination-bullet-active:nth-child(3) {
+        padding-right: 0px;
+        padding-left: 15px;
+      }
+      .swiper-pagination-bullet-active:nth-child(4) {
+        padding-right: 0px;
+        padding-left: 50px;
+      }
+      .swiper-pagination-bullet-active:nth-child(5) {
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+    }
+    &.swiper-horizontal .swiper-scrollbar {
+      width: 800px;
+    }
+    .slider-card {
+      padding: 35px 40px;
+      &__info {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .info-item {
+        max-width: 235px;
+        &__title {
+          font-size: 18px;
+        }
+        &:nth-last-child(n + 2) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .slider-title {
+      font-size: 24px;
+    }
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)
