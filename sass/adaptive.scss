@@ -517,6 +517,51 @@ $tr_time: 0.3s;
       font-size: 48px;
     }
   }
+  .footer {
+    padding-bottom: 30px;
+    &-main {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-bottom: 52px;
+    }
+    &__item {
+      margin-bottom: 0;
+      margin-top: -10px;
+      width: 200px;
+      text-align: left;
+    }
+    &-nav {
+      margin-bottom: 0;
+      margin-top: -10px;
+      &__list {
+        &:first-child {
+          margin-right: 10px;
+        }
+      }
+    }
+    .contact-info {
+      width: 270px;
+      &__value {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &-info {
+      flex-direction: row;
+      justify-content: space-between;
+      &__social {
+        margin-left: -10px;
+      }
+      &__list {
+        margin-bottom: 0;
+        margin-right: -10px;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)

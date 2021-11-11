@@ -800,7 +800,7 @@ $tr_time: 0.3s;
 
 //FOOTER START
 .footer {
-  padding: 60px 0;
+  padding: 50px 0;
   background-color: $brand_color2;
   color: $text_color_light;
   text-align: center;
@@ -847,7 +847,6 @@ $tr_time: 0.3s;
     }
     .footer-nav__link {
       color: $text_color_light;
-      font-size: 14px;
       &:hover,
       &:focus-within {
         color: $brand_color;
