@@ -8,13 +8,13 @@ const swiper = new Swiper(".partners__slider", {
       slidesPerView: 3,
       centeredSlides: true,
       spaceBetween: 32,
-      grabCursor: true,
     },
     576: {
       slidesPerView: 4,
       centeredSlides: true,
     },
     992: {
+      centeredSlides: false,
       slidesPerView: 6,
     },
   },
@@ -34,10 +34,10 @@ const slider = new Swiper(".courses__slider", {
   // Optional parameters
   breakpoints: {
     320: {
+      draggable: true,
       slidesPerView: 1,
       centeredSlides: true,
       spaceBetween: 50,
-      grabCursor: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -82,6 +82,7 @@ const teacherSlider = new Swiper(".teachers-slider", {
       },
     },
     992: {
+      draggable: true,
       slidesPerView: 3,
       pagination: {
         el: ".swiper-pagination",
