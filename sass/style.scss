@@ -401,13 +401,14 @@ $tr_time: 0.3s;
 .subscribe {
   padding: 60px 28px;
   min-width: 272px;
+  width: 100%;
   border-radius: 12px;
   text-align: center;
   color: $text_color_light;
   background: linear-gradient($bg_color2, $bg_color2),
     url(../img/big-flag.webp) no-repeat 50% 50% / cover;
   &__text {
-    @include font("Montserrat", 600, 24px);
+    @include font("Montserrat", 800, 24px);
     margin-bottom: 32px;
     line-height: 1.3;
   }
