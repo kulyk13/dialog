@@ -333,6 +333,43 @@ $tr_time: 0.3s;
       margin-top: auto;
     }
   }
+  .banner-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .banner {
+    padding: 75px 40px 75px 445px;
+    flex-direction: row;
+    position: relative;
+    &__img {
+      position: absolute;
+      top: -37px;
+      left: 40px;
+      margin: 0;
+      width: 360px;
+      height: 480px;
+    }
+    &__description {
+      align-items: flex-start;
+      &-title {
+        font-size: 28px;
+      }
+    }
+  }
+  .partners {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &__slider {
+      max-width: 960px;
+      .partners__list {
+        display: flex;
+        justify-content: space-between;
+        &-item {
+          width: 100px !important;
+        }
+      }
+    }
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)

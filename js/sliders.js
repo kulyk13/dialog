@@ -14,6 +14,9 @@ const swiper = new Swiper(".partners__slider", {
       slidesPerView: 4,
       centeredSlides: true,
     },
+    992: {
+      slidesPerView: 6,
+    },
   },
 });
 
