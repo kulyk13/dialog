@@ -2293,6 +2293,9 @@ a {
     max-width: 600px;
     margin-bottom: 0;
   }
+  .questions__title {
+    font-size: 48px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
