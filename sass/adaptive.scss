@@ -431,6 +431,26 @@ $tr_time: 0.3s;
       font-size: 24px;
     }
   }
+  .teachers-slider {
+    width: 960px;
+  }
+  .introduce-card {
+    &:first-child .introduce-card__img {
+      object-position: 0px 0px;
+    }
+    &:nth-child(2) .introduce-card__img {
+      object-position: 0px -90px;
+    }
+    &:nth-child(4) .introduce-card__img {
+      object-position: 0px -55px;
+    }
+    &:nth-child(5) .introduce-card__img {
+      object-position: 0px -100px;
+    }
+    &__img {
+      width: 276px;
+    }
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)
