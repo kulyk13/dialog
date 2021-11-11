@@ -2186,6 +2186,11 @@ a {
     font-size: 24px;
   }
 
+  .teachers {
+    padding-top: 90px;
+    padding-bottom: 55px;
+  }
+
   .teachers-slider {
     width: 960px;
   }
@@ -2208,6 +2213,11 @@ a {
   }
   .introduce-card__img {
     width: 276px;
+  }
+
+  .whats-need-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .whats-need {
@@ -2240,6 +2250,29 @@ a {
   }
   .whats-need__list {
     max-width: 470px;
+  }
+
+  .benefits {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .benefits .section-head {
+    margin-bottom: 82px;
+  }
+  .benefits__wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 80px;
+  }
+  .benefits__item {
+    width: 200px;
+  }
+  .benefits__item:nth-last-child(n+2) {
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {

@@ -438,6 +438,10 @@ $tr_time: 0.3s;
       font-size: 24px;
     }
   }
+  .teachers {
+    padding-top: 90px;
+    padding-bottom: 55px;
+  }
   .teachers-slider {
     width: 960px;
   }
@@ -458,6 +462,10 @@ $tr_time: 0.3s;
       width: 276px;
     }
   }
+  .whats-need-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .whats-need {
     padding: 80px 70px;
     display: flex;
@@ -473,6 +481,24 @@ $tr_time: 0.3s;
     }
     &__list {
       max-width: 470px;
+    }
+  }
+  .benefits {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .section-head {
+      margin-bottom: 82px;
+    }
+    &__wrap {
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 80px;
+    }
+    &__item {
+      width: 200px;
+      &:nth-last-child(n + 2) {
+        margin-bottom: 0;
+      }
     }
   }
 }
