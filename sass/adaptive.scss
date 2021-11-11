@@ -562,6 +562,24 @@ $tr_time: 0.3s;
       }
     }
   }
+  .popup {
+    &__img {
+      display: block;
+    }
+    &-form {
+      padding: 52px 70px 52px 52px;
+      &__title {
+        text-align: left;
+      }
+      &__subtit le {
+        text-align: left;
+      }
+    }
+    .close-btn {
+      top: 24px;
+      right: 24px;
+    }
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)

@@ -1675,6 +1675,11 @@ a {
   border-radius: 20px 0 0 20px;
   -o-object-position: -160px 0;
      object-position: -160px 0;
+  -webkit-box-shadow: 0 3px 0 #da564e;
+          box-shadow: 0 3px 0 #da564e;
+}
+.popup-form {
+  max-width: 422px;
 }
 .popup__btn {
   width: 100%;
@@ -2353,6 +2358,23 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+
+  .popup__img {
+    display: block;
+  }
+  .popup-form {
+    padding: 52px 70px 52px 52px;
+  }
+  .popup-form__title {
+    text-align: left;
+  }
+  .popup-form__subtit le {
+    text-align: left;
+  }
+  .popup .close-btn {
+    top: 24px;
+    right: 24px;
   }
 }
 @media (min-width: 1200px) {

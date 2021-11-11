@@ -950,6 +950,10 @@ $tr_time: 0.3s;
     display: none;
     border-radius: 20px 0 0 20px;
     object-position: -160px 0;
+    box-shadow: 0 3px 0 #da564e;
+  }
+  &-form {
+    max-width: 422px;
   }
   &__btn {
     width: 100%;
