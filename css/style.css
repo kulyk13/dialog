@@ -2623,6 +2623,38 @@ a {
     font-size: 36px;
     max-width: 600px;
   }
+
+  .courses__slider.swiper {
+    padding-left: 125px;
+    padding-right: 125px;
+    max-width: 1220px;
+  }
+  .courses__slider .swiper-pagination.slider-pagination {
+    width: 1100px;
+    padding-right: 5px;
+    padding-left: 120px;
+  }
+  .courses__slider .swiper-pagination.slider-pagination .swiper-pagination-bullet-active:nth-child(2) {
+    padding-right: 0;
+  }
+  .courses__slider.swiper-horizontal .swiper-scrollbar {
+    width: 970px;
+  }
+  .courses__slider .slider-card {
+    padding: 48px 52px;
+  }
+  .courses__slider .slider-card .info-item {
+    max-width: 262px;
+  }
+  .courses__slider .slider-card .info-item__title {
+    font-size: 20px;
+  }
+  .courses__slider .slider-btn.slider__next-btn {
+    right: 25px;
+  }
+  .courses__slider .slider-btn.slider__prev-btn {
+    left: 25px;
+  }
 }
 @media (min-width: 1400px) {
   .container {

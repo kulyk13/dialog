@@ -88,6 +88,34 @@ const slider = new Swiper(".courses__slider", {
         dragSize: 266,
       },
     },
+    1200: {
+      spaceBetween: 170,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return (
+            '<li class="' +
+            className +
+            ' slider-pagination__item">' +
+            slides[index++] +
+            '<span class="slider-pagination__value"> &#160;-&#160;' +
+            values[index++] +
+            " уровень</span>" +
+            "</li>"
+          );
+        },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+        dragSize: 266,
+      },
+    },
   },
 });
 

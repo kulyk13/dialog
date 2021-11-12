@@ -785,8 +785,42 @@ $tr_time: 0.3s;
       max-width: 600px;
     }
   }
+  .courses__slider {
+    &.swiper {
+      padding-left: 125px;
+      padding-right: 125px;
+      max-width: 1220px;
+    }
+    .swiper-pagination.slider-pagination {
+      width: 1100px;
+      padding-right: 5px;
+      padding-left: 120px;
+      .swiper-pagination-bullet-active:nth-child(2) {
+        padding-right: 0;
+      }
+    }
+    &.swiper-horizontal .swiper-scrollbar {
+      width: 970px;
+    }
+    .slider-card {
+      padding: 48px 52px;
+      .info-item {
+        max-width: 262px;
+        &__title {
+          font-size: 20px;
+        }
+      }
+    }
+    .slider-btn {
+      &.slider__next-btn {
+        right: 25px;
+      }
+      &.slider__prev-btn {
+        left: 25px;
+      }
+    }
+  }
 }
-
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
   .container {
