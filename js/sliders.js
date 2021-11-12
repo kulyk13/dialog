@@ -105,6 +105,13 @@ const teacherSlider = new Swiper(".teachers-slider", {
         clickable: false,
       },
     },
+    768: {
+      slidesPerView: 2,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: false,
+      },
+    },
     992: {
       draggable: true,
       slidesPerView: 3,

@@ -2035,6 +2035,30 @@ a {
   .courses__slider .slider-title {
     font-size: 24px;
   }
+
+  .teachers-slider {
+    width: 720px;
+  }
+
+  .introduce-card:first-child .introduce-card__img {
+    -o-object-position: 0px 0px;
+       object-position: 0px 0px;
+  }
+  .introduce-card:nth-child(2) .introduce-card__img {
+    -o-object-position: 0px -90px;
+       object-position: 0px -90px;
+  }
+  .introduce-card:nth-child(4) .introduce-card__img {
+    -o-object-position: 0px -55px;
+       object-position: 0px -55px;
+  }
+  .introduce-card:nth-child(5) .introduce-card__img {
+    -o-object-position: 0px -100px;
+       object-position: 0px -100px;
+  }
+  .introduce-card__img {
+    width: 276px;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -2285,26 +2309,6 @@ a {
 
   .teachers-slider {
     width: 960px;
-  }
-
-  .introduce-card:first-child .introduce-card__img {
-    -o-object-position: 0px 0px;
-       object-position: 0px 0px;
-  }
-  .introduce-card:nth-child(2) .introduce-card__img {
-    -o-object-position: 0px -90px;
-       object-position: 0px -90px;
-  }
-  .introduce-card:nth-child(4) .introduce-card__img {
-    -o-object-position: 0px -55px;
-       object-position: 0px -55px;
-  }
-  .introduce-card:nth-child(5) .introduce-card__img {
-    -o-object-position: 0px -100px;
-       object-position: 0px -100px;
-  }
-  .introduce-card__img {
-    width: 276px;
   }
 
   .whats-need-section {
