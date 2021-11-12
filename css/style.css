@@ -2614,11 +2614,6 @@ a {
 
   .partners__slider {
     max-width: 1170px;
-    height: 40px;
-  }
-  .partners__slider .partners__list .partner__img {
-    width: initial;
-    height: initial;
   }
 }
 @media (min-width: 1400px) {
