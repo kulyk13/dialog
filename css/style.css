@@ -892,8 +892,11 @@ a {
 .greeting {
   padding-top: 30px;
   padding-bottom: 80px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.6))), url(../img/flag-bg.webp) no-repeat 0 100%/100% 168px;
-  background-image: linear-gradient(white, rgba(255, 255, 255, 0.6)), url(../img/flag-bg.webp) no-repeat 0 100%/100% 168px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.6))), url(../img/flag-bg.webp);
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0.6)), url(../img/flag-bg.webp);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 168px;
 }
 
 .video {
@@ -974,16 +977,20 @@ a {
   display: -ms-grid;
   display: grid;
   row-gap: 32px;
+  max-width: 327px;
 }
 .program-card:nth-last-of-type(n + 2) {
   margin-bottom: 50px;
 }
 .program-card__header {
-  max-width: 327px;
   padding: 28px 35px;
+  min-height: 161px;
   border: 1px solid #e0e0ff;
   border-radius: 4px;
   text-align: center;
+}
+.program-card__header br {
+  display: none;
 }
 .program-card__header .program-card__title {
   font-family: "Montserrat", sans-serif;
@@ -993,6 +1000,7 @@ a {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  margin-top: auto;
 }
 .program-card__header .program-card__price {
   font-family: "Montserrat", sans-serif;
@@ -1016,9 +1024,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .program-card__list .program-card__list-check {
   margin-right: 16px;
@@ -2293,6 +2301,19 @@ a {
     padding-bottom: 80px;
   }
 
+  .programs__cards-wrap {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+
+  .program-card {
+    min-height: 470px;
+  }
+  .program-card__header {
+    min-height: 182px;
+  }
+
   .banner-section {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -2509,6 +2530,13 @@ a {
     max-width: 1170px;
   }
 
+  .section-head {
+    margin-bottom: 48px;
+  }
+  .section-head .section-subtitle {
+    font-size: 48px;
+  }
+
   .header-main .menu {
     margin-left: 145px;
   }
@@ -2538,6 +2566,21 @@ a {
 
   .greeting {
     padding-top: 54px;
+  }
+
+  .video {
+    padding-bottom: 38%;
+  }
+
+  .program-card {
+    max-width: 277px;
+    min-height: 477px;
+  }
+  .program-card:nth-last-of-type(n + 2) {
+    margin-bottom: 0;
+  }
+  .program-card__header br {
+    display: block;
   }
 }
 @media (min-width: 1400px) {

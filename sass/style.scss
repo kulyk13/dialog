@@ -190,7 +190,10 @@ $tr_time: 0.3s;
       hsla(0, 0%, 100%, 1),
       hsla(0, 0%, 100%, 0.6)
     ),
-    url(../img/flag-bg.webp) no-repeat 0 100% / 100% 168px;
+    url(../img/flag-bg.webp);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 168px;
 }
 .video {
   position: relative;
@@ -263,27 +266,28 @@ $tr_time: 0.3s;
     @extend %flex-column-center;
   }
 }
-// .programs__cards-wrap {
-//   display: grid;
-//   row-gap: 50px;
-// }
 .program-card {
   display: grid;
   row-gap: 32px;
+  max-width: 327px;
   &:nth-last-of-type(n + 2) {
     margin-bottom: 50px;
   }
   &__header {
     @extend %flex-column-center;
-    max-width: 327px;
     padding: 28px 35px;
+    min-height: 161px;
     border: 1px solid $brand_color2_light;
     border-radius: 4px;
     text-align: center;
+    br {
+      display: none;
+    }
     .program-card__title {
       @include font("Montserrat", 700, 16px);
       color: $text_color;
       order: 1;
+      margin-top: auto;
     }
     .program-card__price {
       @include font("Montserrat", 900, 18px);
@@ -302,7 +306,7 @@ $tr_time: 0.3s;
     row-gap: 12px;
     &-item {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
     }
     .program-card__list-check {
       margin-right: 16px;
@@ -507,7 +511,6 @@ $tr_time: 0.3s;
         }
       }
     }
-
     &__item {
       color: $text_color2;
       transition: $tr_time;

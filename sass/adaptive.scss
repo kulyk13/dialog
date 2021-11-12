@@ -504,6 +504,15 @@ $tr_time: 0.3s;
     padding-top: 100px;
     padding-bottom: 80px;
   }
+  .programs__cards-wrap {
+    align-items: stretch;
+  }
+  .program-card {
+    min-height: 470px;
+    &__header {
+      min-height: 182px;
+    }
+  }
   .banner-section {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -691,6 +700,12 @@ $tr_time: 0.3s;
   .container {
     max-width: 1170px;
   }
+  .section-head {
+    margin-bottom: 48px;
+    .section-subtitle {
+      font-size: 48px;
+    }
+  }
   .header-main {
     .menu {
       margin-left: 145px;
@@ -720,6 +735,21 @@ $tr_time: 0.3s;
   }
   .greeting {
     padding-top: 54px;
+  }
+  .video {
+    padding-bottom: 38%;
+  }
+  .program-card {
+    max-width: 277px;
+    min-height: 477px;
+    &:nth-last-of-type(n + 2) {
+      margin-bottom: 0;
+    }
+    &__header {
+      br {
+        display: block;
+      }
+    }
   }
 }
 
