@@ -751,6 +751,18 @@ $tr_time: 0.3s;
       }
     }
   }
+  .banner {
+    padding: 100px 70px 100px 550px;
+    &__description-title {
+      font-size: 32px;
+    }
+    &__img {
+      width: 400px;
+      height: 533px;
+      top: -47px;
+      left: 70px;
+    }
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)

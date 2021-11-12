@@ -2582,6 +2582,19 @@ a {
   .program-card__header br {
     display: block;
   }
+
+  .banner {
+    padding: 100px 70px 100px 550px;
+  }
+  .banner__description-title {
+    font-size: 32px;
+  }
+  .banner__img {
+    width: 400px;
+    height: 533px;
+    top: -47px;
+    left: 70px;
+  }
 }
 @media (min-width: 1400px) {
   .container {
