@@ -1938,6 +1938,14 @@ a {
   .program-card__cta {
     margin-top: auto;
   }
+
+  .banner__img {
+    width: 360px;
+    height: 480px;
+  }
+  .banner__description {
+    text-align: center;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -2116,13 +2124,12 @@ a {
     top: -37px;
     left: 40px;
     margin: 0;
-    width: 360px;
-    height: 480px;
   }
   .banner__description {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    text-align: left;
   }
   .banner__description-title {
     font-size: 28px;

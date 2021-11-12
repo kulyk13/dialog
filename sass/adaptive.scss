@@ -232,6 +232,15 @@ $tr_time: 0.3s;
       margin-top: auto;
     }
   }
+  .banner {
+    &__img {
+      width: 360px;
+      height: 480px;
+    }
+    &__description {
+      text-align: center;
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -367,11 +376,10 @@ $tr_time: 0.3s;
       top: -37px;
       left: 40px;
       margin: 0;
-      width: 360px;
-      height: 480px;
     }
     &__description {
       align-items: flex-start;
+      text-align: left;
       &-title {
         font-size: 28px;
       }
