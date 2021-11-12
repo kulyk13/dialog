@@ -187,6 +187,27 @@ $tr_time: 0.3s;
   .container {
     max-width: 756px;
   }
+  .burger-menu {
+    width: 40%;
+    &.open {
+      transform: translateX(60vw);
+    }
+    .header-main {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .offer {
+    &__title {
+      font-size: 46px;
+    }
+  }
+  .video {
+    &__button {
+      width: 80px;
+      height: 80px;
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -280,7 +301,6 @@ $tr_time: 0.3s;
     padding-right: 435px;
     &__title {
       text-align: left;
-      font-size: 46px;
       br {
         display: none;
       }
@@ -305,10 +325,6 @@ $tr_time: 0.3s;
   }
   .video {
     padding-bottom: 46%;
-    &__button {
-      width: 80px;
-      height: 80px;
-    }
   }
   .programs {
     padding-top: 100px;
