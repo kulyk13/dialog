@@ -2615,6 +2615,14 @@ a {
   .partners__slider {
     max-width: 1170px;
   }
+
+  .subscribe {
+    padding: 100px 70px;
+  }
+  .subscribe__text {
+    font-size: 36px;
+    max-width: 600px;
+  }
 }
 @media (min-width: 1400px) {
   .container {

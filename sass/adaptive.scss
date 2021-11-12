@@ -778,6 +778,13 @@ $tr_time: 0.3s;
   .partners__slider {
     max-width: 1170px;
   }
+  .subscribe {
+    padding: 100px 70px;
+    &__text {
+      font-size: 36px;
+      max-width: 600px;
+    }
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
