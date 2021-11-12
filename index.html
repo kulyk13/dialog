@@ -187,6 +187,78 @@
         </button>
       </section>
     </header>
+
+    <div class="popup-window" id="callbackPopup" aria-hidden="true">
+      <div class="popup-wrap">
+        <div class="popup" role="dialog" aria-modal="true">
+          <img
+            src="img/popup.webp"
+            alt="Турецкий флаг"
+            class="popup__img"
+            width="348"
+            height="577"
+            loading="lazy"
+          />
+          <form class="form popup-form" action="#" method="post">
+            <h2 class="form__title popup-form__title">Подача заявки</h2>
+            <p class="form__subtitle popup-form__subtitle">
+              Оставьте свои контактные данные и наш менеджер свяжется с Вами в
+              ближайшее время
+            </p>
+            <div class="form__input-group popup-form__input-group">
+              <label class="form__label popup-form__label">
+                Ваше имя и фамилия
+              </label>
+              <input
+                class="form__input popup-form__input"
+                type="text"
+                placeholder="Имя и Фамилия"
+                required
+              />
+            </div>
+            <div class="form__input-group popup-form__input-group">
+              <label class="form__label popup-form__label">
+                Ваш телефон/whatsapp
+              </label>
+              <input
+                class="form__input popup-form__input"
+                type="tel"
+                placeholder="Телефон/Whatsapp"
+                required
+              />
+            </div>
+            <div class="form__input-group popup-form__input-group">
+              <label class="form__label popup-form__label">Ваш e-mail</label>
+              <input
+                class="form__input popup-form__input"
+                type="email"
+                placeholder="E-mail"
+                required
+              />
+            </div>
+            <button id="applyBtn" class="btn popup__btn" type="submit">
+              Подать заявку
+            </button>
+          </form>
+          <button
+            id="closePopupBtn"
+            class="close-btn"
+            type="button"
+            aria-label="Закрыть оено"
+          >
+            <img
+              src="img/close.svg"
+              alt="Закрыть"
+              class="close-btn__image"
+              width="16"
+              height="16"
+              loading="lazy"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+
     <main class="main">
       <h1 class="visually-hidden">Курсы турецкого языка "Диалог"</h1>
       <section class="hero">
@@ -1935,77 +2007,6 @@
         </section>
       </div>
     </footer>
-
-    <div class="popup-window" id="callbackPopup" aria-hidden="true">
-      <div class="popup-wrap">
-        <div class="popup" role="dialog" aria-modal="true">
-          <img
-            src="img/popup.webp"
-            alt="Турецкий флаг"
-            class="popup__img"
-            width="348"
-            height="577"
-            loading="lazy"
-          />
-          <form class="form popup-form" action="#" method="post">
-            <h2 class="form__title popup-form__title">Подача заявки</h2>
-            <p class="form__subtitle popup-form__subtitle">
-              Оставьте свои контактные данные и наш менеджер свяжется с Вами в
-              ближайшее время
-            </p>
-            <div class="form__input-group popup-form__input-group">
-              <label class="form__label popup-form__label">
-                Ваше имя и фамилия
-              </label>
-              <input
-                class="form__input popup-form__input"
-                type="text"
-                placeholder="Имя и Фамилия"
-                required
-              />
-            </div>
-            <div class="form__input-group popup-form__input-group">
-              <label class="form__label popup-form__label">
-                Ваш телефон/whatsapp
-              </label>
-              <input
-                class="form__input popup-form__input"
-                type="tel"
-                placeholder="Телефон/Whatsapp"
-                required
-              />
-            </div>
-            <div class="form__input-group popup-form__input-group">
-              <label class="form__label popup-form__label">Ваш e-mail</label>
-              <input
-                class="form__input popup-form__input"
-                type="email"
-                placeholder="E-mail"
-                required
-              />
-            </div>
-            <button id="applyBtn" class="btn popup__btn" type="submit">
-              Подать заявку
-            </button>
-          </form>
-          <button
-            id="closePopupBtn"
-            class="close-btn"
-            type="button"
-            aria-label="Закрыть оено"
-          >
-            <img
-              src="img/close.svg"
-              alt="Закрыть"
-              class="close-btn__image"
-              width="16"
-              height="16"
-              loading="lazy"
-            />
-          </button>
-        </div>
-      </div>
-    </div>
 
     <script defer src="js/app.js"></script>
     <script defer src="js/sliders.js"></script>
