@@ -2124,6 +2124,12 @@ a {
     max-width: 400px;
     margin-bottom: 0;
   }
+
+  .footer-nav {
+    width: 600px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -2431,6 +2437,10 @@ a {
     text-align: left;
   }
   .footer-nav {
+    width: initial;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     margin-bottom: 0;
     margin-top: -10px;
   }
