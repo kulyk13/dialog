@@ -266,6 +266,53 @@ $tr_time: 0.3s;
       max-width: 550px;
     }
   }
+  .courses__slider {
+    &.swiper {
+      max-width: 720px;
+    }
+    .swiper-pagination.slider-pagination {
+      width: 720px;
+      .swiper-pagination-bullet-active:nth-child(2) {
+        padding-right: 10px;
+        padding-left: 0px;
+      }
+      .swiper-pagination-bullet-active:nth-child(3) {
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+      .swiper-pagination-bullet-active:nth-child(4) {
+        padding-right: 0px;
+        padding-left: 15px;
+      }
+      .swiper-pagination-bullet-active:nth-child(5) {
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+    }
+    &.swiper-horizontal .swiper-scrollbar {
+      width: 720px;
+      left: auto;
+    }
+    .slider-card {
+      padding: 30px 35px;
+      &__info {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .info-item {
+        max-width: 200px;
+        &__title {
+          font-size: 18px;
+        }
+        &:nth-last-child(n + 2) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .slider-title {
+      font-size: 24px;
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -435,45 +482,15 @@ $tr_time: 0.3s;
     .swiper-pagination.slider-pagination {
       width: 960px;
       padding: 0 80px;
-      .swiper-pagination-bullet-active:nth-child(2) {
-        padding-right: 10px;
-        padding-left: 0px;
-      }
-      .swiper-pagination-bullet-active:nth-child(3) {
-        padding-right: 0px;
-        padding-left: 0px;
-      }
-      .swiper-pagination-bullet-active:nth-child(4) {
-        padding-right: 0px;
-        padding-left: 15px;
-      }
-      .swiper-pagination-bullet-active:nth-child(5) {
-        padding-right: 0px;
-        padding-left: 0px;
-      }
     }
     &.swiper-horizontal .swiper-scrollbar {
       width: 800px;
-      left: auto;
     }
     .slider-card {
       padding: 35px 40px;
-      &__info {
-        flex-direction: row;
-        justify-content: space-between;
-      }
       .info-item {
         max-width: 235px;
-        &__title {
-          font-size: 18px;
-        }
-        &:nth-last-child(n + 2) {
-          margin-bottom: 0;
-        }
       }
-    }
-    .slider-title {
-      font-size: 24px;
     }
     .slider-btn {
       display: block;
