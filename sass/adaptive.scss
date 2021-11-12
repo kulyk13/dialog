@@ -641,6 +641,7 @@ $tr_time: 0.3s;
     }
   }
   .footer {
+    padding-top: 60px;
     padding-bottom: 30px;
     &-main {
       flex-direction: row;
@@ -653,6 +654,9 @@ $tr_time: 0.3s;
       margin-top: -10px;
       width: 200px;
       text-align: left;
+      .logo {
+        margin-left: -30px;
+      }
     }
     &-nav {
       width: initial;
@@ -667,15 +671,18 @@ $tr_time: 0.3s;
     }
     .contact-info {
       width: 270px;
+      text-align: left;
       &__value {
         &:last-child {
           margin-bottom: 0;
+          justify-content: flex-start;
         }
       }
     }
     &-info {
       flex-direction: row;
       justify-content: space-between;
+      margin-top: 32px;
       &__social {
         margin-left: -10px;
       }
@@ -839,6 +846,20 @@ $tr_time: 0.3s;
     &:nth-child(5) .introduce-card__img {
       object-position: 0px -150px;
     }
+  }
+  .whats-need {
+    .section-head {
+      .section-subtitle {
+        font-size: 40px;
+      }
+    }
+  }
+  .questions__wrap {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .footer-nav__list:first-child {
+    margin-right: 35px;
   }
 }
 // XX-Large devices (larger desktops, 1400px and up)
