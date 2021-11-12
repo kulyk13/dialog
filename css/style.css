@@ -2059,6 +2059,56 @@ a {
   .introduce-card__img {
     width: 276px;
   }
+
+  .whats-need {
+    padding: 50px 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .whats-need .section-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 35px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+    max-width: 470px;
+  }
+  .whats-need__list {
+    max-width: 470px;
+  }
+
+  .benefits__wrap {
+    padding: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  .benefits__item {
+    width: 200px;
+  }
+  .benefits__item:nth-last-child(n+2) {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -2318,34 +2368,6 @@ a {
 
   .whats-need {
     padding: 80px 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .whats-need .section-head {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 35px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    text-align: left;
-    max-width: 470px;
-  }
-  .whats-need__list {
-    max-width: 470px;
   }
 
   .benefits {
@@ -2356,19 +2378,8 @@ a {
     margin-bottom: 82px;
   }
   .benefits__wrap {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-bottom: 80px;
-  }
-  .benefits__item {
-    width: 200px;
-  }
-  .benefits__item:nth-last-child(n+2) {
-    margin-bottom: 0;
   }
 
   .questions {
