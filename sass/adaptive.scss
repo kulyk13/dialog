@@ -688,6 +688,16 @@ $tr_time: 0.3s;
   .container {
     max-width: 1170px;
   }
+  .header-main {
+    .menu {
+      margin-left: 145px;
+      &__item {
+        &:nth-of-type(n + 2) {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)

@@ -2505,6 +2505,13 @@ a {
   .container {
     max-width: 1170px;
   }
+
+  .header-main .menu {
+    margin-left: 145px;
+  }
+  .header-main .menu__item:nth-of-type(n + 2) {
+    margin-left: 12px;
+  }
 }
 @media (min-width: 1400px) {
   .container {
