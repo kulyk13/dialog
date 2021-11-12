@@ -2244,7 +2244,7 @@ a {
 
   .hero {
     padding-top: 120px;
-    padding-bottom: 143px;
+    padding-bottom: 120px;
     position: relative;
   }
 
@@ -2267,13 +2267,16 @@ a {
   }
   .offer .hero__img {
     width: 470px;
-    height: 597px;
+    height: 515px;
     -webkit-box-shadow: none;
             box-shadow: none;
     border-radius: 0;
-    -o-object-position: 0px 0px;
-       object-position: 0px 0px;
+    -o-object-position: 0 -65px;
+       object-position: 0 -65px;
     background-color: white;
+  }
+  .offer__btn {
+    margin-bottom: 0;
   }
 
   .greeting {
@@ -2511,6 +2514,30 @@ a {
   }
   .header-main .menu__item:nth-of-type(n + 2) {
     margin-left: 12px;
+  }
+
+  .hero {
+    padding-top: 125px;
+    padding-bottom: 143px;
+  }
+
+  .offer {
+    padding-right: 590px;
+  }
+  .offer__title {
+    font-size: 56px;
+    line-height: 1.3;
+    margin-bottom: 54px;
+  }
+  .offer .hero__img {
+    width: 605px;
+    height: 638px;
+    -o-object-position: 0 -130px;
+       object-position: 0 -130px;
+  }
+
+  .greeting {
+    padding-top: 54px;
   }
 }
 @media (min-width: 1400px) {
