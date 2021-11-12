@@ -2655,6 +2655,30 @@ a {
   .courses__slider .slider-btn.slider__prev-btn {
     left: 25px;
   }
+
+  .teachers-slider {
+    width: 1170px;
+  }
+
+  .introduce-card__img {
+    width: 376px;
+  }
+  .introduce-card:first-child .introduce-card__img {
+    -o-object-position: 0px -45px;
+       object-position: 0px -45px;
+  }
+  .introduce-card:nth-child(2) .introduce-card__img {
+    -o-object-position: 0px -145px;
+       object-position: 0px -145px;
+  }
+  .introduce-card:nth-child(4) .introduce-card__img {
+    -o-object-position: 0px -85px;
+       object-position: 0px -85px;
+  }
+  .introduce-card:nth-child(5) .introduce-card__img {
+    -o-object-position: 0px -150px;
+       object-position: 0px -150px;
+  }
 }
 @media (min-width: 1400px) {
   .container {
