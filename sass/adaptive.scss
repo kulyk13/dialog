@@ -208,6 +208,30 @@ $tr_time: 0.3s;
       height: 80px;
     }
   }
+  .programs__cards-wrap {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .program-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 450px;
+    height: 100%;
+    row-gap: initial;
+    &:nth-last-of-type(2) {
+      margin-bottom: 0;
+    }
+    &__header {
+      margin-bottom: 32px;
+    }
+    &__list {
+      margin-bottom: 32px;
+    }
+    &__cta {
+      margin-top: auto;
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -329,30 +353,6 @@ $tr_time: 0.3s;
   .programs {
     padding-top: 100px;
     padding-bottom: 80px;
-  }
-  .programs__cards-wrap {
-    flex-flow: row wrap;
-    justify-content: space-around;
-  }
-  .program-card {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    min-height: 450px;
-    height: 100%;
-    row-gap: initial;
-    &:nth-last-of-type(2) {
-      margin-bottom: 0;
-    }
-    &__header {
-      margin-bottom: 32px;
-    }
-    &__list {
-      margin-bottom: 32px;
-    }
-    &__cta {
-      margin-top: auto;
-    }
   }
   .banner-section {
     padding-top: 100px;
