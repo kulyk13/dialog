@@ -1946,6 +1946,21 @@ a {
   .banner__description {
     text-align: center;
   }
+
+  .partners__slider {
+    max-width: 720px;
+  }
+  .partners__slider .partners__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .partners__slider .partners__list-item {
+    width: 100px !important;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -2141,17 +2156,6 @@ a {
   }
   .partners__slider {
     max-width: 960px;
-  }
-  .partners__slider .partners__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .partners__slider .partners__list-item {
-    width: 100px !important;
   }
 
   .subscribe-section {

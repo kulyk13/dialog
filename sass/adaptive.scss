@@ -241,6 +241,18 @@ $tr_time: 0.3s;
       text-align: center;
     }
   }
+  .partners {
+    &__slider {
+      max-width: 720px;
+      .partners__list {
+        display: flex;
+        justify-content: space-between;
+        &-item {
+          width: 100px !important;
+        }
+      }
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -390,13 +402,6 @@ $tr_time: 0.3s;
     padding-bottom: 80px;
     &__slider {
       max-width: 960px;
-      .partners__list {
-        display: flex;
-        justify-content: space-between;
-        &-item {
-          width: 100px !important;
-        }
-      }
     }
   }
   .subscribe-section {

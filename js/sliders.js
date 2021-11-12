@@ -13,7 +13,7 @@ const swiper = new Swiper(".partners__slider", {
       slidesPerView: 4,
       centeredSlides: true,
     },
-    992: {
+    768: {
       centeredSlides: false,
       slidesPerView: 6,
     },
