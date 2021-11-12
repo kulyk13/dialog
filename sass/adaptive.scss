@@ -540,6 +540,18 @@ $tr_time: 0.3s;
     padding-bottom: 80px;
     &__slider {
       max-width: 960px;
+      height: 40px;
+      .partners__list {
+        display: flex;
+        justify-content: space-between;
+        &-item {
+          width: initial !important;
+        }
+        .partner__img {
+          width: initial;
+          height: initial;
+        }
+      }
     }
   }
   .subscribe-section {
@@ -761,6 +773,16 @@ $tr_time: 0.3s;
       height: 533px;
       top: -47px;
       left: 70px;
+    }
+  }
+  .partners__slider {
+    max-width: 1170px;
+    height: 40px;
+    .partners__list {
+      .partner__img {
+        width: initial;
+        height: initial;
+      }
     }
   }
 }
