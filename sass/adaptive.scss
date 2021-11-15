@@ -867,4 +867,41 @@ $tr_time: 0.3s;
   .container {
     max-width: 1320px;
   }
+  .offer {
+    padding-right: 650px;
+    .hero__img {
+      width: 660px;
+    }
+  }
+  .video {
+    padding-bottom: 33.5%;
+  }
+  .banner {
+    padding-right: 120px;
+    padding-left: 650px;
+    &__img {
+      left: 120px;
+    }
+  }
+  .partners__slider {
+    max-width: 1320px;
+  }
+  .subscribe {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .teachers-slider {
+    width: 1320px;
+  }
+  .whats-need {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .questions__wrap {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  .footer-nav__list:first-child {
+    margin-right: 80px;
+  }
 }
