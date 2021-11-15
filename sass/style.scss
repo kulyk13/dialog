@@ -894,6 +894,14 @@ $tr_time: 0.3s;
   &-info {
     margin-top: 26px;
     @extend %column-reverse;
+    &__social {
+      .social__link {
+        color: $bg_color;
+        &:hover {
+          color: $brand_color;
+        }
+      }
+    }
     &__list {
       margin-bottom: 20px;
     }

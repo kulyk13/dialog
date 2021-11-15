@@ -265,6 +265,14 @@
   src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmYUtfBBc4.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?poyzy6");
+  src: url("../fonts/icomoon.eot?poyzy6#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?poyzy6") format("truetype"), url("../fonts/icomoon.woff?poyzy6") format("woff"), url("../fonts/icomoon.svg?poyzy6#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 /* ----- FONTS END ----- */
 /* ============ CSS RESET START ============ */
 html,
@@ -602,6 +610,13 @@ a {
   color: #3136c4;
 }
 
+.social__link {
+  font-size: 16px;
+}
+.social__link:hover {
+  color: #dc271e;
+}
+
 .btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -673,6 +688,36 @@ a {
 }
 .form__input:-ms-input-placeholder {
   color: rgba(35, 40, 56, 0.3);
+}
+
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-instagram:before {
+  content: "";
+}
+
+.icon-vk:before {
+  content: "";
+}
+
+.icon-youtube:before {
+  content: "";
 }
 
 .burger-menu .burger-menu__top-nav, .header-mobile__wrap {
@@ -1590,6 +1635,12 @@ a {
 }
 .footer-info {
   margin-top: 26px;
+}
+.footer-info__social .social__link {
+  color: white;
+}
+.footer-info__social .social__link:hover {
+  color: #dc271e;
 }
 .footer-info__list {
   margin-bottom: 20px;
