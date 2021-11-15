@@ -590,7 +590,7 @@ $tr_time: 0.3s;
         font-weight: 800;
         color: $brand_color;
       }
-      .info-item__list-progress {
+      .info-item__list-meter {
         width: 100%;
         position: absolute;
         top: 26px;
@@ -598,20 +598,35 @@ $tr_time: 0.3s;
         background-color: #fff;
       }
     }
-    progress::-webkit-progress-bar {
+    meter::-webkit-meter-bar {
       background-color: $brand_color2_light;
       height: 4px;
       border-radius: 10px;
+      border: none;
     }
-    progress::-webkit-progress-value {
-      background-color: $brand_color;
-      height: 4px;
-      border-radius: 10px;
-    }
-    progress::-moz-progress-bar {
+    meter::-moz-meter-bar {
       background-color: $brand_color2_light;
       height: 4px;
       border-radius: 10px;
+      border: none;
+    }
+    meter:-moz-meter-optimum::-moz-meter-bar {
+      background: $brand-color;
+    }
+    meter::-webkit-meter-optimum-value {
+      background: $brand_color;
+    }
+    meter:-moz-meter-sub-optimum::-moz-meter-bar {
+      background: $brand_color;
+    }
+    meter::-webkit-meter-suboptimum-value {
+      background: $brand_color;
+    }
+    meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+      background: $brand_color;
+    }
+    meter::-webkit-meter-even-less-good-value {
+      background: $brand_color;
     }
     &__list-definition {
       @extend %align-center;

@@ -1305,27 +1305,42 @@ a {
   font-weight: 800;
   color: #dc271e;
 }
-.slider-card .info-item__list-item .info-item__list-progress {
+.slider-card .info-item__list-item .info-item__list-meter {
   width: 100%;
   position: absolute;
   top: 26px;
   left: 0;
   background-color: #fff;
 }
-.slider-card .info-item progress::-webkit-progress-bar {
+.slider-card .info-item meter::-webkit-meter-bar {
   background-color: #e0e0ff;
   height: 4px;
   border-radius: 10px;
+  border: none;
 }
-.slider-card .info-item progress::-webkit-progress-value {
-  background-color: #dc271e;
-  height: 4px;
-  border-radius: 10px;
-}
-.slider-card .info-item progress::-moz-progress-bar {
+.slider-card .info-item meter::-moz-meter-bar {
   background-color: #e0e0ff;
   height: 4px;
   border-radius: 10px;
+  border: none;
+}
+.slider-card .info-item meter:-moz-meter-optimum::-moz-meter-bar {
+  background: #dc271e;
+}
+.slider-card .info-item meter::-webkit-meter-optimum-value {
+  background: #dc271e;
+}
+.slider-card .info-item meter:-moz-meter-sub-optimum::-moz-meter-bar {
+  background: #dc271e;
+}
+.slider-card .info-item meter::-webkit-meter-suboptimum-value {
+  background: #dc271e;
+}
+.slider-card .info-item meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+  background: #dc271e;
+}
+.slider-card .info-item meter::-webkit-meter-even-less-good-value {
+  background: #dc271e;
 }
 .slider-card .info-item__list-check {
   margin-top: -3px;
