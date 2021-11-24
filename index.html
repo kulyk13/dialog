@@ -1,1993 +1,1419 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" href="css/style.css" as="style" type="text/css" />
-    <link
-      rel="preload"
-      href="fonts/Lato-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/Lato-Bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/Lato-Heavy.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="С нами вы начнёте разговаривать на турецком языке уже через месяц. Наша компания на рынке уже более 5 лет. Мы обучили более 3000 студентов."
-    />
-    <title>Языковые курсы «Диалог»</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="img/favicon.svg" type="icon/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
-  </head>
-  <body>
-    <header class="header header-mobile">
-      <div id="mobileHeader" class="header-mobile__wrap shadow">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="С нами вы начнёте разговаривать на турецком языке уже через месяц. Наша компания на рынке уже более 5 лет. Мы обучили более 3000 студентов." />
+  <title>Языковые курсы «Диалог»</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="css/style.css" as="style" type="text/css" />
+  <link rel="preload" href="fonts/Lato-Regular.woff2" as="font"
+    type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/Lato-Bold.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="preload" href="fonts/Lato-Heavy.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="img/favicon.svg" type="icon/x-icon" />
+</head>
+
+<body>
+  <header class="header header-mobile">
+    <div id="mobileHeader" class="header-mobile__wrap shadow">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Курсы турецкого языка ДИАЛОГ"
+          class="logo__img" width="169" height="38" />
+      </a>
+      <button id="burgerBtn" class="menu-btn" type="button">
+        Меню
+      </button>
+    </div>
+  </header>
+  <header id="burgerMenu" class="header header-desktop burger-menu">
+    <div class="header-top container">
+      <ul class="social header-top__social">
+        <li class="social__item">
+          <a href="https://vk.com" target="_blank"
+            rel="nofollow noopener noreferrer" class="social__link"
+            aria-label="vk">
+            <i class="icon-vk"></i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="https://instagram.com" target="_blank"
+            rel="nofollow noopener noreferrer" class="social__link"
+            aria-label="instagram">
+            <i class="icon-instagram"></i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="https://facebook.com" target="_blank"
+            rel="nofollow noopener noreferrer" class="social__link"
+            aria-label="facebook">
+            <i class="icon-facebook"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="contacts header-top__contacts">
+        <li class="contact__item">
+          <img src="img/phone.svg" alt="телефон" class="contact__img" width="16"
+            height="16" />
+          <a href="tel:+74952553020" class="contact__link">+7 (495)
+            255-30-20</a>
+        </li>
+        <li class="contact__item">
+          <img src="img/whatsapp.svg" alt="whatsapp" class="contact__img"
+            width="16" height="16" />
+          <a href="tel:+79153599519" class="contact__link">+7 (915)
+            359-95-19</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-main container">
+      <nav class="header-main__navbar">
         <a href="index.html" class="logo">
-          <img
-            src="img/logo.svg"
-            alt="Курсы турецкого языка ДИАЛОГ"
-            class="logo__img"
-            width="169"
-            height="38"
-          />
+          <img src="img/logo.svg" alt="Курсы турецкого языка ДИАЛОГ"
+            class="logo__img" width="169" height="38" />
         </a>
-        <button
-          id="burgerBtn"
-          class="menu-btn"
-          aria-label="Открыть меню"
-          type="button"
-        >
-          Меню
+        <ul class="menu" role="menu">
+          <li class="menu__item">
+            <a href="#" class="menu__link">О центре</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Онлайн обучение</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Отзывы</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">База занятий</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn header-main__btn js-open-popup" type="button">
+        <img src="img/btn-phone.svg" alt="телефон" width="20" height="20"
+          class="header-main__btn-img" />
+        Заказать звонок
+      </button>
+    </div>
+  </header>
+
+  <div class="popup-window" id="callbackPopup" aria-hidden="true">
+    <div class="popup-wrap">
+      <div class="popup" role="dialog" aria-modal="true">
+        <img src="img/popup.webp" alt="Турецкий флаг" class="popup__img"
+          width="348" height="577" loading="lazy" />
+        <form class="form popup-form" action="sendmail.php" method="post">
+          <h2 class="form__title popup-form__title">Подача заявки</h2>
+          <p class="form__subtitle popup-form__subtitle">
+            Оставьте свои контактные данные и наш менеджер свяжется с Вами в
+            ближайшее время
+          </p>
+          <div class="form__input-group popup-form__input-group">
+            <label for="name" class="form__label popup-form__label">
+              Ваше имя и фамилия
+            </label>
+            <input id="name" class="form__input popup-form__input" name="name"
+              type="text" placeholder="Имя и Фамилия" required />
+          </div>
+          <div class="form__input-group popup-form__input-group">
+            <label for="phone" class="form__label popup-form__label">
+              Ваш телефон/whatsapp
+            </label>
+            <input id="phone" class="form__input popup-form__input" name="phone"
+              type="tel" placeholder="Телефон/Whatsapp" required />
+          </div>
+          <div class="form__input-group popup-form__input-group">
+            <label for="email" class="form__label popup-form__label">Ваш
+              e-mail</label>
+            <input id="email" class="form__input popup-form__input" name="email"
+              type="email" placeholder="E-mail" required />
+          </div>
+          <button id="applyBtn" class="btn popup__btn" type="submit">
+            Подать заявку
+          </button>
+        </form>
+        <button id="closePopupBtn" class="close-btn" type="button"
+          aria-label="Закрыть оено">
+          <img src="img/close.svg" alt="Закрыть" class="close-btn__image"
+            width="16" height="16" loading="lazy" />
         </button>
       </div>
-    </header>
-    <header id="burgerMenu" class="header header-desktop burger-menu">
-      <address class="header-top container">
-        <ul class="social header-top__social">
+    </div>
+  </div>
+
+  <main class="main">
+    <h1 class="visually-hidden">Курсы турецкого языка "Диалог"</h1>
+    <section class="hero">
+      <div class="container offer">
+        <h2 class="offer__title">
+          Начните говорить<br />
+          по-турецки уже
+          <span>через 2 месяца</span>
+        </h2>
+        <p class="offer__text">
+          Мы работаем онлайн ежедневно только для вас!
+        </p>
+        <button type="button" class="btn offer__btn js-open-popup">
+          Записаться на пробный урок
+        </button>
+        <figure class="hero__img-wrap">
+          <img src="img/laptop.webp" alt="Ноутбук" class="hero__img" width="272"
+            height="230" />
+        </figure>
+      </div>
+    </section>
+    <section class="greeting">
+      <div class="section-head container">
+        <h2 class="section-title greeting__title">Приветствие</h2>
+        <p class="section-subtitle greeting__subtitle">
+          Давайте знакомиться!
+        </p>
+      </div>
+      <div class="container">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/Rs75vSex-jo"
+            aria-label="video frame" rel="noopener nofollow noreferrer">
+            <picture>
+              <source srcset="img/video-img-lg.webp" type="image/webp" />
+              <img class="video__media"
+                src="https://i.ytimg.com/vi/Rs75vSex-jo/maxresdefault.jpg"
+                alt="Урок 1 / БЫСТРО учим Турецкий язык / Для начинающих / Приветствие и знакомство!" />
+            </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            Запустить видео
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="programs">
+      <div class="container section-head">
+        <h2 class="section-title programs__title">Программы</h2>
+        <p class="section-subtitle programs__subtitle">
+          Наши программы обучения:
+        </p>
+      </div>
+      <ul class="container programs__cards-wrap">
+        <li class="program-card">
+          <div class="program-card__header">
+            <h3 class="program-card__title">
+              7 дней доступа ко всем онлайн курсам
+            </h3>
+            <p class="program-card__price"><span>690</span> <br />руб.</p>
+          </div>
+          <ul class="program-card__list">
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">Проверочный тест</p>
+            </li>
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">Курсы от А1 до В1</p>
+            </li>
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">Интересные упражнения</p>
+            </li>
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">Подсказки экспертов</p>
+            </li>
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">Разговорный клуб</p>
+            </li>
+          </ul>
+          <div class="program-card__cta">
+            <button type="button" class="btn program-card__btn js-open-popup">
+              Получить
+            </button>
+            <a href="#" class="program-card__watch-btn">
+              <svg width="16" height="16" class="program-card__play-img"
+                viewbox="0 0 80 80" fill="#3136c4">
+                <path
+                  d="M40 0C17.9368 0 0 17.9368 0 40C0 62.0632 17.9368 80 40 80C62.0632 80 80 62.0632 80 40C80 17.9368 62.0632 0 40 0ZM52.8842 42.0211L34.0211 54.5684C32.4211 55.6632 30.2316 54.4842 30.2316 52.5474V27.4526C30.2316 25.5158 32.4211 24.3368 34.0211 25.4316L52.8842 37.9789C54.3158 38.9053 54.3158 41.0947 52.8842 42.0211Z"
+                  fill="#3136c4" />
+              </svg>
+              Смотреть презентацию
+            </a>
+          </div>
+        </li>
+        <li class="program-card">
+          <div class="program-card__header">
+            <h3 class="program-card__title">Индивидуальные уроки по Skype</h3>
+            <p class="program-card__price">
+              от <span> 1190</span> <br />руб./урок
+            </p>
+          </div>
+          <ul class="program-card__list">
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">
+                Бесплатный доступ к онлайн-порталу
+              </p>
+            </li>
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">Любой уровень за 32 урока</p>
+            </li>
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">
+                Вы выбираете преподавателя
+              </p>
+            </li>
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">
+                Вы выбираете время занятий
+              </p>
+            </li>
+          </ul>
+          <div class="program-card__cta">
+            <button type="button" class="btn program-card__btn js-open-popup">
+              Записаться
+            </button>
+            <a href="#" class="program-card__watch-btn">
+              <svg width="16" height="16" class="program-card__play-img"
+                viewbox="0 0 80 80" fill="#3136c4">
+                <path
+                  d="M40 0C17.9368 0 0 17.9368 0 40C0 62.0632 17.9368 80 40 80C62.0632 80 80 62.0632 80 40C80 17.9368 62.0632 0 40 0ZM52.8842 42.0211L34.0211 54.5684C32.4211 55.6632 30.2316 54.4842 30.2316 52.5474V27.4526C30.2316 25.5158 32.4211 24.3368 34.0211 25.4316L52.8842 37.9789C54.3158 38.9053 54.3158 41.0947 52.8842 42.0211Z"
+                  fill="#3136c4" />
+              </svg>
+              Смотреть презентацию
+            </a>
+          </div>
+        </li>
+        <li class="program-card">
+          <div class="program-card__header">
+            <h3 class="program-card__title">
+              Турецкий в группе онлайн за 3 месяца
+            </h3>
+            <p class="program-card__price">
+              от <span> 15000</span> <br />руб./курс
+            </p>
+          </div>
+          <ul class="program-card__list">
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">
+                24 онлайн-занятия по 90 минут
+              </p>
+            </li>
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">
+                Интерактивные учебные материалы
+              </p>
+            </li>
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">
+                Бесплатный доступ к онлайн-порталу
+              </p>
+            </li>
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">
+                Закрытый форум для общения
+              </p>
+            </li>
+          </ul>
+          <div class="program-card__cta">
+            <button type="button" class="btn program-card__btn js-open-popup">
+              Записаться
+            </button>
+            <a href="#" class="program-card__watch-btn">
+              <svg width="16" height="16" class="program-card__play-img"
+                viewbox="0 0 80 80" fill="#3136c4">
+                <path
+                  d="M40 0C17.9368 0 0 17.9368 0 40C0 62.0632 17.9368 80 40 80C62.0632 80 80 62.0632 80 40C80 17.9368 62.0632 0 40 0ZM52.8842 42.0211L34.0211 54.5684C32.4211 55.6632 30.2316 54.4842 30.2316 52.5474V27.4526C30.2316 25.5158 32.4211 24.3368 34.0211 25.4316L52.8842 37.9789C54.3158 38.9053 54.3158 41.0947 52.8842 42.0211Z"
+                  fill="#3136c4" />
+              </svg>
+              Смотреть презентацию
+            </a>
+          </div>
+        </li>
+        <li class="program-card">
+          <div class="program-card__header">
+            <h3 class="program-card__title">
+              Специальный курс обучения сотрудников
+            </h3>
+            <p class="program-card__price program-card__overhead">
+              Корпоративное обучение
+            </p>
+          </div>
+          <ul class="program-card__list">
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">
+                Обучение по уникальной программе TÖMER
+              </p>
+            </li>
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">
+                Оригинальные учебные материалы
+              </p>
+            </li>
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">
+                Интерактивные материалы в личном кабинете
+              </p>
+            </li>
+            <li class="program-card__list-item">
+              <img src="img/check-red.svg" alt="check"
+                class="program-card__list-check" width="16" height="16"
+                loading="lazy" />
+              <p class="program-card__list-text">
+                Скидка на индивидуальные занятия
+              </p>
+            </li>
+          </ul>
+          <div class="program-card__cta">
+            <a href="#" class="btn program-card__btn">Подробнее</a>
+            <a href="#" class="program-card__watch-btn">
+              <svg width="16" height="16" class="program-card__play-img"
+                viewbox="0 0 80 80">
+                <path
+                  d="M40 0C17.9368 0 0 17.9368 0 40C0 62.0632 17.9368 80 40 80C62.0632 80 80 62.0632 80 40C80 17.9368 62.0632 0 40 0ZM52.8842 42.0211L34.0211 54.5684C32.4211 55.6632 30.2316 54.4842 30.2316 52.5474V27.4526C30.2316 25.5158 32.4211 24.3368 34.0211 25.4316L52.8842 37.9789C54.3158 38.9053 54.3158 41.0947 52.8842 42.0211Z"
+                  fill="#3136c4" />
+              </svg>
+              Смотреть презентацию
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="banner-section container">
+      <h2 class="visually-hidden">Баннер</h2>
+      <article class="banner">
+        <div class="banner__description">
+          <h2 class="banner__description-title">
+            ДИАЛОГ - лицензированное образовательное учреждение
+          </h2>
+          <p class="banner__description-text">
+            Имеем лицензию министерства образования РФ и специализируемся
+            только на преподавании турецкого языка и русского языка для турок.
+          </p>
+          <button type="button" class="btn banner__btn js-open-popup">
+            Записаться на пробный урок
+          </button>
+        </div>
+        <img src="img/diploma.webp" alt="Лицензия" class="banner__img"
+          width="255" height="340" loading="lazy" />
+      </article>
+    </section>
+    <section class="partners">
+      <div class="container section-head">
+        <h2 class="section-title partners__title">Партнеры</h2>
+        <p class="section-subtitle partners__subtitle">
+          Наши услуги оценили:
+        </p>
+      </div>
+      <div class="swiper partners__slider">
+        <div class="swiper-wrapper partners__list">
+          <div class="swiper-slide partners__list-item">
+            <img src="img/turkish.webp" alt="Turkish Airlines"
+              class="partner__img" loading="lazy" width="95" height="28" />
+          </div>
+          <div class="swiper-slide partners__list-item">
+            <img src="img/constrution.webp" alt="Renaissance construction"
+              class="partner__img" loading="lazy" width="100" height="28" />
+          </div>
+          <div class="swiper-slide partners__list-item">
+            <img src="img/enka.webp" alt="ENKA" class="partner__img"
+              loading="lazy" width="100" height="28" />
+          </div>
+          <div class="swiper-slide partners__list-item">
+            <img src="img/real.webp" alt="real" class="partner__img"
+              loading="lazy" width="100" height="28" />
+          </div>
+          <div class="swiper-slide partners__list-item">
+            <img src="img/ashan.webp" alt="Ашан" class="partner__img"
+              loading="lazy" width="100" height="28" />
+          </div>
+          <div class="swiper-slide partners__list-item">
+            <img src="img/queen.webp" alt="Снежная королева"
+              class="partner__img" loading="lazy" width="100" height="28" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe-section container">
+      <h2 class="visually-hidden">Подпишись</h2>
+      <article class="subscribe">
+        <h2 class="visually-hidden">Подпишись</h2>
+        <p class="subscribe__text">
+          Подпишись на 10 бесплатных уроков «Турецкий базар» в email рассылке
+          для комфортного общения
+        </p>
+        <button type="button" class="btn subscribe__btn">Подписаться</button>
+      </article>
+    </section>
+    <section class="courses">
+      <div class="container section-head">
+        <h2 class="section-title courses__title">Курсы</h2>
+        <p class="section-subtitle courses-subtitle">
+          Общий курс турецкого языка:
+        </p>
+      </div>
+      <div class="swiper courses__slider">
+        <div class="container swiper-wrapper slider">
+          <h3 class="visually-hidden">Слайдер</h3>
+          <article class="swiper-slide slider-card">
+            <h3 class="slider-card__title slider-title">
+              Что вы будете уметь после прохождения начального уровня А1:
+            </h3>
+            <p class="slider-card__description">
+              По окончании данного уровня Вы можете простыми предложениями
+              рассказать о себе, о своей семье, о своих друзьях, о работе,
+              описать, что Вы любите и не любите делать, умеете спрашивать и
+              отвечать который час, использовать цифры от 1 до 1 000, можете
+              поддержать беседу на бытовые темы (ресторан, магазин, улица),
+              задать простые вопросы собеседнику или ответить самому на темы,
+              связанные с аспектами бытовой жизни: об отдыхе, о еде и
+              напитках, о ежедневных делах. Можете написать простые
+              предложения с приветствиями и поздравлениями друзьям и близким.
+            </p>
+            <ul class="slider-card__info">
+              <li class="info-item">
+                <h4 class="info-item__title slider-title">Для справки</h4>
+                <dl class="info-item__list">
+                  <dt class="info-item__list-definition">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    Длительность курса:
+                  </dt>
+                  <dd class="info-item__list-value">64 академических часа</dd>
+                  <dt class="info-item__list-definition">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    Длительность занятия:
+                  </dt>
+                  <dd class="info-item__list-value">2 ак.часа (90 минут)</dd>
+                  <dt class="info-item__list-definition">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    Уровень подготовки:
+                  </dt>
+                  <dd class="info-item__list-value">
+                    законченный уровень А1
+                  </dd>
+                  <dt class="info-item__list-definition visually-hidden">
+                    Гарантия
+                  </dt>
+                  <dd class="info-item__list-value">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    В случае, если Вы не освоите материал курса, то сможете
+                    пройти его повторно по гарантии качества абсолютно
+                    бесплатно
+                  </dd>
+                </dl>
+              </li>
+              <li class="info-item">
+                <h4 class="info-item__title slider-title">Структура курса</h4>
+                <dl class="info-item__list">
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Говорение -</dt>
+                    <dd class="info-item__list-value">
+                      40%
+                      <meter class="info-item__list-meter" max="100"
+                        value="40"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Грамматика -</dt>
+                    <dd class="info-item__list-value">
+                      20%
+                      <meter class="info-item__list-meter" max="100"
+                        value="20"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Аудирование -</dt>
+                    <dd class="info-item__list-value">
+                      20%
+                      <meter class="info-item__list-meter" max="100"
+                        value="20"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Чтение -</dt>
+                    <dd class="info-item__list-value">
+                      10%
+                      <meter class="info-item__list-meter" max="100"
+                        value="10"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Письмо -</dt>
+                    <dd class="info-item__list-value">
+                      10%
+                      <meter class="info-item__list-meter" max="100"
+                        value="10"></meter>
+                    </dd>
+                  </div>
+                </dl>
+              </li>
+              <li class="info-item">
+                <h4 class="info-item__title slider-title">
+                  Учебные материалы
+                </h4>
+                <img src="img/hitit.webp" alt="Учебник" class="info-item__book"
+                  width="131" height="185" loading="lazy" />
+              </li>
+            </ul>
+          </article>
+          <article class="swiper-slide slider-card">
+            <h3 class="slider-card__title slider-title">
+              Что вы будете уметь после прохождения начального уровня А2:
+            </h3>
+            <p class="slider-card__description">
+              По окончании данного уровня Вы можете простыми предложениями
+              рассказать о себе, о своей семье, о своих друзьях, о работе,
+              описать, что Вы любите и не любите делать, умеете спрашивать и
+              отвечать который час, использовать цифры от 1 000 до 10 000,
+              можете поддержать беседу на бытовые темы (ресторан, магазин,
+              улица), задать простые вопросы собеседнику или ответить самому
+              на темы, связанные с аспектами бытовой жизни: об отдыхе, о еде и
+              напитках, о ежедневных делах. Можете написать простые
+              предложения с приветствиями и поздравлениями друзьям и близким.
+            </p>
+            <ul class="slider-card__info">
+              <li class="info-item">
+                <h4 class="info-item__title slider-title">Для справки</h4>
+                <dl class="info-item__list">
+                  <dt class="info-item__list-definition">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    Длительность курса:
+                  </dt>
+                  <dd class="info-item__list-value">64 академических часа</dd>
+                  <dt class="info-item__list-definition">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    Длительность занятия:
+                  </dt>
+                  <dd class="info-item__list-value">2 ак.часа (90 минут)</dd>
+                  <dt class="info-item__list-definition">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    Уровень подготовки:
+                  </dt>
+                  <dd class="info-item__list-value">
+                    законченный уровень А2
+                  </dd>
+                  <dt class="info-item__list-definition visually-hidden">
+                    Гарантия
+                  </dt>
+                  <dd class="info-item__list-value">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    В случае, если Вы не освоите материал курса, то сможете
+                    пройти его повторно по гарантии качества абсолютно
+                    бесплатно
+                  </dd>
+                </dl>
+              </li>
+              <li class="info-item">
+                <h4 class="info-item__title slider-title">Структура курса</h4>
+                <dl class="info-item__list">
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Говорение -</dt>
+                    <dd class="info-item__list-value">
+                      30%
+                      <meter class="info-item__list-meter" max="100"
+                        value="30"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Грамматика -</dt>
+                    <dd class="info-item__list-value">
+                      30%
+                      <meter class="info-item__list-meter" max="100"
+                        value="30"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Аудирование -</dt>
+                    <dd class="info-item__list-value">
+                      10%
+                      <meter class="info-item__list-meter" max="100"
+                        value="10"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Чтение -</dt>
+                    <dd class="info-item__list-value">
+                      15%
+                      <meter class="info-item__list-meter" max="100"
+                        value="15"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Письмо -</dt>
+                    <dd class="info-item__list-value">
+                      15%
+                      <meter class="info-item__list-meter" max="100"
+                        value="15"></meter>
+                    </dd>
+                  </div>
+                </dl>
+              </li>
+              <li class="info-item">
+                <h4 class="info-item__title slider-title">
+                  Учебные материалы
+                </h4>
+                <img src="img/hitit.webp" alt="Учебник" class="info-item__book"
+                  width="131" height="185" loading="lazy" />
+              </li>
+            </ul>
+          </article>
+          <article class="swiper-slide slider-card">
+            <h3 class="slider-card__title slider-title">
+              Что вы будете уметь после прохождения начального уровня B1:
+            </h3>
+            <p class="slider-card__description">
+              По окончании данного уровня Вы можете простыми предложениями
+              рассказать о себе, о своей семье, о своих друзьях, о работе,
+              описать, что Вы любите и не любите делать, умеете спрашивать и
+              отвечать который час, использовать цифры от 10 000 до 100 000,
+              можете поддержать беседу на бытовые темы (ресторан, магазин,
+              улица), задать простые вопросы собеседнику или ответить самому
+              на темы, связанные с аспектами бытовой жизни: об отдыхе, о еде и
+              напитках, о ежедневных делах. Можете написать простые
+              предложения с приветствиями и поздравлениями друзьям и близким.
+            </p>
+            <ul class="slider-card__info">
+              <li class="info-item">
+                <h4 class="info-item__title slider-title">Для справки</h4>
+                <dl class="info-item__list">
+                  <dt class="info-item__list-definition">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    Длительность курса:
+                  </dt>
+                  <dd class="info-item__list-value">64 академических часа</dd>
+                  <dt class="info-item__list-definition">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    Длительность занятия:
+                  </dt>
+                  <dd class="info-item__list-value">2 ак.часа (90 минут)</dd>
+                  <dt class="info-item__list-definition">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    Уровень подготовки:
+                  </dt>
+                  <dd class="info-item__list-value">
+                    законченный уровень B1
+                  </dd>
+                  <dt class="info-item__list-definition visually-hidden">
+                    Гарантия
+                  </dt>
+                  <dd class="info-item__list-value">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    В случае, если Вы не освоите материал курса, то сможете
+                    пройти его повторно по гарантии качества абсолютно
+                    бесплатно
+                  </dd>
+                </dl>
+              </li>
+              <li class="info-item">
+                <h4 class="info-item__title slider-title">Структура курса</h4>
+                <dl class="info-item__list">
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Говорение -</dt>
+                    <dd class="info-item__list-value">
+                      20%
+                      <meter class="info-item__list-meter" max="100"
+                        value="20"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Грамматика -</dt>
+                    <dd class="info-item__list-value">
+                      20%
+                      <meter class="info-item__list-meter" max="100"
+                        value="20"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Аудирование -</dt>
+                    <dd class="info-item__list-value">
+                      10%
+                      <meter class="info-item__list-meter" max="100"
+                        value="10"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Чтение -</dt>
+                    <dd class="info-item__list-value">
+                      25%
+                      <meter class="info-item__list-meter" max="100"
+                        value="25"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Письмо -</dt>
+                    <dd class="info-item__list-value">
+                      25%
+                      <meter class="info-item__list-meter" max="100"
+                        value="25"></meter>
+                    </dd>
+                  </div>
+                </dl>
+              </li>
+              <li class="info-item">
+                <h4 class="info-item__title slider-title">
+                  Учебные материалы
+                </h4>
+                <img src="img/hitit.webp" alt="Учебник" class="info-item__book"
+                  width="131" height="185" loading="lazy" />
+              </li>
+            </ul>
+          </article>
+          <article class="swiper-slide slider-card">
+            <h3 class="slider-card__title slider-title">
+              Что вы будете уметь после прохождения начального уровня B2:
+            </h3>
+            <p class="slider-card__description">
+              По окончании данного уровня Вы можете простыми предложениями
+              рассказать о себе, о своей семье, о своих друзьях, о работе,
+              описать, что Вы любите и не любите делать, умеете спрашивать и
+              отвечать который час, использовать цифры от 100 000 до 1 000
+              000, можете поддержать беседу на бытовые темы (ресторан,
+              магазин, улица), задать простые вопросы собеседнику или ответить
+              самому на темы, связанные с аспектами бытовой жизни: об отдыхе,
+              о еде и напитках, о ежедневных делах. Можете написать простые
+              предложения с приветствиями и поздравлениями друзьям и близким.
+            </p>
+            <ul class="slider-card__info">
+              <li class="info-item">
+                <h4 class="info-item__title slider-title">Для справки</h4>
+                <dl class="info-item__list">
+                  <dt class="info-item__list-definition">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    Длительность курса:
+                  </dt>
+                  <dd class="info-item__list-value">64 академических часа</dd>
+                  <dt class="info-item__list-definition">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    Длительность занятия:
+                  </dt>
+                  <dd class="info-item__list-value">2 ак.часа (90 минут)</dd>
+                  <dt class="info-item__list-definition">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    Уровень подготовки:
+                  </dt>
+                  <dd class="info-item__list-value">
+                    законченный уровень B2
+                  </dd>
+                  <dt class="info-item__list-definition visually-hidden">
+                    Гарантия
+                  </dt>
+                  <dd class="info-item__list-value">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    В случае, если Вы не освоите материал курса, то сможете
+                    пройти его повторно по гарантии качества абсолютно
+                    бесплатно
+                  </dd>
+                </dl>
+              </li>
+              <li class="info-item">
+                <h4 class="info-item__title slider-title">Структура курса</h4>
+                <dl class="info-item__list">
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Говорение -</dt>
+                    <dd class="info-item__list-value">
+                      50%
+                      <meter class="info-item__list-meter" max="100"
+                        value="50"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Грамматика -</dt>
+                    <dd class="info-item__list-value">
+                      15%
+                      <meter class="info-item__list-meter" max="100"
+                        value="15"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Аудирование -</dt>
+                    <dd class="info-item__list-value">
+                      15%
+                      <meter class="info-item__list-meter" max="100"
+                        value="15"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Чтение -</dt>
+                    <dd class="info-item__list-value">
+                      10%
+                      <meter class="info-item__list-meter" max="100"
+                        value="10"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Письмо -</dt>
+                    <dd class="info-item__list-value">
+                      10%
+                      <meter class="info-item__list-meter" max="100"
+                        value="10"></meter>
+                    </dd>
+                  </div>
+                </dl>
+              </li>
+              <li class="info-item">
+                <h4 class="info-item__title slider-title">
+                  Учебные материалы
+                </h4>
+                <img src="img/hitit.webp" alt="Учебник" class="info-item__book"
+                  width="131" height="185" loading="lazy" />
+              </li>
+            </ul>
+          </article>
+          <article class="swiper-slide slider-card">
+            <h3 class="slider-card__title slider-title">
+              Что вы будете уметь после прохождения начального уровня C1:
+            </h3>
+            <p class="slider-card__description">
+              По окончании данного уровня Вы можете простыми предложениями
+              рассказать о себе, о своей семье, о своих друзьях, о работе,
+              описать, что Вы любите и не любите делать, умеете спрашивать и
+              отвечать который час, использовать цифры от 1 000 000 до 10 000
+              000, можете поддержать беседу на бытовые темы (ресторан,
+              магазин, улица), задать простые вопросы собеседнику или ответить
+              самому на темы, связанные с аспектами бытовой жизни: об отдыхе,
+              о еде и напитках, о ежедневных делах. Можете написать простые
+              предложения с приветствиями и поздравлениями друзьям и близким.
+            </p>
+            <ul class="slider-card__info">
+              <li class="info-item">
+                <h4 class="info-item__title slider-title">Для справки</h4>
+                <dl class="info-item__list">
+                  <dt class="info-item__list-definition">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    Длительность курса:
+                  </dt>
+                  <dd class="info-item__list-value">64 академических часа</dd>
+                  <dt class="info-item__list-definition">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    Длительность занятия:
+                  </dt>
+                  <dd class="info-item__list-value">2 ак.часа (90 минут)</dd>
+                  <dt class="info-item__list-definition">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    Уровень подготовки:
+                  </dt>
+                  <dd class="info-item__list-value">
+                    законченный уровень C1
+                  </dd>
+                  <dt class="info-item__list-definition visually-hidden">
+                    Гарантия
+                  </dt>
+                  <dd class="info-item__list-value">
+                    <img src="img/check-red.svg" alt="check"
+                      class="info-item__list-check" width="18" height="18"
+                      loading="lazy" />
+                    В случае, если Вы не освоите материал курса, то сможете
+                    пройти его повторно по гарантии качества абсолютно
+                    бесплатно
+                  </dd>
+                </dl>
+              </li>
+              <li class="info-item">
+                <h4 class="info-item__title slider-title">Структура курса</h4>
+                <dl class="info-item__list">
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Говорение -</dt>
+                    <dd class="info-item__list-value">
+                      60%
+                      <meter class="info-item__list-meter" max="100"
+                        value="60"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Грамматика -</dt>
+                    <dd class="info-item__list-value">
+                      5%
+                      <meter class="info-item__list-meter" max="100"
+                        value="5"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Аудирование -</dt>
+                    <dd class="info-item__list-value">
+                      10%
+                      <meter class="info-item__list-meter" max="100"
+                        value="10"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Чтение -</dt>
+                    <dd class="info-item__list-value">
+                      10%
+                      <meter class="info-item__list-meter" max="100"
+                        value="10"></meter>
+                    </dd>
+                  </div>
+                  <div class="info-item__list-item">
+                    <dt class="info-item__list-definition">Письмо -</dt>
+                    <dd class="info-item__list-value">
+                      15%
+                      <meter class="info-item__list-meter" max="100"
+                        value="15"></meter>
+                    </dd>
+                  </div>
+                </dl>
+              </li>
+              <li class="info-item">
+                <h4 class="info-item__title slider-title">
+                  Учебные материалы
+                </h4>
+                <img src="img/hitit.webp" alt="Учебник" class="info-item__book"
+                  width="131" height="185" loading="lazy" />
+              </li>
+            </ul>
+          </article>
+        </div>
+        <ul class="swiper-pagination slider-pagination">
+          <li class="slider-pagination__item"></li>
+          <li class="slider-pagination__item"></li>
+          <li class="slider-pagination__item"></li>
+          <li class="slider-pagination__item"></li>
+          <li class="slider-pagination__item"></li>
+        </ul>
+        <div class="swiper-scrollbar"></div>
+        <button class="slider-btn slider__prev-btn swiper-button-prev"
+          type="button" aria-label="Предыдущий слайд">
+          <svg width="9" height="14" class="slider-btn__arrow-img"
+            viewbox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.50746 6.97291C2.60299 7.08429 2.65075 7.14618 2.69851 7.19568C4.14328 8.69321 5.57612 10.1907 7.0209 11.6759C7.2597 11.9234 7.51045 12.1586 7.73731 12.4185C8.16716 12.9011 8.04776 13.619 7.49851 13.9036C7.16418 14.0769 6.77015 14.015 6.48358 13.7304C6.2209 13.4704 5.97015 13.2105 5.7194 12.9506C4.1194 11.2922 2.50746 9.63381 0.907463 7.97539C0.608955 7.66598 0.310448 7.3442 0 6.99766C0.0358209 6.94816 0.0955224 6.8739 0.155224 6.81202C2.23284 4.65855 4.32239 2.50507 6.4 0.339228C6.75821 -0.0320602 7.16418 -0.0568128 7.45075 0.0669499C8.02388 0.314475 8.19104 1.06943 7.76119 1.5521C7.48657 1.86151 7.2 2.13379 6.92537 2.43082C5.52836 3.89122 4.13134 5.32686 2.74627 6.77489C2.67463 6.83677 2.60299 6.88627 2.50746 6.97291Z"
+              fill="#E6514A" />
+          </svg>
+        </button>
+        <button class="slider-btn slider__next-btn swiper-button-next"
+          type="button" aria-label="Следующий слайд">
+          <svg width="9" height="14" class="slider-btn__arrow-img"
+            viewbox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.49559 7.02709C5.40007 6.91571 5.35231 6.85382 5.30454 6.80432C3.85977 5.30679 2.42693 3.80926 0.982157 2.32411C0.743351 2.07658 0.492604 1.84143 0.265739 1.58153C-0.164112 1.09886 -0.0447081 0.381034 0.504545 0.0963805C0.838874 -0.0768878 1.2329 -0.0150057 1.51947 0.269648C1.78216 0.52955 2.0329 0.789452 2.28365 1.04935C3.88365 2.70777 5.49559 4.36619 7.09559 6.02461C7.3941 6.33402 7.6926 6.6558 8.00305 7.00234C7.96723 7.05184 7.90753 7.1261 7.84783 7.18798C5.77022 9.34145 3.68066 11.4949 1.60305 13.6608C1.24484 14.0321 0.838872 14.0568 0.552305 13.933C-0.0208292 13.6855 -0.187993 12.9306 0.241858 12.4479C0.516484 12.1385 0.803052 11.8662 1.07768 11.5692C2.47469 10.1088 3.87171 8.67314 5.25678 7.22511C5.32843 7.16323 5.40007 7.11373 5.49559 7.02709Z"
+              fill="#E6514A" />
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section class="teachers">
+      <div class="container section-head">
+        <h2 class="section-title teachers__title">Преподаватели</h2>
+        <p class="section-subtitle teachers__subtitle">
+          Наши преподаватели турецкого языка:
+        </p>
+      </div>
+      <div class="swiper teachers-slider">
+        <div class="container swiper-wrapper teachers__introduce">
+          <div class="swiper-slide introduce-card">
+            <a href="#" class="introduce-card__link">
+              <img src="img/ozjan.webp" alt="Озджан Бей"
+                class="introduce-card__img" loading="lazy" width="272"
+                height="190" />
+            </a>
+            <blockquote class="introduce-card__quote">
+              <cite class="introduce-card__quote-name">Озджан Бей</cite>
+              <p class="introduce-card__quote-text">
+                Здравствуйте! Меня зовут Озджан. Я работаю в языковом центре
+                «Диалог» более 5 лет. За это время многие мои студенты
+                научились очень хорошо говорить на моем родном и любимом
+                турецком языке. Я веду групповые и индивидуальные занятия.
+                Люблю, когда атмосфера на занятиях располагает к тому, чтобы
+                обучение проходило легко, но эффективно. Жду вас в нашей...
+                <a href="#" class="introduce-card__comment-link">Перейти к
+                  комментарию</a>
+              </p>
+            </blockquote>
+          </div>
+          <div class="swiper-slide introduce-card">
+            <a href="#" class="introduce-card__link">
+              <img src="img/aidemir.webp" alt="Айдемир Бей"
+                class="introduce-card__img" loading="lazy" width="272"
+                height="190" />
+            </a>
+            <blockquote class="introduce-card__quote">
+              <cite class="introduce-card__quote-name">Айдемир Бей</cite>
+              <p class="introduce-card__quote-text">
+                Здравствуйте, меня зовут Айдемир. Я турок, приехал из
+                Стамбула, где учился и работал. В России живу более 12 лет. В
+                Москве окончил РУДН. Работаю преподавателем более 8 лет, веду
+                групповые и индивидуальные занятия. Моя работа позволяет мне
+                каждый день помогать моим студентам осваивать основы турецкого
+                языка и совершенствовать уже пройденный материал...
+                <a href="#" class="introduce-card__comment-link">Перейти к
+                  комментарию</a>
+              </p>
+            </blockquote>
+          </div>
+          <div class="swiper-slide introduce-card">
+            <a href="#" class="introduce-card__link">
+              <img src="img/irina.webp" alt="Ирина Ханым"
+                class="introduce-card__img" loading="lazy" width="272"
+                height="190" />
+            </a>
+            <blockquote class="introduce-card__quote">
+              <cite class="introduce-card__quote-name">Ирина Ханым</cite>
+              <p class="introduce-card__quote-text">
+                Ведущий преподаватель курсов. Выпускница Анкарского
+                Университета, педагог с большим опытом преподавания турецкого
+                языка, профессиональный переводчик. Имеет изданные пособия по
+                изучению турецкого языка. Использует собственные методики
+                преподавания. Около 30 лет постоянно проживает в Турции ,
+                владеет языком на уровне носителя...
+                <a href="#" class="introduce-card__comment-link">Перейти к
+                  комментарию</a>
+              </p>
+            </blockquote>
+          </div>
+          <div class="swiper-slide introduce-card">
+            <a href="#" class="introduce-card__link">
+              <img src="img/ramina.webp" alt="Рамина Гаяне"
+                class="introduce-card__img" loading="lazy" width="272"
+                height="190" />
+            </a>
+            <blockquote class="introduce-card__quote">
+              <cite class="introduce-card__quote-name">Рамина Гаяне</cite>
+              <p class="introduce-card__quote-text">
+                Здравствуйте! Меня зовут Рамина. Я работаю в языковом центре
+                «Диалог» более 5 лет. За это время многие мои студенты
+                научились очень хорошо говорить на моем родном и любимом
+                турецком языке. Я веду групповые и индивидуальные занятия.
+                Люблю, когда атмосфера на занятиях располагает к тому, чтобы
+                обучение проходило легко, но эффективно. Жду вас в нашей...
+                <a href="#" class="introduce-card__comment-link">Перейти к
+                  комментарию</a>
+              </p>
+            </blockquote>
+          </div>
+          <div class="swiper-slide introduce-card">
+            <a href="#" class="introduce-card__link">
+              <img src="img/luis.webp" alt="Луи Кабар"
+                class="introduce-card__img" loading="lazy" width="272"
+                height="190" />
+            </a>
+            <blockquote class="introduce-card__quote">
+              <cite class="introduce-card__quote-name">Луи Кабар</cite>
+              <p class="introduce-card__quote-text">
+                Здравствуйте, меня зовут Луи. Я турок, приехал из Стамбула,
+                где учился и работал. В России живу более 12 лет. В Москве
+                окончил РУДН. Работаю преподавателем более 8 лет, веду
+                групповые и индивидуальные занятия. Моя работа позволяет мне
+                каждый день помогать моим студентам осваивать основы турецкого
+                языка и совершенствовать уже пройденный материал...
+                <a href="#" class="introduce-card__comment-link">Перейти к
+                  комментарию</a>
+              </p>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="whats-need-section container">
+      <h2 class="visually-hidden">Что нужно?</h2>
+      <article class="whats-need">
+        <div class="section-head">
+          <h2 class="section-title whats-need__title">Что нужно?</h2>
+          <p class="section-subtitle whats-need__subtitle">
+            Что нужно, чтобы начать?
+          </p>
+        </div>
+        <ul class="whats-need__list">
+          <li class="whats-need__list-item">
+            <span class="whats-need__list-number">1.</span>
+            Оставить заявку
+          </li>
+          <li class="whats-need__list-item">
+            <span class="whats-need__list-number">2.</span>
+            Получить консультацию менеджера, который поможет вам выбрать
+            подходящий формат обучения и сориентирует по условиям
+          </li>
+          <li class="whats-need__list-item">
+            <span class="whats-need__list-number">3.</span>
+            Приступить к изучению прекрасного турецкого языка!
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="benefits">
+      <div class="container benefits-container">
+        <div class="section-head">
+          <h2 class="section-title benefits__title">Преимущества</h2>
+          <p class="section-subtitle benefits__subtitle">
+            Наши преимущества:
+          </p>
+        </div>
+        <ul class="benefits__wrap">
+          <li class="benefits__item">
+            <img src="img/benefit1.svg" alt="Студенты"
+              class="benefits__item-img" width="120" height="120"
+              loading="lazy" />
+            <h3 class="benefits__item-title">12000 студентов</h3>
+            <p class="benefits__item-text">
+              За 16 лет мы обучили свободному общению
+            </p>
+          </li>
+          <li class="benefits__item">
+            <img src="img/benefit2.svg" alt="Переезд" class="benefits__item-img"
+              width="120" height="120" loading="lazy" />
+            <h3 class="benefits__item-title">1125 из них</h3>
+            <p class="benefits__item-text">Переехали на ПМЖ в Турцию</p>
+          </li>
+          <li class="benefits__item">
+            <img src="img/benefit3.svg" alt="Работа" class="benefits__item-img"
+              width="120" height="120" loading="lazy" />
+            <h3 class="benefits__item-title">4169 студентов</h3>
+            <p class="benefits__item-text">
+              Получили работу в турецких компаниях
+            </p>
+          </li>
+        </ul>
+        <button type="button" class="btn benefits__btn js-open-popup">
+          Записаться на пробный урок
+        </button>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container questions__wrap">
+        <div class="questions__content">
+          <h2 class="questions__title">Остались вопросы?</h2>
+          <p class="questions__text">
+            Если у вас возникли какие-либо вопросы, пожалуйста, не стесняйтесь
+            задать ваш вопрос. Наши менеджеры с радостью дадут всю необходимую
+            информацию, подберут подходящий именно для вас вариант обучения,
+            расскажут об актуальных акциях и выгодных предложениях. Ждем вас
+            на занятиях!
+          </p>
+        </div>
+        <a href="#" class="btn questions__ask-btn">Задать вопрос</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <section class="footer-main">
+        <h2 class="visually-hidden">Подвал</h2>
+        <article class="footer__item">
+          <h2 class="copyright">
+            Языковые курсы «Диалог» © 2005 -
+            <span id="copyrightYear">2019</span>
+          </h2>
+          <a href="#" class="logo">
+            <img src="img/footer-logo.svg" alt="Курсы турецкого языка ДИАЛОГ"
+              class="logo__img" loading="lazy" width="169" height="38" />
+          </a>
+          <p class="caution-text">
+            Копирование информации с сайта и ее размещение возможно только с
+            ссылкой на данный ресурс.
+          </p>
+        </article>
+        <nav class="footer-nav">
+          <ul class="footer-nav__list menu">
+            <li class="footer-nav__item menu__item">
+              <a href="#" class="footer-nav__link menu__link">О центре</a>
+            </li>
+            <li class="footer-nav__item menu__item">
+              <a href="#" class="footer-nav__link menu__link">Курсы</a>
+            </li>
+            <li class="footer-nav__item menu__item">
+              <a href="#" class="footer-nav__link menu__link">Отзывы
+                учеников</a>
+            </li>
+            <li class="footer-nav__item menu__item">
+              <a href="#" class="footer-nav__link menu__link">База знатий</a>
+            </li>
+            <li class="footer-nav__item menu__item">
+              <a href="#" class="footer-nav__link menu__link">Узнать уровень
+                турецкого</a>
+            </li>
+            <li class="footer-nav__item menu__item">
+              <a href="#" class="footer-nav__link menu__link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list menu">
+            <li class="footer-nav__item menu__item">
+              <a href="#" class="footer-nav__link menu__link">Обучение в
+                групппе</a>
+            </li>
+            <li class="footer-nav__item menu__item">
+              <a href="#" class="footer-nav__link menu__link">Индивидуальные
+                занятия</a>
+            </li>
+            <li class="footer-nav__item menu__item">
+              <a href="#" class="footer-nav__link menu__link">Корпоративное
+                обучение</a>
+            </li>
+            <li class="footer-nav__item menu__item">
+              <a href="#"
+                class="footer-nav__link menu__link">Онлайн-обучение</a>
+            </li>
+            <li class="footer-nav__item menu__item">
+              <a href="#" class="footer-nav__link menu__link">Курсы турецкого по
+                Skype</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="contact-info">
+          <dl class="contact-info__list">
+            <dt class="contact-info__title">Адрес</dt>
+            <dd class="contact-info__value">
+              г. Москва, пл. Тверская застава д. 3, 4 этаж, оф. 410
+            </dd>
+            <dt class="contact-info__title">Время работы</dt>
+            <dd class="contact-info__value">
+              Мы работаем ежедневно с 9:00 до 21:00
+            </dd>
+            <dt class="contact-info__title">Контакты</dt>
+            <dd class="contact-info__value">
+              <ul class="contacts footer__contacts">
+                <li class="contact__item">
+                  <img src="img/phone.svg" alt="телефон" class="contact__img"
+                    width="16" height="16" />
+                  <a href="tel:+74952553020" class="contact__link">+7 (495)
+                    255-30-20</a>
+                </li>
+                <li class="contact__item">
+                  <img src="img/whatsapp.svg" alt="whatsapp"
+                    class="contact__img" width="16" height="16" />
+                  <a href="tel:+79153599519" class="contact__link">+7 (915)
+                    359-95-19</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+        </address>
+      </section>
+      <section class="footer-info">
+        <h2 class="visually-hidden">Информационные ссылки</h2>
+        <ul class="social footer-info__social">
           <li class="social__item">
-            <a
-              href="https://vk.com"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="social__link"
-              aria-label="vk"
-            >
+            <a href="https://vk.com" target="_blank"
+              rel="nofollow noopener noreferrer" class="social__link"
+              aria-label="vk">
               <i class="icon-vk"></i>
             </a>
           </li>
           <li class="social__item">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="social__link"
-              aria-label="instagram"
-            >
+            <a href="https://instagram.com" target="_blank"
+              rel="nofollow noopener noreferrer" class="social__link"
+              aria-label="instagram">
               <i class="icon-instagram"></i>
             </a>
           </li>
           <li class="social__item">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="social__link"
-              aria-label="facebook"
-            >
+            <a href="https://facebook.com" target="_blank"
+              rel="nofollow noopener noreferrer" class="social__link"
+              aria-label="facebook">
               <i class="icon-facebook"></i>
             </a>
           </li>
-        </ul>
-        <ul class="contacts header-top__contacts">
-          <li class="contact__item">
-            <img
-              src="img/phone.svg"
-              alt="телефон"
-              class="contact__img"
-              width="16"
-              height="16"
-            />
-            <a href="tel:+74952553020" class="contact__link"
-              >+7 (495) 255-30-20</a
-            >
-          </li>
-          <li class="contact__item">
-            <img
-              src="img/whatsapp.svg"
-              alt="whatsapp"
-              class="contact__img"
-              width="16"
-              height="16"
-            />
-            <a href="tel:+79153599519" class="contact__link"
-              >+7 (915) 359-95-19</a
-            >
+          <li class="social__item">
+            <a href="https://youtube.com" target="_blank"
+              rel="nofollow noopener noreferrer" class="social__link"
+              aria-label="youtube">
+              <i class="icon-youtube"></i>
+            </a>
           </li>
         </ul>
-      </address>
-      <section class="header-main container">
-        <h2 class="visually-hidden">Шапка сайта</h2>
-        <nav class="header-main__navbar">
-          <a href="index.html" class="logo">
-            <img
-              src="img/logo.svg"
-              alt="Курсы турецкого языка ДИАЛОГ"
-              class="logo__img"
-              width="169"
-              height="38"
-            />
-          </a>
-          <ul class="menu">
-            <li class="menu__item">
-              <a href="#" class="menu__link">О центре</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Онлайн обучение</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Отзывы</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">База занятий</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <button
-          id="callbackBtn"
-          class="btn header-main__btn js-open-popup"
-          type="button"
-        >
-          <img
-            src="img/btn-phone.svg"
-            alt="телефон"
-            width="20"
-            height="20"
-            class="header-main__btn-img"
-          />
-          Заказать звонок
-        </button>
+        <ul class="footer-info__list">
+          <li class="footer-info__item">
+            <a href="#" class="footer-info__link">Информация о платежах</a>
+          </li>
+          <li class="footer-info__item">
+            <a href="#" class="footer-info__link">
+              Соглашение об обработке персональных данных
+            </a>
+          </li>
+        </ul>
       </section>
-    </header>
-
-    <div class="popup-window" id="callbackPopup" aria-hidden="true">
-      <div class="popup-wrap">
-        <div class="popup" role="dialog" aria-modal="true">
-          <img
-            src="img/popup.webp"
-            alt="Турецкий флаг"
-            class="popup__img"
-            width="348"
-            height="577"
-            loading="lazy"
-          />
-          <form class="form popup-form" action="sendmail.php" method="post">
-            <h2 class="form__title popup-form__title">Подача заявки</h2>
-            <p class="form__subtitle popup-form__subtitle">
-              Оставьте свои контактные данные и наш менеджер свяжется с Вами в
-              ближайшее время
-            </p>
-            <div class="form__input-group popup-form__input-group">
-              <label for="name" class="form__label popup-form__label">
-                Ваше имя и фамилия
-              </label>
-              <input
-                id="name"
-                class="form__input popup-form__input"
-                name="name"
-                type="text"
-                placeholder="Имя и Фамилия"
-                required
-              />
-            </div>
-            <div class="form__input-group popup-form__input-group">
-              <label for="phone" class="form__label popup-form__label">
-                Ваш телефон/whatsapp
-              </label>
-              <input
-                id="phone"
-                class="form__input popup-form__input"
-                name="phone"
-                type="tel"
-                placeholder="Телефон/Whatsapp"
-                required
-              />
-            </div>
-            <div class="form__input-group popup-form__input-group">
-              <label for="email" class="form__label popup-form__label"
-                >Ваш e-mail</label
-              >
-              <input
-                id="email"
-                class="form__input popup-form__input"
-                name="email"
-                type="email"
-                placeholder="E-mail"
-                required
-              />
-            </div>
-            <button id="applyBtn" class="btn popup__btn" type="submit">
-              Подать заявку
-            </button>
-          </form>
-          <button
-            id="closePopupBtn"
-            class="close-btn"
-            type="button"
-            aria-label="Закрыть оено"
-          >
-            <img
-              src="img/close.svg"
-              alt="Закрыть"
-              class="close-btn__image"
-              width="16"
-              height="16"
-              loading="lazy"
-            />
-          </button>
-        </div>
-      </div>
     </div>
+  </footer>
 
-    <main class="main">
-      <h1 class="visually-hidden">Курсы турецкого языка "Диалог"</h1>
-      <section class="hero">
-        <div class="container offer">
-          <h2 class="offer__title">
-            Начните говорить<br />
-            по-турецки уже
-            <span>через 2 месяца</span>
-          </h2>
-          <p class="offer__text">
-            Мы работаем онлайн ежедневно только для вас!
-          </p>
-          <button type="button" class="btn offer__btn js-open-popup">
-            Записаться на пробный урок
-          </button>
-          <figure class="hero__img-wrap">
-            <img
-              src="img/laptop.webp"
-              alt="Ноутбук"
-              class="hero__img"
-              width="272"
-              height="230"
-            />
-          </figure>
-        </div>
-      </section>
-      <section class="greeting">
-        <div class="section-head container">
-          <h2 class="section-title greeting__title">Приветствие</h2>
-          <p class="section-subtitle greeting__subtitle">
-            Давайте знакомиться!
-          </p>
-        </div>
-        <div class="container">
-          <div class="video">
-            <a
-              class="video__link"
-              href="https://youtu.be/Rs75vSex-jo"
-              aria-label="video frame"
-              rel="noopener nofollow noreferrer"
-            >
-              <picture>
-                <source srcset="img/video-img-lg.webp" type="image/webp" />
-                <img
-                  class="video__media"
-                  src="https://i.ytimg.com/vi/Rs75vSex-jo/maxresdefault.jpg"
-                  alt="Урок 1 / БЫСТРО учим Турецкий язык / Для начинающих / Приветствие и знакомство!"
-                />
-              </picture>
-            </a>
-            <button class="video__button" aria-label="Запустить видео">
-              Запустить видео
-            </button>
-          </div>
-        </div>
-      </section>
-      <section class="programs">
-        <div class="container section-head">
-          <h2 class="section-title programs__title">Программы</h2>
-          <p class="section-subtitle programs__subtitle">
-            Наши программы обучения:
-          </p>
-        </div>
-        <ul class="container programs__cards-wrap">
-          <li class="program-card">
-            <div class="program-card__header">
-              <h3 class="program-card__title">
-                7 дней доступа ко всем онлайн курсам
-              </h3>
-              <p class="program-card__price"><span>690</span> <br />руб.</p>
-            </div>
-            <ul class="program-card__list">
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">Проверочный тест</p>
-              </li>
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">Курсы от А1 до В1</p>
-              </li>
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">Интересные упражнения</p>
-              </li>
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">Подсказки экспертов</p>
-              </li>
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">Разговорный клуб</p>
-              </li>
-            </ul>
-            <div class="program-card__cta">
-              <button type="button" class="btn program-card__btn js-open-popup">
-                Получить
-              </button>
-              <a href="#" class="program-card__watch-btn">
-                <svg
-                  width="16"
-                  height="16"
-                  class="program-card__play-img"
-                  viewbox="0 0 80 80"
-                  fill="#3136c4"
-                >
-                  <path
-                    d="M40 0C17.9368 0 0 17.9368 0 40C0 62.0632 17.9368 80 40 80C62.0632 80 80 62.0632 80 40C80 17.9368 62.0632 0 40 0ZM52.8842 42.0211L34.0211 54.5684C32.4211 55.6632 30.2316 54.4842 30.2316 52.5474V27.4526C30.2316 25.5158 32.4211 24.3368 34.0211 25.4316L52.8842 37.9789C54.3158 38.9053 54.3158 41.0947 52.8842 42.0211Z"
-                    fill="#3136c4"
-                  />
-                </svg>
-                Смотреть презентацию
-              </a>
-            </div>
-          </li>
-          <li class="program-card">
-            <div class="program-card__header">
-              <h3 class="program-card__title">Индивидуальные уроки по Skype</h3>
-              <p class="program-card__price">
-                от <span> 1190</span> <br />руб./урок
-              </p>
-            </div>
-            <ul class="program-card__list">
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">
-                  Бесплатный доступ к онлайн-порталу
-                </p>
-              </li>
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">Любой уровень за 32 урока</p>
-              </li>
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">
-                  Вы выбираете преподавателя
-                </p>
-              </li>
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">
-                  Вы выбираете время занятий
-                </p>
-              </li>
-            </ul>
-            <div class="program-card__cta">
-              <button type="button" class="btn program-card__btn js-open-popup">
-                Записаться
-              </button>
-              <a href="#" class="program-card__watch-btn">
-                <svg
-                  width="16"
-                  height="16"
-                  class="program-card__play-img"
-                  viewbox="0 0 80 80"
-                  fill="#3136c4"
-                >
-                  <path
-                    d="M40 0C17.9368 0 0 17.9368 0 40C0 62.0632 17.9368 80 40 80C62.0632 80 80 62.0632 80 40C80 17.9368 62.0632 0 40 0ZM52.8842 42.0211L34.0211 54.5684C32.4211 55.6632 30.2316 54.4842 30.2316 52.5474V27.4526C30.2316 25.5158 32.4211 24.3368 34.0211 25.4316L52.8842 37.9789C54.3158 38.9053 54.3158 41.0947 52.8842 42.0211Z"
-                    fill="#3136c4"
-                  />
-                </svg>
-                Смотреть презентацию
-              </a>
-            </div>
-          </li>
-          <li class="program-card">
-            <div class="program-card__header">
-              <h3 class="program-card__title">
-                Турецкий в группе онлайн за 3 месяца
-              </h3>
-              <p class="program-card__price">
-                от <span> 15000</span> <br />руб./курс
-              </p>
-            </div>
-            <ul class="program-card__list">
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">
-                  24 онлайн-занятия по 90 минут
-                </p>
-              </li>
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">
-                  Интерактивные учебные материалы
-                </p>
-              </li>
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">
-                  Бесплатный доступ к онлайн-порталу
-                </p>
-              </li>
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">
-                  Закрытый форум для общения
-                </p>
-              </li>
-            </ul>
-            <div class="program-card__cta">
-              <button type="button" class="btn program-card__btn js-open-popup">
-                Записаться
-              </button>
-              <a href="#" class="program-card__watch-btn">
-                <svg
-                  width="16"
-                  height="16"
-                  class="program-card__play-img"
-                  viewbox="0 0 80 80"
-                  fill="#3136c4"
-                >
-                  <path
-                    d="M40 0C17.9368 0 0 17.9368 0 40C0 62.0632 17.9368 80 40 80C62.0632 80 80 62.0632 80 40C80 17.9368 62.0632 0 40 0ZM52.8842 42.0211L34.0211 54.5684C32.4211 55.6632 30.2316 54.4842 30.2316 52.5474V27.4526C30.2316 25.5158 32.4211 24.3368 34.0211 25.4316L52.8842 37.9789C54.3158 38.9053 54.3158 41.0947 52.8842 42.0211Z"
-                    fill="#3136c4"
-                  />
-                </svg>
-                Смотреть презентацию
-              </a>
-            </div>
-          </li>
-          <li class="program-card">
-            <div class="program-card__header">
-              <h3 class="program-card__title">
-                Специальный курс обучения сотрудников
-              </h3>
-              <p class="program-card__price program-card__overhead">
-                Корпоративное обучение
-              </p>
-            </div>
-            <ul class="program-card__list">
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">
-                  Обучение по уникальной программе TÖMER
-                </p>
-              </li>
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">
-                  Оригинальные учебные материалы
-                </p>
-              </li>
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">
-                  Интерактивные материалы в личном кабинете
-                </p>
-              </li>
-              <li class="program-card__list-item">
-                <img
-                  src="img/check-red.svg"
-                  alt="check"
-                  class="program-card__list-check"
-                  width="16"
-                  height="16"
-                  loading="lazy"
-                />
-                <p class="program-card__list-text">
-                  Скидка на индивидуальные занятия
-                </p>
-              </li>
-            </ul>
-            <div class="program-card__cta">
-              <a href="#" class="btn program-card__btn">Подробнее</a>
-              <a href="#" class="program-card__watch-btn">
-                <svg
-                  width="16"
-                  height="16"
-                  class="program-card__play-img"
-                  viewbox="0 0 80 80"
-                >
-                  <path
-                    d="M40 0C17.9368 0 0 17.9368 0 40C0 62.0632 17.9368 80 40 80C62.0632 80 80 62.0632 80 40C80 17.9368 62.0632 0 40 0ZM52.8842 42.0211L34.0211 54.5684C32.4211 55.6632 30.2316 54.4842 30.2316 52.5474V27.4526C30.2316 25.5158 32.4211 24.3368 34.0211 25.4316L52.8842 37.9789C54.3158 38.9053 54.3158 41.0947 52.8842 42.0211Z"
-                    fill="#3136c4"
-                  />
-                </svg>
-                Смотреть презентацию
-              </a>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="banner-section container">
-        <h2 class="visually-hidden">Баннер</h2>
-        <article class="banner">
-          <div class="banner__description">
-            <h2 class="banner__description-title">
-              ДИАЛОГ - лицензированное образовательное учреждение
-            </h2>
-            <p class="banner__description-text">
-              Имеем лицензию министерства образования РФ и специализируемся
-              только на преподавании турецкого языка и русского языка для турок.
-            </p>
-            <button type="button" class="btn banner__btn js-open-popup">
-              Записаться на пробный урок
-            </button>
-          </div>
-          <img
-            src="img/diploma.webp"
-            alt="Лицензия"
-            class="banner__img"
-            width="255"
-            height="340"
-            loading="lazy"
-          />
-        </article>
-      </section>
-      <section class="partners">
-        <div class="container section-head">
-          <h2 class="section-title partners__title">Партнеры</h2>
-          <p class="section-subtitle partners__subtitle">
-            Наши услуги оценили:
-          </p>
-        </div>
-        <div class="swiper partners__slider">
-          <div class="swiper-wrapper partners__list">
-            <div class="swiper-slide partners__list-item">
-              <img
-                src="img/turkish.webp"
-                alt="Turkish Airlines"
-                class="partner__img"
-                loading="lazy"
-                width="95"
-                height="28"
-              />
-            </div>
-            <div class="swiper-slide partners__list-item">
-              <img
-                src="img/constrution.webp"
-                alt="Renaissance construction"
-                class="partner__img"
-                loading="lazy"
-                width="100"
-                height="28"
-              />
-            </div>
-            <div class="swiper-slide partners__list-item">
-              <img
-                src="img/enka.webp"
-                alt="ENKA"
-                class="partner__img"
-                loading="lazy"
-                width="100"
-                height="28"
-              />
-            </div>
-            <div class="swiper-slide partners__list-item">
-              <img
-                src="img/real.webp"
-                alt="real"
-                class="partner__img"
-                loading="lazy"
-                width="100"
-                height="28"
-              />
-            </div>
-            <div class="swiper-slide partners__list-item">
-              <img
-                src="img/ashan.webp"
-                alt="Ашан"
-                class="partner__img"
-                loading="lazy"
-                width="100"
-                height="28"
-              />
-            </div>
-            <div class="swiper-slide partners__list-item">
-              <img
-                src="img/queen.webp"
-                alt="Снежная королева"
-                class="partner__img"
-                loading="lazy"
-                width="100"
-                height="28"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="subscribe-section container">
-        <h2 class="visually-hidden">Подпишись</h2>
-        <article class="subscribe">
-          <h2 class="visually-hidden">Подпишись</h2>
-          <p class="subscribe__text">
-            Подпишись на 10 бесплатных уроков «Турецкий базар» в email рассылке
-            для комфортного общения
-          </p>
-          <button type="button" class="btn subscribe__btn">Подписаться</button>
-        </article>
-      </section>
-      <section class="courses">
-        <div class="container section-head">
-          <h2 class="section-title courses__title">Курсы</h2>
-          <p class="section-subtitle courses-subtitle">
-            Общий курс турецкого языка:
-          </p>
-        </div>
-        <div class="swiper courses__slider">
-          <div class="container swiper-wrapper slider">
-            <h3 class="visually-hidden">Слайдер</h3>
-            <article class="swiper-slide slider-card">
-              <h3 class="slider-card__title slider-title">
-                Что вы будете уметь после прохождения начального уровня А1:
-              </h3>
-              <p class="slider-card__description">
-                По окончании данного уровня Вы можете простыми предложениями
-                рассказать о себе, о своей семье, о своих друзьях, о работе,
-                описать, что Вы любите и не любите делать, умеете спрашивать и
-                отвечать который час, использовать цифры от 1 до 1 000, можете
-                поддержать беседу на бытовые темы (ресторан, магазин, улица),
-                задать простые вопросы собеседнику или ответить самому на темы,
-                связанные с аспектами бытовой жизни: об отдыхе, о еде и
-                напитках, о ежедневных делах. Можете написать простые
-                предложения с приветствиями и поздравлениями друзьям и близким.
-              </p>
-              <ul class="slider-card__info">
-                <li class="info-item">
-                  <h4 class="info-item__title slider-title">Для справки</h4>
-                  <dl class="info-item__list">
-                    <dt class="info-item__list-definition">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      Длительность курса:
-                    </dt>
-                    <dd class="info-item__list-value">64 академических часа</dd>
-                    <dt class="info-item__list-definition">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      Длительность занятия:
-                    </dt>
-                    <dd class="info-item__list-value">2 ак.часа (90 минут)</dd>
-                    <dt class="info-item__list-definition">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      Уровень подготовки:
-                    </dt>
-                    <dd class="info-item__list-value">
-                      законченный уровень А1
-                    </dd>
-                    <dt class="info-item__list-definition visually-hidden">
-                      Гарантия
-                    </dt>
-                    <dd class="info-item__list-value">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      В случае, если Вы не освоите материал курса, то сможете
-                      пройти его повторно по гарантии качества абсолютно
-                      бесплатно
-                    </dd>
-                  </dl>
-                </li>
-                <li class="info-item">
-                  <h4 class="info-item__title slider-title">Структура курса</h4>
-                  <dl class="info-item__list">
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Говорение -</dt>
-                      <dd class="info-item__list-value">
-                        40%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="40"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Грамматика -</dt>
-                      <dd class="info-item__list-value">
-                        20%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="20"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Аудирование -</dt>
-                      <dd class="info-item__list-value">
-                        20%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="20"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Чтение -</dt>
-                      <dd class="info-item__list-value">
-                        10%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="10"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Письмо -</dt>
-                      <dd class="info-item__list-value">
-                        10%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="10"
-                        ></meter>
-                      </dd>
-                    </div>
-                  </dl>
-                </li>
-                <li class="info-item">
-                  <h4 class="info-item__title slider-title">
-                    Учебные материалы
-                  </h4>
-                  <img
-                    src="img/hitit.webp"
-                    alt="Учебник"
-                    class="info-item__book"
-                    width="131"
-                    height="185"
-                    loading="lazy"
-                  />
-                </li>
-              </ul>
-            </article>
-            <article class="swiper-slide slider-card">
-              <h3 class="slider-card__title slider-title">
-                Что вы будете уметь после прохождения начального уровня А2:
-              </h3>
-              <p class="slider-card__description">
-                По окончании данного уровня Вы можете простыми предложениями
-                рассказать о себе, о своей семье, о своих друзьях, о работе,
-                описать, что Вы любите и не любите делать, умеете спрашивать и
-                отвечать который час, использовать цифры от 1 000 до 10 000,
-                можете поддержать беседу на бытовые темы (ресторан, магазин,
-                улица), задать простые вопросы собеседнику или ответить самому
-                на темы, связанные с аспектами бытовой жизни: об отдыхе, о еде и
-                напитках, о ежедневных делах. Можете написать простые
-                предложения с приветствиями и поздравлениями друзьям и близким.
-              </p>
-              <ul class="slider-card__info">
-                <li class="info-item">
-                  <h4 class="info-item__title slider-title">Для справки</h4>
-                  <dl class="info-item__list">
-                    <dt class="info-item__list-definition">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      Длительность курса:
-                    </dt>
-                    <dd class="info-item__list-value">64 академических часа</dd>
-                    <dt class="info-item__list-definition">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      Длительность занятия:
-                    </dt>
-                    <dd class="info-item__list-value">2 ак.часа (90 минут)</dd>
-                    <dt class="info-item__list-definition">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      Уровень подготовки:
-                    </dt>
-                    <dd class="info-item__list-value">
-                      законченный уровень А2
-                    </dd>
-                    <dt class="info-item__list-definition visually-hidden">
-                      Гарантия
-                    </dt>
-                    <dd class="info-item__list-value">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      В случае, если Вы не освоите материал курса, то сможете
-                      пройти его повторно по гарантии качества абсолютно
-                      бесплатно
-                    </dd>
-                  </dl>
-                </li>
-                <li class="info-item">
-                  <h4 class="info-item__title slider-title">Структура курса</h4>
-                  <dl class="info-item__list">
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Говорение -</dt>
-                      <dd class="info-item__list-value">
-                        30%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="30"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Грамматика -</dt>
-                      <dd class="info-item__list-value">
-                        30%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="30"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Аудирование -</dt>
-                      <dd class="info-item__list-value">
-                        10%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="10"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Чтение -</dt>
-                      <dd class="info-item__list-value">
-                        15%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="15"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Письмо -</dt>
-                      <dd class="info-item__list-value">
-                        15%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="15"
-                        ></meter>
-                      </dd>
-                    </div>
-                  </dl>
-                </li>
-                <li class="info-item">
-                  <h4 class="info-item__title slider-title">
-                    Учебные материалы
-                  </h4>
-                  <img
-                    src="img/hitit.webp"
-                    alt="Учебник"
-                    class="info-item__book"
-                    width="131"
-                    height="185"
-                    loading="lazy"
-                  />
-                </li>
-              </ul>
-            </article>
-            <article class="swiper-slide slider-card">
-              <h3 class="slider-card__title slider-title">
-                Что вы будете уметь после прохождения начального уровня B1:
-              </h3>
-              <p class="slider-card__description">
-                По окончании данного уровня Вы можете простыми предложениями
-                рассказать о себе, о своей семье, о своих друзьях, о работе,
-                описать, что Вы любите и не любите делать, умеете спрашивать и
-                отвечать который час, использовать цифры от 10 000 до 100 000,
-                можете поддержать беседу на бытовые темы (ресторан, магазин,
-                улица), задать простые вопросы собеседнику или ответить самому
-                на темы, связанные с аспектами бытовой жизни: об отдыхе, о еде и
-                напитках, о ежедневных делах. Можете написать простые
-                предложения с приветствиями и поздравлениями друзьям и близким.
-              </p>
-              <ul class="slider-card__info">
-                <li class="info-item">
-                  <h4 class="info-item__title slider-title">Для справки</h4>
-                  <dl class="info-item__list">
-                    <dt class="info-item__list-definition">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      Длительность курса:
-                    </dt>
-                    <dd class="info-item__list-value">64 академических часа</dd>
-                    <dt class="info-item__list-definition">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      Длительность занятия:
-                    </dt>
-                    <dd class="info-item__list-value">2 ак.часа (90 минут)</dd>
-                    <dt class="info-item__list-definition">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      Уровень подготовки:
-                    </dt>
-                    <dd class="info-item__list-value">
-                      законченный уровень B1
-                    </dd>
-                    <dt class="info-item__list-definition visually-hidden">
-                      Гарантия
-                    </dt>
-                    <dd class="info-item__list-value">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      В случае, если Вы не освоите материал курса, то сможете
-                      пройти его повторно по гарантии качества абсолютно
-                      бесплатно
-                    </dd>
-                  </dl>
-                </li>
-                <li class="info-item">
-                  <h4 class="info-item__title slider-title">Структура курса</h4>
-                  <dl class="info-item__list">
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Говорение -</dt>
-                      <dd class="info-item__list-value">
-                        20%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="20"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Грамматика -</dt>
-                      <dd class="info-item__list-value">
-                        20%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="20"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Аудирование -</dt>
-                      <dd class="info-item__list-value">
-                        10%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="10"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Чтение -</dt>
-                      <dd class="info-item__list-value">
-                        25%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="25"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Письмо -</dt>
-                      <dd class="info-item__list-value">
-                        25%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="25"
-                        ></meter>
-                      </dd>
-                    </div>
-                  </dl>
-                </li>
-                <li class="info-item">
-                  <h4 class="info-item__title slider-title">
-                    Учебные материалы
-                  </h4>
-                  <img
-                    src="img/hitit.webp"
-                    alt="Учебник"
-                    class="info-item__book"
-                    width="131"
-                    height="185"
-                    loading="lazy"
-                  />
-                </li>
-              </ul>
-            </article>
-            <article class="swiper-slide slider-card">
-              <h3 class="slider-card__title slider-title">
-                Что вы будете уметь после прохождения начального уровня B2:
-              </h3>
-              <p class="slider-card__description">
-                По окончании данного уровня Вы можете простыми предложениями
-                рассказать о себе, о своей семье, о своих друзьях, о работе,
-                описать, что Вы любите и не любите делать, умеете спрашивать и
-                отвечать который час, использовать цифры от 100 000 до 1 000
-                000, можете поддержать беседу на бытовые темы (ресторан,
-                магазин, улица), задать простые вопросы собеседнику или ответить
-                самому на темы, связанные с аспектами бытовой жизни: об отдыхе,
-                о еде и напитках, о ежедневных делах. Можете написать простые
-                предложения с приветствиями и поздравлениями друзьям и близким.
-              </p>
-              <ul class="slider-card__info">
-                <li class="info-item">
-                  <h4 class="info-item__title slider-title">Для справки</h4>
-                  <dl class="info-item__list">
-                    <dt class="info-item__list-definition">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      Длительность курса:
-                    </dt>
-                    <dd class="info-item__list-value">64 академических часа</dd>
-                    <dt class="info-item__list-definition">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      Длительность занятия:
-                    </dt>
-                    <dd class="info-item__list-value">2 ак.часа (90 минут)</dd>
-                    <dt class="info-item__list-definition">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      Уровень подготовки:
-                    </dt>
-                    <dd class="info-item__list-value">
-                      законченный уровень B2
-                    </dd>
-                    <dt class="info-item__list-definition visually-hidden">
-                      Гарантия
-                    </dt>
-                    <dd class="info-item__list-value">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      В случае, если Вы не освоите материал курса, то сможете
-                      пройти его повторно по гарантии качества абсолютно
-                      бесплатно
-                    </dd>
-                  </dl>
-                </li>
-                <li class="info-item">
-                  <h4 class="info-item__title slider-title">Структура курса</h4>
-                  <dl class="info-item__list">
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Говорение -</dt>
-                      <dd class="info-item__list-value">
-                        50%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="50"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Грамматика -</dt>
-                      <dd class="info-item__list-value">
-                        15%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="15"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Аудирование -</dt>
-                      <dd class="info-item__list-value">
-                        15%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="15"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Чтение -</dt>
-                      <dd class="info-item__list-value">
-                        10%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="10"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Письмо -</dt>
-                      <dd class="info-item__list-value">
-                        10%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="10"
-                        ></meter>
-                      </dd>
-                    </div>
-                  </dl>
-                </li>
-                <li class="info-item">
-                  <h4 class="info-item__title slider-title">
-                    Учебные материалы
-                  </h4>
-                  <img
-                    src="img/hitit.webp"
-                    alt="Учебник"
-                    class="info-item__book"
-                    width="131"
-                    height="185"
-                    loading="lazy"
-                  />
-                </li>
-              </ul>
-            </article>
-            <article class="swiper-slide slider-card">
-              <h3 class="slider-card__title slider-title">
-                Что вы будете уметь после прохождения начального уровня C1:
-              </h3>
-              <p class="slider-card__description">
-                По окончании данного уровня Вы можете простыми предложениями
-                рассказать о себе, о своей семье, о своих друзьях, о работе,
-                описать, что Вы любите и не любите делать, умеете спрашивать и
-                отвечать который час, использовать цифры от 1 000 000 до 10 000
-                000, можете поддержать беседу на бытовые темы (ресторан,
-                магазин, улица), задать простые вопросы собеседнику или ответить
-                самому на темы, связанные с аспектами бытовой жизни: об отдыхе,
-                о еде и напитках, о ежедневных делах. Можете написать простые
-                предложения с приветствиями и поздравлениями друзьям и близким.
-              </p>
-              <ul class="slider-card__info">
-                <li class="info-item">
-                  <h4 class="info-item__title slider-title">Для справки</h4>
-                  <dl class="info-item__list">
-                    <dt class="info-item__list-definition">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      Длительность курса:
-                    </dt>
-                    <dd class="info-item__list-value">64 академических часа</dd>
-                    <dt class="info-item__list-definition">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      Длительность занятия:
-                    </dt>
-                    <dd class="info-item__list-value">2 ак.часа (90 минут)</dd>
-                    <dt class="info-item__list-definition">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      Уровень подготовки:
-                    </dt>
-                    <dd class="info-item__list-value">
-                      законченный уровень C1
-                    </dd>
-                    <dt class="info-item__list-definition visually-hidden">
-                      Гарантия
-                    </dt>
-                    <dd class="info-item__list-value">
-                      <img
-                        src="img/check-red.svg"
-                        alt="check"
-                        class="info-item__list-check"
-                        width="18"
-                        height="18"
-                        loading="lazy"
-                      />
-                      В случае, если Вы не освоите материал курса, то сможете
-                      пройти его повторно по гарантии качества абсолютно
-                      бесплатно
-                    </dd>
-                  </dl>
-                </li>
-                <li class="info-item">
-                  <h4 class="info-item__title slider-title">Структура курса</h4>
-                  <dl class="info-item__list">
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Говорение -</dt>
-                      <dd class="info-item__list-value">
-                        60%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="60"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Грамматика -</dt>
-                      <dd class="info-item__list-value">
-                        5%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="5"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Аудирование -</dt>
-                      <dd class="info-item__list-value">
-                        10%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="10"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Чтение -</dt>
-                      <dd class="info-item__list-value">
-                        10%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="10"
-                        ></meter>
-                      </dd>
-                    </div>
-                    <div class="info-item__list-item">
-                      <dt class="info-item__list-definition">Письмо -</dt>
-                      <dd class="info-item__list-value">
-                        15%
-                        <meter
-                          class="info-item__list-meter"
-                          max="100"
-                          value="15"
-                        ></meter>
-                      </dd>
-                    </div>
-                  </dl>
-                </li>
-                <li class="info-item">
-                  <h4 class="info-item__title slider-title">
-                    Учебные материалы
-                  </h4>
-                  <img
-                    src="img/hitit.webp"
-                    alt="Учебник"
-                    class="info-item__book"
-                    width="131"
-                    height="185"
-                    loading="lazy"
-                  />
-                </li>
-              </ul>
-            </article>
-          </div>
-          <ul class="swiper-pagination slider-pagination">
-            <li class="slider-pagination__item"></li>
-            <li class="slider-pagination__item"></li>
-            <li class="slider-pagination__item"></li>
-            <li class="slider-pagination__item"></li>
-            <li class="slider-pagination__item"></li>
-          </ul>
-          <div class="swiper-scrollbar"></div>
-          <button
-            class="slider-btn slider__prev-btn swiper-button-prev"
-            type="button"
-            aria-label="Предыдущий слайд"
-          >
-            <svg
-              width="9"
-              height="14"
-              class="slider-btn__arrow-img"
-              viewbox="0 0 9 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2.50746 6.97291C2.60299 7.08429 2.65075 7.14618 2.69851 7.19568C4.14328 8.69321 5.57612 10.1907 7.0209 11.6759C7.2597 11.9234 7.51045 12.1586 7.73731 12.4185C8.16716 12.9011 8.04776 13.619 7.49851 13.9036C7.16418 14.0769 6.77015 14.015 6.48358 13.7304C6.2209 13.4704 5.97015 13.2105 5.7194 12.9506C4.1194 11.2922 2.50746 9.63381 0.907463 7.97539C0.608955 7.66598 0.310448 7.3442 0 6.99766C0.0358209 6.94816 0.0955224 6.8739 0.155224 6.81202C2.23284 4.65855 4.32239 2.50507 6.4 0.339228C6.75821 -0.0320602 7.16418 -0.0568128 7.45075 0.0669499C8.02388 0.314475 8.19104 1.06943 7.76119 1.5521C7.48657 1.86151 7.2 2.13379 6.92537 2.43082C5.52836 3.89122 4.13134 5.32686 2.74627 6.77489C2.67463 6.83677 2.60299 6.88627 2.50746 6.97291Z"
-                fill="#E6514A"
-              />
-            </svg>
-          </button>
-          <button
-            class="slider-btn slider__next-btn swiper-button-next"
-            type="button"
-            aria-label="Следующий слайд"
-          >
-            <svg
-              width="9"
-              height="14"
-              class="slider-btn__arrow-img"
-              viewbox="0 0 9 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5.49559 7.02709C5.40007 6.91571 5.35231 6.85382 5.30454 6.80432C3.85977 5.30679 2.42693 3.80926 0.982157 2.32411C0.743351 2.07658 0.492604 1.84143 0.265739 1.58153C-0.164112 1.09886 -0.0447081 0.381034 0.504545 0.0963805C0.838874 -0.0768878 1.2329 -0.0150057 1.51947 0.269648C1.78216 0.52955 2.0329 0.789452 2.28365 1.04935C3.88365 2.70777 5.49559 4.36619 7.09559 6.02461C7.3941 6.33402 7.6926 6.6558 8.00305 7.00234C7.96723 7.05184 7.90753 7.1261 7.84783 7.18798C5.77022 9.34145 3.68066 11.4949 1.60305 13.6608C1.24484 14.0321 0.838872 14.0568 0.552305 13.933C-0.0208292 13.6855 -0.187993 12.9306 0.241858 12.4479C0.516484 12.1385 0.803052 11.8662 1.07768 11.5692C2.47469 10.1088 3.87171 8.67314 5.25678 7.22511C5.32843 7.16323 5.40007 7.11373 5.49559 7.02709Z"
-                fill="#E6514A"
-              />
-            </svg>
-          </button>
-        </div>
-      </section>
-      <section class="teachers">
-        <div class="container section-head">
-          <h2 class="section-title teachers__title">Преподаватели</h2>
-          <p class="section-subtitle teachers__subtitle">
-            Наши преподаватели турецкого языка:
-          </p>
-        </div>
-        <div class="swiper teachers-slider">
-          <div class="container swiper-wrapper teachers__introduce">
-            <div class="swiper-slide introduce-card">
-              <a href="#" class="introduce-card__link">
-                <img
-                  src="img/ozjan.webp"
-                  alt="Озджан Бей"
-                  class="introduce-card__img"
-                  loading="lazy"
-                  width="272"
-                  height="190"
-                />
-              </a>
-              <blockquote class="introduce-card__quote">
-                <cite class="introduce-card__quote-name">Озджан Бей</cite>
-                <p class="introduce-card__quote-text">
-                  Здравствуйте! Меня зовут Озджан. Я работаю в языковом центре
-                  «Диалог» более 5 лет. За это время многие мои студенты
-                  научились очень хорошо говорить на моем родном и любимом
-                  турецком языке. Я веду групповые и индивидуальные занятия.
-                  Люблю, когда атмосфера на занятиях располагает к тому, чтобы
-                  обучение проходило легко, но эффективно. Жду вас в нашей...
-                  <a href="#" class="introduce-card__comment-link"
-                    >Перейти к коментарию</a
-                  >
-                </p>
-              </blockquote>
-            </div>
-            <div class="swiper-slide introduce-card">
-              <a href="#" class="introduce-card__link">
-                <img
-                  src="img/aidemir.webp"
-                  alt="Айдемир Бей"
-                  class="introduce-card__img"
-                  loading="lazy"
-                  width="272"
-                  height="190"
-                />
-              </a>
-              <blockquote class="introduce-card__quote">
-                <cite class="introduce-card__quote-name">Айдемир Бей</cite>
-                <p class="introduce-card__quote-text">
-                  Здравствуйте, меня зовут Айдемир. Я турок, приехал из
-                  Стамбула, где учился и работал. В России живу более 12 лет. В
-                  Москве окончил РУДН. Работаю преподавателем более 8 лет, веду
-                  групповые и индивидуальные занятия. Моя работа позволяет мне
-                  каждый день помогать моим студентам осваивать основы турецкого
-                  языка и совершенствовать уже пройденный материал...
-                  <a href="#" class="introduce-card__comment-link"
-                    >Перейти к коментарию</a
-                  >
-                </p>
-              </blockquote>
-            </div>
-            <div class="swiper-slide introduce-card">
-              <a href="#" class="introduce-card__link">
-                <img
-                  src="img/irina.webp"
-                  alt="Ирина Ханым"
-                  class="introduce-card__img"
-                  loading="lazy"
-                  width="272"
-                  height="190"
-                />
-              </a>
-              <blockquote class="introduce-card__quote">
-                <cite class="introduce-card__quote-name">Ирина Ханым</cite>
-                <p class="introduce-card__quote-text">
-                  Ведущий преподаватель курсов. Выпускница Анкарского
-                  Университета, педагог с большим опытом преподавания турецкого
-                  языка, профессиональный переводчик. Имеет изданные пособия по
-                  изучению турецкого языка. Использует собственные методики
-                  преподавания. Около 30 лет постоянно проживает в Турции ,
-                  владеет языком на уровне носителя...
-                  <a href="#" class="introduce-card__comment-link"
-                    >Перейти к коментарию</a
-                  >
-                </p>
-              </blockquote>
-            </div>
-            <div class="swiper-slide introduce-card">
-              <a href="#" class="introduce-card__link">
-                <img
-                  src="img/ramina.webp"
-                  alt="Рамина Гаяне"
-                  class="introduce-card__img"
-                  loading="lazy"
-                  width="272"
-                  height="190"
-                />
-              </a>
-              <blockquote class="introduce-card__quote">
-                <cite class="introduce-card__quote-name">Рамина Гаяне</cite>
-                <p class="introduce-card__quote-text">
-                  Здравствуйте! Меня зовут Рамина. Я работаю в языковом центре
-                  «Диалог» более 5 лет. За это время многие мои студенты
-                  научились очень хорошо говорить на моем родном и любимом
-                  турецком языке. Я веду групповые и индивидуальные занятия.
-                  Люблю, когда атмосфера на занятиях располагает к тому, чтобы
-                  обучение проходило легко, но эффективно. Жду вас в нашей...
-                  <a href="#" class="introduce-card__comment-link"
-                    >Перейти к коментарию</a
-                  >
-                </p>
-              </blockquote>
-            </div>
-            <div class="swiper-slide introduce-card">
-              <a href="#" class="introduce-card__link">
-                <img
-                  src="img/luis.webp"
-                  alt="Луи Кабар"
-                  class="introduce-card__img"
-                  loading="lazy"
-                  width="272"
-                  height="190"
-                />
-              </a>
-              <blockquote class="introduce-card__quote">
-                <cite class="introduce-card__quote-name">Луи Кабар</cite>
-                <p class="introduce-card__quote-text">
-                  Здравствуйте, меня зовут Луи. Я турок, приехал из Стамбула,
-                  где учился и работал. В России живу более 12 лет. В Москве
-                  окончил РУДН. Работаю преподавателем более 8 лет, веду
-                  групповые и индивидуальные занятия. Моя работа позволяет мне
-                  каждый день помогать моим студентам осваивать основы турецкого
-                  языка и совершенствовать уже пройденный материал...
-                  <a href="#" class="introduce-card__comment-link"
-                    >Перейти к коментарию</a
-                  >
-                </p>
-              </blockquote>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-      <section class="whats-need-section container">
-        <h2 class="visually-hidden">Что нужно?</h2>
-        <article class="whats-need">
-          <div class="section-head">
-            <h2 class="section-title whats-need__title">Что нужно?</h2>
-            <p class="section-subtitle whats-need__subtitle">
-              Что нужно, чтобы начать?
-            </p>
-          </div>
-          <ul class="whats-need__list">
-            <li class="whats-need__list-item">
-              <span class="whats-need__list-number">1.</span>
-              Оставить заявку
-            </li>
-            <li class="whats-need__list-item">
-              <span class="whats-need__list-number">2.</span>
-              Получить консультацию менеджера, который поможет вам выбрать
-              подходящий формат обучения и сориентирует по условиям
-            </li>
-            <li class="whats-need__list-item">
-              <span class="whats-need__list-number">3.</span>
-              Приступить к изучению прекрасного турецкого языка!
-            </li>
-          </ul>
-        </article>
-      </section>
-      <section class="benefits">
-        <div class="container benefits-container">
-          <div class="section-head">
-            <h2 class="section-title benefits__title">Преимущества</h2>
-            <p class="section-subtitle benefits__subtitle">
-              Наши преимущества:
-            </p>
-          </div>
-          <ul class="benefits__wrap">
-            <li class="benefits__item">
-              <img
-                src="img/benefit1.svg"
-                alt="Студенты"
-                class="benefits__item-img"
-                width="120"
-                height="120"
-                loading="lazy"
-              />
-              <h3 class="benefits__item-title">12000 студентов</h3>
-              <p class="benefits__item-text">
-                За 16 лет мы обучили свободному общению
-              </p>
-            </li>
-            <li class="benefits__item">
-              <img
-                src="img/benefit2.svg"
-                alt="Переезд"
-                class="benefits__item-img"
-                width="120"
-                height="120"
-                loading="lazy"
-              />
-              <h3 class="benefits__item-title">1125 из них</h3>
-              <p class="benefits__item-text">Переехали на ПМЖ в Турцию</p>
-            </li>
-            <li class="benefits__item">
-              <img
-                src="img/benefit3.svg"
-                alt="Работа"
-                class="benefits__item-img"
-                width="120"
-                height="120"
-                loading="lazy"
-              />
-              <h3 class="benefits__item-title">4169 студентов</h3>
-              <p class="benefits__item-text">
-                Получили работу в турецких компаниях
-              </p>
-            </li>
-          </ul>
-          <button type="button" class="btn benefits__btn js-open-popup">
-            Записаться на пробный урок
-          </button>
-        </div>
-      </section>
-      <section class="questions">
-        <div class="container questions__wrap">
-          <div class="questions__content">
-            <h2 class="questions__title">Остались вопросы?</h2>
-            <p class="questions__text">
-              Если у вас возникли какие-либо вопросы, пожалуйста, не стесняйтесь
-              задать ваш вопрос. Наши менеджеры с радостью дадут всю необходимую
-              информацию, подберут подходящий именно для вас вариант обучения,
-              расскажут об актуальных акциях и выгодных предложениях. Ждем вас
-              на занятиях!
-            </p>
-          </div>
-          <a href="#" class="btn questions__ask-btn">Задать вопрос</a>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <section class="footer-main">
-          <h2 class="visually-hidden">Подвал</h2>
-          <article class="footer__item">
-            <h2 class="copyright">
-              Языковые курсы «Диалог» © 2005 -
-              <span id="copyrightYear">2019</span>
-            </h2>
-            <a href="#" class="logo">
-              <img
-                src="img/footer-logo.svg"
-                alt="Курсы турецкого языка ДИАЛОГ"
-                class="logo__img"
-                loading="lazy"
-                width="169"
-                height="38"
-              />
-            </a>
-            <p class="caution-text">
-              Копирование информации с сайта и ее размещение возможно только с
-              ссылкой на данный ресурс.
-            </p>
-          </article>
-          <nav class="footer-nav">
-            <ul class="footer-nav__list menu">
-              <li class="footer-nav__item menu__item">
-                <a href="#" class="footer-nav__link menu__link">О центре</a>
-              </li>
-              <li class="footer-nav__item menu__item">
-                <a href="#" class="footer-nav__link menu__link">Курсы</a>
-              </li>
-              <li class="footer-nav__item menu__item">
-                <a href="#" class="footer-nav__link menu__link"
-                  >Отзывы учеников</a
-                >
-              </li>
-              <li class="footer-nav__item menu__item">
-                <a href="#" class="footer-nav__link menu__link">База знатий</a>
-              </li>
-              <li class="footer-nav__item menu__item">
-                <a href="#" class="footer-nav__link menu__link"
-                  >Узнать уровень турецкого</a
-                >
-              </li>
-              <li class="footer-nav__item menu__item">
-                <a href="#" class="footer-nav__link menu__link">Контакты</a>
-              </li>
-            </ul>
-            <ul class="footer-nav__list menu">
-              <li class="footer-nav__item menu__item">
-                <a href="#" class="footer-nav__link menu__link"
-                  >Обучение в групппе</a
-                >
-              </li>
-              <li class="footer-nav__item menu__item">
-                <a href="#" class="footer-nav__link menu__link"
-                  >Индивидуальные занятия</a
-                >
-              </li>
-              <li class="footer-nav__item menu__item">
-                <a href="#" class="footer-nav__link menu__link"
-                  >Корпоративное обучение</a
-                >
-              </li>
-              <li class="footer-nav__item menu__item">
-                <a href="#" class="footer-nav__link menu__link"
-                  >Онлайн-обучение</a
-                >
-              </li>
-              <li class="footer-nav__item menu__item">
-                <a href="#" class="footer-nav__link menu__link"
-                  >Курсы турецкого по Skype</a
-                >
-              </li>
-            </ul>
-          </nav>
-          <address class="contact-info">
-            <dl class="contact-info__list">
-              <dt class="contact-info__title">Адрес</dt>
-              <dd class="contact-info__value">
-                г. Москва, пл. Тверская застава д. 3, 4 этаж, оф. 410
-              </dd>
-              <dt class="contact-info__title">Время работы</dt>
-              <dd class="contact-info__value">
-                Мы работаем ежедневно с 9:00 до 21:00
-              </dd>
-              <dt class="contact-info__title">Контакты</dt>
-              <dd class="contact-info__value">
-                <ul class="contacts footer__contacts">
-                  <li class="contact__item">
-                    <img
-                      src="img/phone.svg"
-                      alt="телефон"
-                      class="contact__img"
-                      width="16"
-                      height="16"
-                    />
-                    <a href="tel:+74952553020" class="contact__link"
-                      >+7 (495) 255-30-20</a
-                    >
-                  </li>
-                  <li class="contact__item">
-                    <img
-                      src="img/whatsapp.svg"
-                      alt="whatsapp"
-                      class="contact__img"
-                      width="16"
-                      height="16"
-                    />
-                    <a href="tel:+79153599519" class="contact__link"
-                      >+7 (915) 359-95-19</a
-                    >
-                  </li>
-                </ul>
-              </dd>
-            </dl>
-          </address>
-        </section>
-        <section class="footer-info">
-          <h2 class="visually-hidden">Информационные ссылки</h2>
-          <ul class="social footer-info__social">
-            <li class="social__item">
-              <a
-                href="https://vk.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                class="social__link"
-                aria-label="vk"
-              >
-                <i class="icon-vk"></i>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                class="social__link"
-                aria-label="instagram"
-              >
-                <i class="icon-instagram"></i>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                class="social__link"
-                aria-label="facebook"
-              >
-                <i class="icon-facebook"></i>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                class="social__link"
-                aria-label="youtube"
-              >
-                <i class="icon-youtube"></i>
-              </a>
-            </li>
-          </ul>
-          <ul class="footer-info__list">
-            <li class="footer-info__item">
-              <a href="#" class="footer-info__link">Информация о платежах</a>
-            </li>
-            <li class="footer-info__item">
-              <a href="#" class="footer-info__link">
-                Соглашение об обработке персональных данных
-              </a>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </footer>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/sliders.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</body>
 
-    <script defer src="js/app.js"></script>
-    <script defer src="js/sliders.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  </body>
 </html>
