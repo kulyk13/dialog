@@ -857,6 +857,9 @@ $tr_time: 0.3s;
   }
   .teachers-slider {
     width: 1160px;
+    .slider-btn {
+      width: 346px;
+    }
   }
   .introduce-card {
     &__img {
@@ -920,6 +923,9 @@ $tr_time: 0.3s;
   }
   .teachers-slider {
     width: 1320px;
+    .slider-btn {
+      width: 400px;
+    }
   }
   .whats-need {
     padding-left: 120px;

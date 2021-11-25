@@ -2766,6 +2766,9 @@ a {
   .teachers-slider {
     width: 1160px;
   }
+  .teachers-slider .slider-btn {
+    width: 346px;
+  }
 
   .introduce-card__img {
     width: 376px;
@@ -2835,6 +2838,9 @@ a {
 
   .teachers-slider {
     width: 1320px;
+  }
+  .teachers-slider .slider-btn {
+    width: 400px;
   }
 
   .whats-need {
