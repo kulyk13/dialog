@@ -447,6 +447,8 @@ $tr_time: 0.3s;
         display: flex;
         flex-direction: row;
         .menu {
+          flex-wrap: wrap;
+          justify-content: center;
           flex-direction: row;
           &__item:nth-child(n + 2) {
             margin-top: 0;
@@ -459,6 +461,7 @@ $tr_time: 0.3s;
       &__btn {
         padding: 14px 28px;
         margin-top: 0;
+        min-width: 230px;
       }
     }
   }

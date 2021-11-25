@@ -2305,6 +2305,11 @@ a {
             flex-direction: row;
   }
   .header-desktop .header-main__navbar .menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2319,6 +2324,7 @@ a {
   .header-desktop .header-main__btn {
     padding: 14px 28px;
     margin-top: 0;
+    min-width: 230px;
   }
 
   .hero {
