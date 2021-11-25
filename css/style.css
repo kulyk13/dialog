@@ -1595,6 +1595,7 @@ a {
 }
 .footer__item {
   font-size: 12px;
+  line-height: 1.5;
   margin-bottom: 42px;
 }
 .footer__item .copyright {
@@ -1651,6 +1652,9 @@ a {
 .footer-info__link {
   color: white;
   font-family: "Montserrat", sans-serif;
+}
+.footer-info__link:hover {
+  text-decoration: underline;
 }
 
 .contact-info__title {

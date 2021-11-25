@@ -858,6 +858,7 @@ $tr_time: 0.3s;
   &__item {
     @extend %flex-column-center;
     font-size: 12px;
+    line-height: 1.5;
     margin-bottom: 42px;
     .copyright {
       order: 1;
@@ -913,6 +914,9 @@ $tr_time: 0.3s;
     &__link {
       color: $text_color_light;
       font-family: "Montserrat", sans-serif;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
