@@ -447,32 +447,6 @@ $tr_time: 0.3s;
   .slider {
     padding: 0;
   }
-  .slider-btn {
-    display: none;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background-color: $bg_color;
-    box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22);
-    &.swiper-button-next:after,
-    &.swiper-button-prev:after {
-      content: "";
-    }
-    .slider-btn__arrow-img {
-      path {
-        transition: $tr_time;
-      }
-    }
-    &:hover {
-      background-color: $brand_color2;
-      & > .slider-btn__arrow-img {
-        path {
-          transition: $tr_time;
-          fill: $bg_color;
-        }
-      }
-    }
-  }
   .slider-pagination {
     @extend %align-center;
     @include font("Montserrat", 700, 18px);

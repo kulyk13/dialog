@@ -384,7 +384,7 @@ $tr_time: 0.3s;
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 955px;
     padding: 0;
   }
   .section-head {
@@ -591,14 +591,14 @@ $tr_time: 0.3s;
       display: block;
       position: absolute;
       &.slider__next-btn {
-        right: 40px;
+        right: 30px;
         .slider-btn__arrow-img {
           margin-left: 6px;
           margin-top: 4px;
         }
       }
       &.slider__prev-btn {
-        left: 40px;
+        left: 30px;
         .slider-btn__arrow-img {
           margin-left: 3px;
           margin-top: 4px;
@@ -608,10 +608,38 @@ $tr_time: 0.3s;
   }
   .teachers {
     padding-top: 90px;
-    padding-bottom: 55px;
+    padding-bottom: 40px;
   }
   .teachers-slider {
     width: 960px;
+    .swiper-pagination-bullets {
+      &.swiper-pagination-bullets {
+        bottom: 20px;
+      }
+    }
+    .slider-btn {
+      display: block;
+      position: absolute;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: none;
+      top: initial;
+      bottom: 0;
+      &.slider__next-btn {
+        right: 15px;
+        .slider-btn__arrow-img {
+          margin-left: 6px;
+          margin-top: 4px;
+        }
+      }
+      &.slider__prev-btn {
+        left: 23px;
+        .slider-btn__arrow-img {
+          margin-left: 3px;
+          margin-top: 4px;
+        }
+      }
+    }
   }
   .whats-need-section {
     padding-top: 60px;
@@ -717,7 +745,7 @@ $tr_time: 0.3s;
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    max-width: 1160px;
   }
   .section-head {
     margin-bottom: 48px;
@@ -771,7 +799,7 @@ $tr_time: 0.3s;
     }
   }
   .banner {
-    padding: 100px 70px 100px 550px;
+    padding: 100px 70px 100px 540px;
     &__description-title {
       font-size: 32px;
     }
@@ -783,7 +811,7 @@ $tr_time: 0.3s;
     }
   }
   .partners__slider {
-    max-width: 1170px;
+    max-width: 1160px;
   }
   .subscribe {
     padding: 100px 70px;
@@ -796,10 +824,10 @@ $tr_time: 0.3s;
     &.swiper {
       padding-left: 125px;
       padding-right: 125px;
-      max-width: 1220px;
+      max-width: 1180px;
     }
     .swiper-pagination.slider-pagination {
-      width: 1100px;
+      width: 1060px;
       padding-right: 5px;
       padding-left: 120px;
       .swiper-pagination-bullet-active:nth-child(2) {
@@ -807,7 +835,7 @@ $tr_time: 0.3s;
       }
     }
     &.swiper-horizontal .swiper-scrollbar {
-      width: 970px;
+      width: 930px;
     }
     .slider-card {
       padding: 48px 52px;
@@ -828,7 +856,7 @@ $tr_time: 0.3s;
     }
   }
   .teachers-slider {
-    width: 1170px;
+    width: 1160px;
   }
   .introduce-card {
     &__img {

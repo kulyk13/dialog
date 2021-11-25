@@ -690,6 +690,31 @@ a {
   color: rgba(35, 40, 56, 0.3);
 }
 
+.slider-btn {
+  display: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22);
+          box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22);
+}
+.slider-btn.swiper-button-next:after, .slider-btn.swiper-button-prev:after {
+  content: "";
+}
+.slider-btn .slider-btn__arrow-img path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.slider-btn:hover {
+  background-color: #3136c4;
+}
+.slider-btn:hover > .slider-btn__arrow-img path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  fill: white;
+}
+
 [class^=icon-],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -1205,30 +1230,6 @@ a {
 }
 .courses__slider .slider {
   padding: 0;
-}
-.courses__slider .slider-btn {
-  display: none;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background-color: white;
-  -webkit-box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22);
-          box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22);
-}
-.courses__slider .slider-btn.swiper-button-next:after, .courses__slider .slider-btn.swiper-button-prev:after {
-  content: "";
-}
-.courses__slider .slider-btn .slider-btn__arrow-img path {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.courses__slider .slider-btn:hover {
-  background-color: #3136c4;
-}
-.courses__slider .slider-btn:hover > .slider-btn__arrow-img path {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  fill: white;
 }
 .courses__slider .slider-pagination {
   font-family: "Montserrat", sans-serif;
@@ -2211,7 +2212,7 @@ a {
 }
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 955px;
     padding: 0;
   }
 
@@ -2476,14 +2477,14 @@ a {
     position: absolute;
   }
   .courses__slider .slider-btn.slider__next-btn {
-    right: 40px;
+    right: 30px;
   }
   .courses__slider .slider-btn.slider__next-btn .slider-btn__arrow-img {
     margin-left: 6px;
     margin-top: 4px;
   }
   .courses__slider .slider-btn.slider__prev-btn {
-    left: 40px;
+    left: 30px;
   }
   .courses__slider .slider-btn.slider__prev-btn .slider-btn__arrow-img {
     margin-left: 3px;
@@ -2492,11 +2493,38 @@ a {
 
   .teachers {
     padding-top: 90px;
-    padding-bottom: 55px;
+    padding-bottom: 40px;
   }
 
   .teachers-slider {
     width: 960px;
+  }
+  .teachers-slider .swiper-pagination-bullets.swiper-pagination-bullets {
+    bottom: 20px;
+  }
+  .teachers-slider .slider-btn {
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+    width: 280px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    top: initial;
+    bottom: 0;
+  }
+  .teachers-slider .slider-btn.slider__next-btn {
+    right: 15px;
+  }
+  .teachers-slider .slider-btn.slider__next-btn .slider-btn__arrow-img {
+    margin-left: 6px;
+    margin-top: 4px;
+  }
+  .teachers-slider .slider-btn.slider__prev-btn {
+    left: 23px;
+  }
+  .teachers-slider .slider-btn.slider__prev-btn .slider-btn__arrow-img {
+    margin-left: 3px;
+    margin-top: 4px;
   }
 
   .whats-need-section {
@@ -2622,7 +2650,7 @@ a {
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    max-width: 1160px;
   }
 
   .section-head {
@@ -2679,7 +2707,7 @@ a {
   }
 
   .banner {
-    padding: 100px 70px 100px 550px;
+    padding: 100px 70px 100px 540px;
   }
   .banner__description-title {
     font-size: 32px;
@@ -2692,7 +2720,7 @@ a {
   }
 
   .partners__slider {
-    max-width: 1170px;
+    max-width: 1160px;
   }
 
   .subscribe {
@@ -2706,10 +2734,10 @@ a {
   .courses__slider.swiper {
     padding-left: 125px;
     padding-right: 125px;
-    max-width: 1220px;
+    max-width: 1180px;
   }
   .courses__slider .swiper-pagination.slider-pagination {
-    width: 1100px;
+    width: 1060px;
     padding-right: 5px;
     padding-left: 120px;
   }
@@ -2717,7 +2745,7 @@ a {
     padding-right: 0;
   }
   .courses__slider.swiper-horizontal .swiper-scrollbar {
-    width: 970px;
+    width: 930px;
   }
   .courses__slider .slider-card {
     padding: 48px 52px;
@@ -2736,7 +2764,7 @@ a {
   }
 
   .teachers-slider {
-    width: 1170px;
+    width: 1160px;
   }
 
   .introduce-card__img {
